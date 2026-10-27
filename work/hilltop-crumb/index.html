@@ -1,0 +1,1223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hilltop Crumb | Artisan Bakery &amp; Coffee Bar in Escondido, CA</title>
+<meta name="description" content="Concept site: Hilltop Crumb, an artisan bakery and coffee bar in Escondido, CA. Naturally leavened sourdough, croissants, seasonal pies and espresso.">
+<meta name="theme-color" content="#fbf7f0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23c0603b'/%3E%3Cpath d='M7 28c0-8.3 5.8-15 13-15s13 6.7 13 15z' fill='%23fbf7f0'/%3E%3Cpath d='M14.5 18.5l3 5M19.5 16l3 6M24.5 18.5l2.4 4.4' stroke='%23c0603b' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='29.5' cy='11' r='3' fill='%23efd5a3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --flour:#fbf7f0;
+  --paper:#fffdf9;
+  --cream:#f4ebdd;
+  --cream-2:#ecdfca;
+  --butter:#efd5a3;
+  --kraft:#c99a62;
+  --terra:#c0603b;
+  --terra-deep:#a24a2a;
+  --terra-soft:#f3dccd;
+  --brown:#3a2419;
+  --brown-2:#5b3b2a;
+  --ink:#2e1d14;
+  --muted:#7b6354;
+  --line:#e5d6c1;
+  --open:#4f8a4b;
+  --soon:#c98a1c;
+  --shadow:0 34px 60px -34px rgba(58,36,25,.55);
+  --shadow-sm:0 14px 30px -18px rgba(58,36,25,.45);
+  --gutter:clamp(18px,4vw,48px);
+  --maxw:1280px;
+  --hills:clamp(84px,11vw,168px);
+  --serif:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.2,.75,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--flour);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::after{content:"";position:fixed;inset:0;z-index:90;pointer-events:none;opacity:.2;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .22  0 0 0 0 .13  0 0 0 0 .08  0 0 0 .7 0'/></filter><rect width='180' height='180' filter='url(%23n)'/></svg>")}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:450;line-height:1.05;letter-spacing:-.02em;margin:0;font-variation-settings:"SOFT" 40,"WONK" 0}
+h2 em,h1 em{font-style:italic;font-weight:400;color:var(--terra);font-variation-settings:"SOFT" 100,"WONK" 1}
+p{margin:0}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:12px;top:-60px;z-index:300;background:var(--brown);color:var(--flour);padding:10px 16px;border-radius:10px;text-decoration:none}
+.skip:focus{top:12px}
+:focus-visible{outline:2.5px solid var(--terra);outline-offset:3px;border-radius:8px}
+section[id]{scroll-margin-top:84px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--terra)}
+.eyebrow::before{content:"";width:28px;height:1.5px;background:currentColor;opacity:.7}
+.section{padding:clamp(84px,11vw,148px) 0}
+.section-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px 64px;align-items:end;margin-bottom:clamp(36px,5vw,60px)}
+.section-head h2{font-size:clamp(38px,5vw,70px);margin-top:18px}
+.section-head>p{color:var(--muted);font-size:18px;max-width:30em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;border:1.5px solid transparent;font-weight:600;font-size:16px;text-decoration:none;cursor:pointer;transition:transform .3s var(--ease),background-color .3s,border-color .3s,box-shadow .3s,color .3s;white-space:nowrap}
+.btn svg{transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn-primary{background:var(--terra);color:#fff9f2;box-shadow:0 16px 30px -16px rgba(162,74,42,.85)}
+.btn-primary:hover{background:var(--terra-deep);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(58,36,25,.28);color:var(--brown)}
+.btn-ghost:hover{border-color:var(--brown);background:rgba(255,255,255,.55)}
+.btn-sm{min-height:46px;padding:0 20px;font-size:15px}
+.btn[disabled]{opacity:.42;cursor:not-allowed;transform:none;box-shadow:none}
+.box-card .btn[disabled]{opacity:1;background:rgba(244,235,221,.1);color:rgba(244,235,221,.45);border-color:rgba(244,235,221,.12)}
+
+/* status badge */
+.status{display:inline-flex;align-items:center;gap:9px;min-height:36px;padding:0 15px 0 13px;border-radius:999px;background:rgba(255,253,249,.78);border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--brown);white-space:nowrap}
+.status .dot{position:relative;width:9px;height:9px;border-radius:50%;background:var(--muted);flex:none}
+.status[data-state=open] .dot{background:var(--open)}
+.status[data-state=soon] .dot{background:var(--soon)}
+.status[data-state=closed] .dot{background:var(--terra)}
+.status[data-state=open] .dot::after,.status[data-state=soon] .dot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid currentColor;color:inherit;opacity:0;animation:ping 2.4s var(--ease) infinite}
+.status[data-state=open] .dot::after{border-color:var(--open)}
+.status[data-state=soon] .dot::after{border-color:var(--soon)}
+@keyframes ping{0%{transform:scale(.5);opacity:.7}100%{transform:scale(1.6);opacity:0}}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:60;transition:background-color .35s,box-shadow .35s,backdrop-filter .35s}
+.site-header.scrolled{background:rgba(251,247,240,.86);-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);box-shadow:0 1px 0 var(--line)}
+.nav-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:80px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.brand svg{width:42px;height:42px;flex:none}
+.brand-name{display:block;font-family:var(--serif);font-size:23px;font-weight:600;letter-spacing:-.015em;line-height:1;font-variation-settings:"SOFT" 60}
+.brand-name em{font-style:italic;font-weight:500;color:var(--terra);font-variation-settings:"SOFT" 100,"WONK" 1}
+.brand-sub{display:block;margin-top:5px;font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.nav-links{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.nav-links a{display:inline-flex;align-items:center;min-height:44px;padding:0 15px;border-radius:999px;text-decoration:none;font-weight:500;font-size:15.5px;color:var(--brown-2);transition:background-color .25s,color .25s}
+.nav-links a:hover{background:var(--cream);color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.menu-toggle{display:none;width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(58,36,25,.25);background:rgba(255,253,249,.7);cursor:pointer;align-items:center;justify-content:center}
+.menu-toggle span{position:relative;display:block;width:18px;height:1.8px;background:var(--brown);border-radius:2px;transition:background-color .2s}
+.menu-toggle span::before,.menu-toggle span::after{content:"";position:absolute;left:0;width:18px;height:1.8px;background:var(--brown);border-radius:2px;transition:transform .3s var(--ease)}
+.menu-toggle span::before{top:-6px}.menu-toggle span::after{top:6px}
+.menu-toggle[aria-expanded=true] span{background:transparent}
+.menu-toggle[aria-expanded=true] span::before{transform:translateY(6px) rotate(45deg)}
+.menu-toggle[aria-expanded=true] span::after{transform:translateY(-6px) rotate(-45deg)}
+.mobile-nav{position:fixed;left:0;right:0;top:80px;z-index:55;background:var(--flour);border-bottom:1px solid var(--line);box-shadow:0 30px 40px -30px rgba(58,36,25,.4);padding:12px var(--gutter) 28px;transform:translateY(-12px);opacity:0;visibility:hidden;transition:opacity .3s,transform .35s var(--ease),visibility 0s .35s}
+.mobile-nav.open{opacity:1;transform:none;visibility:visible;transition:opacity .3s,transform .35s var(--ease)}
+.mobile-nav a.m-link{display:flex;align-items:center;justify-content:space-between;min-height:58px;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:28px;text-decoration:none}
+.mobile-nav .m-foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:22px}
+
+/* hero */
+.hero{position:relative;min-height:min(calc(100vh - 80px),960px);min-height:min(calc(100svh - 80px),960px);display:flex;flex-direction:column;justify-content:center;padding:28px 0 calc(var(--hills) * .8);overflow:hidden;isolation:isolate}
+.hero-glow{position:absolute;inset:-10% -5% 0;z-index:-2;pointer-events:none;background:
+  radial-gradient(48% 52% at 74% 34%,rgba(239,213,163,.62),transparent 70%),
+  radial-gradient(40% 40% at 8% 88%,rgba(243,220,205,.75),transparent 70%),
+  radial-gradient(30% 30% at 40% 0%,rgba(255,255,255,.8),transparent 70%)}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:clamp(28px,4.5vw,72px);align-items:center}
+.hero-kicker{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;font-size:14px;font-weight:500;color:var(--muted)}
+.hero-kicker .loc{display:inline-flex;align-items:center;gap:7px}
+.hero-kicker .kind{display:none;font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--terra)}
+.hero-kicker .sep{display:none;width:4px;height:4px;border-radius:50%;background:var(--line)}
+@media (min-width:1181px){.hero-kicker .status{display:none}.hero-kicker .kind,.hero-kicker .sep{display:inline-block}.hero-kicker .sep{background:#cdb89c}}
+.hero-title{font-size:clamp(48px,6.15vw,94px);line-height:.97;letter-spacing:-.035em;word-spacing:.07em;font-weight:430;margin:28px 0 26px;font-variation-settings:"SOFT" 50,"WONK" 0;color:var(--ink)}
+.hero-title .line{display:block;overflow:hidden;padding:0 .06em .13em 0;margin-bottom:-.13em}
+.hero-title .line>span{display:inline-block}
+.hero-title em{position:relative;display:inline-block;padding-right:.04em}
+.swash{position:absolute;left:-2%;bottom:-.03em;width:104%;height:.24em;z-index:-1;overflow:visible}
+.swash path{fill:none;stroke:var(--butter);stroke-width:9;stroke-linecap:round;stroke-dasharray:330;stroke-dashoffset:0}
+.hero-lede{font-size:clamp(17px,1.32vw,19.5px);line-height:1.62;color:var(--brown-2);max-width:31em}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero-facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px clamp(24px,3vw,44px);list-style:none;margin:40px 0 0;padding:24px 0 0;border-top:1px solid var(--line);max-width:560px}
+.hero-facts strong{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.2vw,30px);line-height:1;letter-spacing:-.02em;color:var(--brown)}
+.hero-facts span{display:block;margin-top:7px;font-size:13.5px;line-height:1.35;color:var(--muted)}
+
+.hero-art{position:relative;width:100%;max-width:620px;aspect-ratio:600/650;justify-self:end}
+.layer{position:absolute;will-change:translate}
+.l-arch{left:17%;top:0;width:57%;height:89%;border-radius:999px 999px 32px 32px;overflow:hidden;box-shadow:var(--shadow);background:var(--brown)}
+.l-arch img{width:100%;height:100%;object-fit:cover;object-position:46% 50%;transform:scale(1.04)}
+.l-arch::after{content:"";position:absolute;inset:12px;border-radius:999px 999px 22px 22px;border:1px solid rgba(255,248,236,.42);pointer-events:none}
+.l-tile{left:0;bottom:3%;width:37%;aspect-ratio:4/5;border-radius:24px;overflow:hidden;border:8px solid var(--paper);box-shadow:var(--shadow);rotate:-6deg;background:var(--cream-2)}
+.l-tile img,.l-cup img{width:100%;height:100%;object-fit:cover}
+.l-cup{right:1%;top:13%;width:29%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--paper);box-shadow:var(--shadow);background:var(--cream-2)}
+.l-seal{left:2%;top:6%;width:24%;aspect-ratio:1}
+.l-seal .seal{width:100%;height:100%;animation:spin 32s linear infinite;filter:drop-shadow(0 14px 18px rgba(58,36,25,.28))}
+.l-seal .seal-core{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+.l-seal .seal-core svg{width:34%;height:34%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.l-oven{right:-2%;bottom:15%;display:flex;align-items:center;gap:13px;padding:13px 20px 13px 13px;border-radius:20px;background:var(--paper);box-shadow:0 26px 50px -24px rgba(58,36,25,.55),0 0 0 1px rgba(58,36,25,.06)}
+.oven-ico{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--terra-soft);flex:none}
+.oven-txt small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.oven-txt strong{display:block;font-family:var(--serif);font-weight:500;font-size:18px;line-height:1.2;color:var(--ink);margin-top:3px}
+.oven-txt .t{display:inline-block;margin-top:5px;font-size:12.5px;font-weight:600;color:var(--terra-deep)}
+.spark{position:absolute;color:var(--terra);pointer-events:none}
+.spark svg{width:100%;height:100%;animation:twinkle 4s ease-in-out infinite}
+@keyframes twinkle{0%,100%{transform:scale(1) rotate(0);opacity:1}50%{transform:scale(.6) rotate(45deg);opacity:.55}}
+.hills{position:absolute;left:0;right:0;bottom:-1px;height:var(--hills);z-index:1;pointer-events:none}
+.hill{position:absolute;left:0;bottom:0;width:100%;height:100%;will-change:translate}
+
+/* entrance */
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes layerIn{from{opacity:0;scale:.88}}
+@keyframes draw{from{stroke-dashoffset:330}to{stroke-dashoffset:0}}
+.js .hero-title .line>span{animation:rise 1.05s var(--ease) both;animation-delay:calc(var(--i) * .11s + .15s)}
+.js .swash path{animation:draw 1s var(--ease) 1s both}
+.js .hero-kicker,.js .hero-lede,.js .hero-ctas,.js .hero-facts{animation:fadeUp .9s var(--ease) both}
+.js .hero-kicker{animation-delay:.05s}.js .hero-lede{animation-delay:.5s}.js .hero-ctas{animation-delay:.62s}.js .hero-facts{animation-delay:.74s}
+.js .hero-art .layer{animation:layerIn 1.2s var(--ease) both;animation-delay:var(--d,0s)}
+
+/* marquee */
+.marquee{position:relative;background:var(--brown);color:var(--cream);overflow:hidden;padding:10px 0 34px;margin-top:-1px}
+.marquee-track{display:flex;width:max-content;animation:marquee 46s linear infinite}
+.marquee-group{display:flex;align-items:center;gap:clamp(22px,3vw,40px);padding-right:clamp(22px,3vw,40px);font-family:var(--serif);font-style:italic;font-weight:350;font-size:clamp(24px,3.1vw,42px);line-height:1.2;white-space:nowrap;font-variation-settings:"SOFT" 100,"WONK" 1}
+.marquee-group svg{width:.62em;height:.62em;color:var(--butter);flex:none}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* story */
+.story-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(40px,7vw,110px);align-items:center}
+.story-media{position:relative}
+.story-photo{border-radius:30px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow);background:var(--cream-2)}
+.story-photo img{width:100%;height:100%;object-fit:cover}
+.starter-card{position:absolute;right:-6%;bottom:9%;display:flex;align-items:center;gap:14px;max-width:270px;padding:16px 20px 16px 16px;border-radius:20px;background:var(--paper);box-shadow:0 26px 50px -24px rgba(58,36,25,.55)}
+.starter-card .jar{width:50px;height:50px;flex:none;border-radius:16px;background:var(--cream);display:grid;place-items:center}
+.starter-card b{display:block;font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.15}
+.starter-card span{display:block;font-size:13.5px;color:var(--muted);line-height:1.4;margin-top:3px}
+.story-copy h2{font-size:clamp(38px,4.6vw,64px);margin:18px 0 26px}
+.story-copy .body{color:var(--brown-2);font-size:18px;max-width:34em}
+.story-copy .body+.body{margin-top:16px}
+.timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;list-style:none;margin:44px 0 0;padding:0;counter-reset:t}
+.timeline li{position:relative;padding-top:24px;border-top:1.5px solid var(--line)}
+.timeline li::before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:var(--flour);border:2px solid var(--terra)}
+.timeline li:last-child::before{background:var(--terra)}
+.timeline b{display:block;font-family:var(--serif);font-weight:500;font-size:26px;line-height:1;letter-spacing:-.02em;color:var(--ink)}
+.timeline b small{font-size:.55em;letter-spacing:0;margin-left:2px;color:var(--muted);font-family:var(--sans);font-weight:600}
+.timeline span{display:block;margin-top:9px;font-size:14.5px;line-height:1.45;color:var(--muted)}
+.signoff{display:flex;align-items:center;gap:14px;margin-top:40px;font-family:var(--serif);font-style:italic;font-size:21px;color:var(--brown-2);font-variation-settings:"SOFT" 100,"WONK" 1}
+.signoff::before{content:"";width:40px;height:1.5px;background:var(--terra)}
+
+/* menu */
+.menu{background:var(--paper);position:relative}
+.menu-body{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(32px,5vw,72px);align-items:start}
+.menu-feature{position:sticky;top:104px;border-radius:30px;overflow:hidden;aspect-ratio:4/5;background:var(--brown);box-shadow:var(--shadow)}
+.mf-img{position:absolute;inset:0;opacity:0;transform:scale(1.08);transition:opacity .8s var(--ease),transform 1.4s var(--ease)}
+.mf-img.on{opacity:1;transform:none}
+.mf-img img{width:100%;height:100%;object-fit:cover}
+.mf-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(30,18,12,.55) 62%,rgba(30,18,12,.88))}
+.mf-cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:28px;color:var(--flour)}
+.mf-cap small{display:block;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--butter)}
+.mf-cap p{margin-top:8px;font-family:var(--serif);font-size:clamp(20px,1.8vw,24px);line-height:1.3;font-weight:400}
+.mf-img .mf-cap{opacity:0;transform:translateY(12px);transition:opacity .6s .15s,transform .7s .15s var(--ease)}
+.mf-img.on .mf-cap{opacity:1;transform:none}
+.tabs{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:5px;max-width:580px;border-radius:999px;background:var(--cream);border:1px solid var(--line)}
+.tab{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;padding:0 6px;border:0;border-radius:999px;background:none;font-weight:600;font-size:15.5px;color:var(--brown-2);cursor:pointer;transition:color .35s}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected=true]{color:#fff9f2}
+.tab .new{width:6px;height:6px;border-radius:50%;background:var(--terra);flex:none}
+.tab[aria-selected=true] .new{background:var(--butter)}
+.tab-ink{position:absolute;z-index:0;top:5px;bottom:5px;left:5px;width:calc((100% - 10px) / 4);border-radius:999px;background:var(--brown);box-shadow:0 10px 20px -10px rgba(58,36,25,.8);transform:translateX(calc(var(--idx,0) * 100%));transition:transform .5s cubic-bezier(.65,0,.35,1)}
+.menu-meta{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:26px 0 4px;font-size:14px;color:var(--muted)}
+.menu-meta b{color:var(--ink);font-weight:600}
+.menu-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px;transition:height .5s cubic-bezier(.65,0,.35,1)}
+.menu-list.sizing{overflow:hidden}
+.menu-item{padding:24px 0 22px;border-bottom:1px dashed rgba(58,36,25,.2);transition:opacity .2s,transform .2s}
+.menu-item[hidden]{display:none}
+.menu-list.leaving .menu-item{opacity:0;transform:translateY(-10px)}
+.menu-item.entering{animation:itemIn .6s var(--ease) backwards;animation-delay:calc(var(--i,0) * 60ms)}
+@keyframes itemIn{from{opacity:0;transform:translateY(18px)}}
+.mi-top{display:flex;align-items:baseline;gap:12px}
+.mi-top h3{font-size:22px;font-weight:500;letter-spacing:-.01em;line-height:1.2}
+.mi-dots{flex:1;min-width:16px;border-bottom:2px dotted rgba(58,36,25,.22);transform:translateY(-6px)}
+.mi-price{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--terra);white-space:nowrap}
+.mi-desc{margin-top:7px;font-size:15.5px;line-height:1.5;color:var(--muted)}
+.tag{display:inline-block;margin-top:11px;padding:4px 10px;border-radius:999px;background:var(--terra-soft);color:var(--terra-deep);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.tag.alt{background:#e4e8d6;color:#4f5d39}
+
+/* pastry box */
+.box-section{position:relative;background:var(--cream)}
+.scallop{position:absolute;left:0;right:0;top:-13px;height:14px;background:radial-gradient(circle at 50% 100%,var(--cream) 0 12px,transparent 12.6px) 0 0/26px 14px repeat-x}
+.box-grid{display:grid;grid-template-columns:minmax(0,1.38fr) minmax(0,.92fr);gap:clamp(28px,4vw,56px);align-items:start}
+.px-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;list-style:none;margin:0;padding:0}
+.px{position:relative;display:grid;grid-template-columns:76px minmax(0,1fr);grid-template-areas:"img info" "img foot";column-gap:16px;row-gap:10px;padding:16px;border-radius:22px;background:var(--paper);border:1.5px solid transparent;box-shadow:0 1px 0 rgba(58,36,25,.06),0 16px 30px -26px rgba(58,36,25,.55);transition:border-color .3s,transform .35s var(--ease),box-shadow .35s}
+.px:hover{transform:translateY(-3px);box-shadow:0 1px 0 rgba(58,36,25,.06),0 24px 40px -26px rgba(58,36,25,.6)}
+.px.picked{border-color:var(--terra)}
+.px-img{grid-area:img;position:relative;width:76px;height:76px;align-self:center}
+.px-img img{width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:0 0 0 4px var(--cream)}
+.px-badge{position:absolute;top:-4px;right:-6px;min-width:26px;height:26px;padding:0 7px;border-radius:999px;background:var(--terra);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center;border:2.5px solid var(--paper);transform:scale(0);transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.px.picked .px-badge{transform:scale(1)}
+.px-info{grid-area:info;min-width:0}
+.px-info h3{font-size:19px;font-weight:500;line-height:1.2;letter-spacing:-.01em}
+.px-info p{margin-top:3px;font-size:14px;line-height:1.4;color:var(--muted)}
+.px-foot{grid-area:foot;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.px-price{font-family:var(--serif);font-size:19px;font-weight:500;color:var(--terra)}
+.stepper{display:inline-flex;align-items:center;border-radius:999px;background:var(--cream);padding:3px}
+.step{width:44px;height:44px;border-radius:50%;border:0;background:transparent;display:grid;place-items:center;cursor:pointer;color:var(--brown);transition:background-color .2s,color .2s,transform .15s}
+.step:hover{background:var(--paper)}
+.step:active{transform:scale(.9)}
+.step.plus{background:var(--brown);color:var(--flour)}
+.step.plus:hover{background:var(--terra)}
+.step[disabled]{opacity:.35;cursor:not-allowed;background:transparent}
+.step.plus[aria-disabled=true]{background:var(--cream-2);color:var(--muted)}
+.qty{min-width:28px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.box-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;list-style:none;margin:26px 0 0;padding:24px 0 0;border-top:1.5px dashed rgba(58,36,25,.18)}
+.box-steps li{display:flex;align-items:flex-start;gap:12px}
+.box-steps .n{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:1.5px solid var(--terra);color:var(--terra);font-family:var(--serif);font-weight:600;font-size:16px}
+.box-steps b{display:block;font-family:var(--serif);font-weight:500;font-size:18px;line-height:1.2}
+.box-steps span{display:block;margin-top:3px;font-size:14px;line-height:1.45;color:var(--muted)}
+
+.box-card{position:sticky;top:100px;border-radius:30px;background:var(--brown);color:var(--cream);padding:clamp(22px,2.4vw,32px);box-shadow:var(--shadow)}
+.box-card.shake{animation:shake .45s}
+@keyframes shake{20%{transform:translateX(-7px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(2px)}}
+.box-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.box-head h3{font-size:30px;font-weight:450;color:var(--flour)}
+.box-count{font-size:15px;color:rgba(244,235,221,.75)}
+.box-count b{font-family:var(--serif);font-size:26px;font-weight:500;color:var(--butter);font-variant-numeric:tabular-nums}
+.kraft{position:relative;margin-top:20px;padding:16px;border-radius:18px;background:linear-gradient(160deg,#d3a66d,#b98952);box-shadow:inset 0 2px 0 rgba(255,255,255,.25),inset 0 -10px 22px rgba(70,40,15,.25)}
+.tray{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:14px;border-radius:12px;background:#f3e6cf;box-shadow:inset 0 2px 8px rgba(91,59,42,.25)}
+.slot{position:relative;aspect-ratio:1;border-radius:50%;border:2px dashed rgba(91,59,42,.28);overflow:hidden}
+.slot.filled{border:0;box-shadow:0 6px 12px -6px rgba(58,36,25,.6)}
+.slot img{width:100%;height:100%;object-fit:cover}
+.slot.pop{animation:pop .5s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{from{transform:scale(.3);opacity:0}}
+.ribbon{position:absolute;inset:0;pointer-events:none;opacity:0;transform:scale(.92);transition:opacity .4s,transform .5s cubic-bezier(.3,1.5,.5,1)}
+.ribbon::before,.ribbon::after{content:"";position:absolute;background:var(--terra);box-shadow:0 2px 6px rgba(58,36,25,.35)}
+.ribbon::before{left:50%;top:0;bottom:0;width:14px;margin-left:-7px}
+.ribbon::after{top:50%;left:0;right:0;height:14px;margin-top:-7px}
+.ribbon svg{position:absolute;left:50%;top:50%;width:64px;height:40px;transform:translate(-50%,-58%);z-index:1}
+.kraft.full .ribbon{opacity:1;transform:none}
+.meter{margin-top:16px;height:6px;border-radius:6px;background:rgba(244,235,221,.14);overflow:hidden}
+.meter span{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--butter),var(--terra));transition:width .5s var(--ease)}
+.box-hint{margin-top:12px;font-size:14.5px;color:rgba(244,235,221,.78);min-height:1.5em}
+.box-lines{list-style:none;margin:18px 0 0;padding:0;border-top:1px solid rgba(244,235,221,.14)}
+.box-lines li{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid rgba(244,235,221,.1);font-size:15px}
+.box-lines li span:last-child{font-variant-numeric:tabular-nums;color:rgba(244,235,221,.85)}
+.box-lines li.empty{color:rgba(244,235,221,.55);font-style:italic}
+.pick-label{margin-top:20px;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,235,221,.6)}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+.chip{min-height:44px;padding:6px 10px;border-radius:14px;border:1.5px solid rgba(244,235,221,.2);background:transparent;color:var(--cream);font-size:14px;font-weight:600;cursor:pointer;line-height:1.25;transition:background-color .25s,border-color .25s,color .25s}
+.chip:hover{border-color:rgba(244,235,221,.5)}
+.chip[aria-checked=true]{background:var(--cream);border-color:var(--cream);color:var(--brown)}
+.box-total{display:flex;align-items:baseline;justify-content:space-between;margin:22px 0 16px}
+.box-total span{font-size:15px;color:rgba(244,235,221,.75)}
+.box-total strong{font-family:var(--serif);font-weight:500;font-size:38px;line-height:1;color:var(--flour);font-variant-numeric:tabular-nums}
+.btn-block{width:100%}
+.box-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;font-size:13.5px;color:rgba(244,235,221,.6)}
+.link-btn{flex:none;white-space:nowrap;min-height:40px;padding:0 4px;border:0;background:none;color:var(--butter);font-weight:600;font-size:14px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,16.5vw,250px);gap:clamp(10px,1.3vw,18px);grid-auto-flow:dense}
+.g-item{position:relative;margin:0;border-radius:24px;overflow:hidden;background:var(--cream-2)}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.g-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(30,18,12,.45));opacity:0;transition:opacity .5s}
+.g-item:hover img{transform:scale(1.08)}
+.g-item:hover::after{opacity:1}
+.g-item figcaption{position:absolute;left:14px;bottom:14px;z-index:2;padding:8px 15px;border-radius:999px;background:rgba(255,253,249,.94);font-size:14px;font-weight:600;color:var(--brown);opacity:0;transform:translateY(10px);transition:opacity .4s,transform .5s var(--ease)}
+.g-item:hover figcaption{opacity:1;transform:none}
+.g-a{grid-column:span 2;grid-row:span 2}
+.g-c{grid-row:span 2}
+.g-f{grid-column:span 2}
+@media (hover:none){.g-item figcaption{opacity:1;transform:none;font-size:12.5px;padding:6px 12px;left:10px;bottom:10px}}
+
+/* quotes */
+.quotes-wrap{background:var(--paper)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,26px)}
+.quote{margin:0;padding:clamp(26px,3vw,38px);border-radius:26px;background:var(--flour);border:1px solid var(--line);display:flex;flex-direction:column}
+.quote svg{width:38px;height:30px;color:var(--terra)}
+.quote blockquote{margin:18px 0 26px;font-family:var(--serif);font-size:clamp(20px,1.75vw,24px);line-height:1.38;font-weight:380;color:var(--ink);font-variation-settings:"SOFT" 60;flex:1}
+.quote figcaption{display:flex;align-items:center;gap:12px}
+.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--terra-soft);color:var(--terra-deep);font-family:var(--serif);font-weight:600;font-size:19px;flex:none}
+.quote b{display:block;font-size:15.5px}
+.quote small{display:block;font-size:13.5px;color:var(--muted)}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(20px,3vw,36px);align-items:stretch}
+.visit-card{padding:clamp(26px,4vw,52px);border-radius:30px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.visit-card h2{font-size:clamp(38px,4.6vw,62px);margin:16px 0 16px}
+.visit-card>p:not(.eyebrow){color:var(--brown-2);max-width:32em}
+.visit-status{margin-top:22px}
+.hours{list-style:none;margin:26px 0 0;padding:0}
+.hours li{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px;border-bottom:1px dashed rgba(58,36,25,.18);font-size:16px}
+.hours li .d{display:flex;align-items:center;gap:10px}
+.hours li .h{font-variant-numeric:tabular-nums;color:var(--brown-2)}
+.hours li.closed .h{color:var(--muted);font-style:italic}
+.hours li.today{font-weight:700}
+.hours li.today .h{color:var(--ink)}
+.today-pill{display:none;padding:2px 9px;border-radius:999px;background:var(--terra);color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.hours li.today .today-pill{display:inline-block}
+.contact{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px}
+.contact li{display:flex;align-items:center;gap:14px}
+.contact .ci{width:42px;height:42px;border-radius:50%;background:var(--cream);display:grid;place-items:center;flex:none;color:var(--terra-deep)}
+.contact a{text-decoration:none;font-weight:600}
+.contact a:hover{color:var(--terra)}
+.contact small{display:block;color:var(--muted);font-size:13.5px;font-weight:400}
+.visit-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.visit-map{position:relative;border-radius:30px;overflow:hidden;min-height:420px;background:#ecdcc4;box-shadow:var(--shadow-sm)}
+.visit-map svg{position:absolute;inset:0;width:100%;height:100%}
+.pin-pulse{transform-origin:center;transform-box:fill-box;animation:pinPulse 2.6s var(--ease) infinite}
+@keyframes pinPulse{0%{transform:scale(.4);opacity:.55}100%{transform:scale(1.6);opacity:0}}
+.map-note{position:absolute;left:18px;bottom:18px;right:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 18px;border-radius:18px;background:rgba(255,253,249,.93);box-shadow:var(--shadow-sm);font-size:14px}
+.map-note b{font-family:var(--serif);font-size:18px;font-weight:500}
+
+/* footer */
+.site-footer{background:var(--brown);color:var(--cream);padding:clamp(70px,9vw,120px) 0 110px;position:relative;overflow:hidden}
+.foot-big{font-family:var(--serif);font-style:italic;font-weight:350;font-size:clamp(46px,8.6vw,132px);line-height:.98;letter-spacing:-.035em;color:var(--flour);font-variation-settings:"SOFT" 100,"WONK" 1;margin:0}
+.foot-big span{color:var(--butter)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-top:clamp(48px,6vw,80px);padding-top:40px;border-top:1px solid rgba(244,235,221,.16)}
+.foot-grid h4{margin:0 0 14px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--butter)}
+.foot-grid p,.foot-grid li{font-size:15.5px;color:rgba(244,235,221,.8);line-height:1.7}
+.foot-grid ul{list-style:none;margin:0;padding:0}
+.foot-grid a{text-decoration:none}
+.foot-grid a:hover{color:var(--flour);text-decoration:underline;text-underline-offset:3px}
+.foot-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px;text-decoration:none}
+.foot-brand .brand-name{color:var(--flour)}
+.foot-brand .brand-name em{color:var(--butter)}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:56px;font-size:13.5px;color:rgba(244,235,221,.55)}
+.foot-bottom a{color:rgba(244,235,221,.8)}
+
+/* concept pill */
+.concept-pill{position:fixed;left:16px;bottom:16px;z-index:150;display:inline-flex;align-items:center;gap:9px;min-height:40px;padding:0 15px 0 8px;border-radius:999px;background:rgba(46,29,20,.92);color:#f6ecdd;border:1px solid rgba(255,255,255,.14);font:600 13px/1 var(--sans);letter-spacing:.01em;text-decoration:none;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 14px 28px -14px rgba(0,0,0,.55);transition:background-color .25s,transform .25s var(--ease)}
+.concept-pill:hover{background:#0f5b4a;transform:translateY(-2px)}
+.concept-pill svg{width:24px;height:24px;flex:none}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:20px}
+.modal[hidden]{display:none}
+.modal-backdrop{position:absolute;inset:0;background:rgba(36,22,15,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);opacity:0;transition:opacity .35s}
+.modal-card{position:relative;width:min(460px,100%);padding:38px 30px 30px;border-radius:30px;background:var(--paper);text-align:center;box-shadow:0 40px 80px -30px rgba(0,0,0,.5);opacity:0;transform:translateY(24px) scale(.96);transition:opacity .35s,transform .5s cubic-bezier(.3,1.4,.5,1)}
+.modal.open .modal-backdrop{opacity:1}
+.modal.open .modal-card{opacity:1;transform:none}
+.modal-art{position:relative;width:120px;height:96px;margin:0 auto 6px}
+.modal-card h3{font-size:32px;margin-top:10px}
+.modal-card p{margin-top:12px;color:var(--brown-2)}
+.modal-card .demo-note{display:inline-block;margin-top:16px;padding:6px 12px;border-radius:999px;background:var(--cream);color:var(--muted);font-size:13px}
+.modal-card .btn{margin-top:24px;min-width:200px}
+.crumb{position:absolute;left:50%;top:50%;width:var(--s);height:var(--s);border-radius:50%;background:var(--c);opacity:0;animation:burst .9s var(--ease) forwards;animation-delay:.15s}
+@keyframes burst{0%{transform:translate(-50%,-50%) scale(.4);opacity:1}100%{transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) scale(1);opacity:0}}
+
+/* responsive */
+@media (max-width:1180px){
+  .nav-status{display:none}
+  .l-oven{right:0}
+}
+@media (max-width:960px){
+  .nav-links,.nav-right .nav-cta{display:none}
+  .menu-toggle{display:inline-flex}
+  .hero{min-height:0;padding-top:24px}
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:44px}
+  .hero-art{justify-self:center;max-width:560px}
+  .section-head{grid-template-columns:minmax(0,1fr);align-items:start}
+  .story-grid{grid-template-columns:minmax(0,1fr)}
+  .story-media{max-width:560px}
+  .menu-body{grid-template-columns:minmax(0,1fr)}
+  .menu-feature{position:relative;top:0;aspect-ratio:16/10}
+  .box-grid{grid-template-columns:minmax(0,1fr)}
+  .box-card{position:relative;top:0}
+  .quotes{grid-template-columns:minmax(0,1fr)}
+  .visit-grid{grid-template-columns:minmax(0,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  body{font-size:16.5px}
+  .nav-bar{height:72px}
+  .mobile-nav{top:72px}
+  section[id]{scroll-margin-top:76px}
+  .brand svg{width:38px;height:38px}
+  .brand-name{font-size:21px}
+  .hero-facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 16px}
+  .hero-facts span{font-size:12.5px}
+  .hero-ctas .btn{flex:1 1 auto}
+  .l-oven{right:0;bottom:12%;padding:10px 14px 10px 10px;gap:10px;border-radius:16px}
+  .oven-ico{width:38px;height:38px;border-radius:11px}
+  .oven-txt strong{font-size:15.5px}
+  .oven-txt small{font-size:9.5px}
+  .oven-txt .t{font-size:11.5px;margin-top:3px}
+  .l-tile,.l-cup{border-width:5px}
+  .starter-card{right:12px;left:12px;bottom:14px;max-width:none}
+  .timeline{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 18px}
+  .menu-list{grid-template-columns:minmax(0,1fr)}
+  .mf-cap{padding:20px}
+  .tab{font-size:14.5px}
+  .tab .new{display:none}
+  .px-list{grid-template-columns:minmax(0,1fr)}
+  .px{grid-template-columns:64px minmax(0,1fr);padding:14px;column-gap:14px}
+  .px-img{width:64px;height:64px}
+  .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px}
+  .g-item{border-radius:18px}
+  .visit-map{min-height:440px}
+  .map-note{left:12px;right:12px;bottom:12px;padding:12px 14px}
+  .box-steps{grid-template-columns:minmax(0,1fr);gap:16px}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column}
+  .concept-pill{left:12px;bottom:12px}
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001ms!important;transition-delay:0s!important}
+  .marquee-track,.l-seal .seal,.spark svg,.pin-pulse,.status .dot::after{animation:none!important}
+  .js .reveal{opacity:1;transform:none}
+  .g-item:hover img{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#c0603b"/><path d="M7 28c0-8.3 5.8-15 13-15s13 6.7 13 15z" fill="#fbf7f0"/><path d="M14.5 18.5l3 5M19.5 16l3 6M24.5 18.5l2.4 4.4" stroke="#c0603b" stroke-width="2" stroke-linecap="round"/><circle cx="29.5" cy="11" r="3" fill="#efd5a3"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 0c.9 6.6 4.4 10.4 12 12-7.6 1.6-11.1 5.4-12 12-.9-6.6-4.4-10.4-12-12C7.6 10.4 11.1 6.6 12 0z" fill="currentColor"/></symbol>
+    <symbol id="arrow" viewBox="0 0 20 20"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="minus" viewBox="0 0 20 20"><path d="M5 10h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="plus" viewBox="0 0 20 20"><path d="M10 5v10M5 10h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="header">
+  <div class="wrap nav-bar">
+    <a class="brand" href="#top" aria-label="Hilltop Crumb, back to top">
+      <svg aria-hidden="true"><use href="#mark"/></svg>
+      <span><span class="brand-name">Hilltop <em>Crumb</em></span><span class="brand-sub">Bakery &amp; Coffee</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#box">Pastry box</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <span class="status nav-status js-status" data-state="closed"><i class="dot"></i><span class="txt">Open Tue–Sun</span></span>
+      <a class="btn btn-primary btn-sm nav-cta" href="#box">Order ahead</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" id="mobile-nav">
+  <a class="m-link" href="#story">Our story <svg width="20" height="20" aria-hidden="true"><use href="#arrow"/></svg></a>
+  <a class="m-link" href="#menu">Menu <svg width="20" height="20" aria-hidden="true"><use href="#arrow"/></svg></a>
+  <a class="m-link" href="#box">Pastry box <svg width="20" height="20" aria-hidden="true"><use href="#arrow"/></svg></a>
+  <a class="m-link" href="#gallery">Gallery <svg width="20" height="20" aria-hidden="true"><use href="#arrow"/></svg></a>
+  <a class="m-link" href="#visit">Visit <svg width="20" height="20" aria-hidden="true"><use href="#arrow"/></svg></a>
+  <div class="m-foot">
+    <span class="status js-status" data-state="closed"><i class="dot"></i><span class="txt">Open Tue–Sun</span></span>
+    <a class="btn btn-primary btn-sm" href="#box">Order ahead</a>
+  </div>
+</div>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="hero-kicker">
+        <span class="status js-status" data-state="closed"><i class="dot"></i><span class="txt">Open Tue–Sun</span></span>
+        <span class="kind">Artisan bakery &amp; coffee bar</span><span class="sep" aria-hidden="true"></span>
+        <span class="loc"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>Escondido, CA</span>
+      </p>
+      <h1 class="hero-title">
+        <span class="line"><span style="--i:0">Bread worth</span></span>
+        <span class="line"><span style="--i:1"><em>climbing<svg class="swash" viewBox="0 0 320 24" preserveAspectRatio="none" aria-hidden="true"><path d="M6 16C70 6 170 4 314 12"/></svg></em> the</span></span>
+        <span class="line"><span style="--i:2">hill for.</span></span>
+      </h1>
+      <p class="hero-lede">Naturally leavened sourdough, butter-laminated croissants, pies that follow the seasons and espresso pulled with care. All of it baked by hand before the sun clears the hills.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#box">Build a pastry box <svg width="18" height="18" aria-hidden="true"><use href="#arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#menu">See today’s menu</a>
+      </div>
+      <ul class="hero-facts">
+        <li><strong>36 hr</strong><span>slow-fermented<br>sourdough</span></li>
+        <li><strong>27</strong><span>butter layers in<br>every croissant</span></li>
+        <li><strong>4 am</strong><span>ovens on,<br>six days a week</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-art" id="heroArt">
+      <div class="layer l-arch" data-depth="0.05" style="--d:.2s">
+        <img src="https://images.unsplash.com/photo-1623334044303-241021148842?w=1000&amp;q=80&amp;auto=format&amp;fit=crop" alt="Rows of golden, flaky croissants on parchment" width="1000" height="667" fetchpriority="high">
+      </div>
+      <div class="layer l-tile" data-depth="0.13" style="--d:.45s">
+        <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?w=600&amp;q=80&amp;auto=format&amp;fit=crop" alt="A rustic, flour-dusted sourdough boule" width="600" height="400">
+      </div>
+      <div class="layer l-cup" data-depth="0.2" style="--d:.6s">
+        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&amp;q=80&amp;auto=format&amp;fit=crop" alt="A cappuccino with leaf latte art, seen from above" width="500" height="500">
+      </div>
+      <div class="layer l-seal" data-depth="0.16" style="--d:.75s" aria-hidden="true">
+        <svg class="seal" viewBox="0 0 160 160">
+          <defs><path id="sealPath" d="M80,80 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"/></defs>
+          <circle cx="80" cy="80" r="78" fill="#c0603b"/>
+          <circle cx="80" cy="80" r="70" fill="none" stroke="#f4ebdd" stroke-opacity=".35" stroke-width="1"/>
+          <text fill="#fbf7f0" font-family="DM Sans, sans-serif" font-size="12.5" font-weight="700" letter-spacing="2.6"><textPath href="#sealPath" textLength="348" lengthAdjust="spacing">BAKED BEFORE SUNRISE • HILLTOP CRUMB • </textPath></text>
+        </svg>
+        <span class="seal-core"><svg viewBox="0 0 40 40"><path d="M5 29c0-9.4 6.7-17 15-17s15 7.6 15 17z" fill="#fbf7f0"/><path d="M13.5 18.5l3.4 5.6M19.5 15.8l3.4 6.4M25.6 18.6l2.6 4.6" stroke="#c0603b" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+      </div>
+      <div class="layer l-oven" data-depth="0.09" style="--d:.9s">
+        <span class="oven-ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 32 32"><path d="M4 24c0-6.6 5.4-11 12-11s12 4.4 12 11z" fill="#c0603b"/><path d="M11 17.5l2 3.4M15.5 16l2 3.8M20 17.5l1.8 3.2" stroke="#fbf7f0" stroke-width="1.8" stroke-linecap="round"/><path d="M11 9c-1.2-1.6 1.2-2.6 0-4.4M16 8.4c-1.2-1.6 1.2-2.6 0-4.4M21 9c-1.2-1.6 1.2-2.6 0-4.4" fill="none" stroke="#c0603b" stroke-width="1.6" stroke-linecap="round" opacity=".7"/></svg></span>
+        <span class="oven-txt" aria-live="polite"><small class="js-oven-label">Next from the oven</small><strong class="js-oven-item">Morning buns</strong><span class="t js-oven-time">9:30am</span></span>
+      </div>
+      <span class="spark" style="right:6%;top:2%;width:22px;height:22px" aria-hidden="true"><svg><use href="#star"/></svg></span>
+      <span class="spark" style="left:5%;top:46%;width:14px;height:14px;color:#d9a85c" aria-hidden="true"><svg style="animation-delay:1.2s"><use href="#star"/></svg></span>
+      <span class="spark" style="right:20%;bottom:2%;width:16px;height:16px" aria-hidden="true"><svg style="animation-delay:2.1s"><use href="#star"/></svg></span>
+    </div>
+  </div>
+
+  <div class="hills" aria-hidden="true">
+    <svg class="hill" data-speed="0.22" viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0 92C160 40 330 22 520 70s340 92 540 34 300-60 380-36V200H0z" fill="#efd5a3" opacity=".75"/></svg>
+    <svg class="hill" data-speed="0.12" viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0 140c210-62 430-70 650-30s420 52 600 6c80-20 140-26 190-20V200H0z" fill="#e7b896" opacity=".8"/></svg>
+    <svg class="hill" data-speed="0" viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0 176c260-34 520-38 790-16s470 18 650-6V200H0z" fill="#3a2419"/></svg>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span>Country sourdough</span><svg><use href="#star"/></svg>
+      <span>Butter croissants</span><svg><use href="#star"/></svg>
+      <span>Seasonal pies</span><svg><use href="#star"/></svg>
+      <span>Espresso &amp; cortados</span><svg><use href="#star"/></svg>
+      <span>Baked before sunrise</span><svg><use href="#star"/></svg>
+      <span>Escondido, CA</span><svg><use href="#star"/></svg>
+    </div>
+    <div class="marquee-group">
+      <span>Country sourdough</span><svg><use href="#star"/></svg>
+      <span>Butter croissants</span><svg><use href="#star"/></svg>
+      <span>Seasonal pies</span><svg><use href="#star"/></svg>
+      <span>Espresso &amp; cortados</span><svg><use href="#star"/></svg>
+      <span>Baked before sunrise</span><svg><use href="#star"/></svg>
+      <span>Escondido, CA</span><svg><use href="#star"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="section story" id="story">
+  <div class="wrap story-grid">
+    <div class="story-media reveal">
+      <div class="story-photo">
+        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=1000&amp;q=80&amp;auto=format&amp;fit=crop" alt="A baker's hands kneading dough on a floured counter" width="1000" height="667" loading="lazy">
+      </div>
+      <div class="starter-card">
+        <span class="jar" aria-hidden="true"><svg width="28" height="30" viewBox="0 0 28 30"><rect x="7" y="1.5" width="14" height="5" rx="1.5" fill="#c0603b"/><path d="M6 8h16a2 2 0 0 1 2 2v15a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V10a2 2 0 0 1 2-2z" fill="#fbf7f0" stroke="#5b3b2a" stroke-width="1.6"/><path d="M5.5 17c3 1.5 5-1 8.5 0s5 1.6 8.5 0V25a3 3 0 0 1-3 3H8.5a3 3 0 0 1-3-3z" fill="#efd5a3"/><circle cx="10" cy="22" r="1" fill="#c99a62"/><circle cx="16" cy="24" r="1.2" fill="#c99a62"/><circle cx="19" cy="20.5" r=".8" fill="#c99a62"/></svg></span>
+        <span><b>Meet Dolores</b><span>Our sourdough starter, fed every single day since 1986.</span></span>
+      </div>
+    </div>
+    <div class="story-copy">
+      <p class="eyebrow reveal">Our story</p>
+      <h2 class="reveal" style="--d:.08s">A small bakery with a <em>very old</em> starter.</h2>
+      <p class="body reveal" style="--d:.16s">Hilltop Crumb began with one stone-deck oven, a handful of early risers and a jar of starter passed down from a grandmother’s kitchen. We still mix, shape and bake everything by hand, right here in Escondido.</p>
+      <p class="body reveal" style="--d:.22s">Our flour is stone-milled in California, our butter is cultured, and our fruit comes from farms close enough to visit. No shortcuts and nothing par-baked. Just patience and a very early alarm.</p>
+      <ol class="timeline reveal" style="--d:.3s" aria-label="A morning at the bakery">
+        <li><b>4:00<small>am</small></b><span>Ovens fire up, dough comes out of the cold</span></li>
+        <li><b>6:30<small>am</small></b><span>First loaves out, crackling on the racks</span></li>
+        <li><b>7:00<small>am</small></b><span>Doors open, espresso machine warm</span></li>
+        <li><b>3:00<small>pm</small></b><span>Sold out, swept up, starter fed</span></li>
+      </ol>
+      <p class="signoff reveal" style="--d:.36s">The Hilltop crew</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section menu" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow reveal">The menu</p>
+        <h2 class="reveal" style="--d:.08s">Baked this morning, <em>gone by three.</em></h2>
+      </div>
+      <p class="reveal" style="--d:.16s">A short menu, done properly. Breads and pastries come out of the oven in waves all morning. Coffee is roasted a few miles away and pulled to order.</p>
+    </div>
+
+    <div class="menu-body">
+      <div class="menu-feature reveal" aria-hidden="true">
+        <div class="mf-img on" data-cat="breads">
+          <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="900" height="600" loading="lazy">
+          <div class="mf-cap"><small>Breads</small><p>Shaped by hand and baked on stone. Loaves are ready from 7am and usually gone by noon.</p></div>
+        </div>
+        <div class="mf-img" data-cat="pastries">
+          <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="900" height="600" loading="lazy">
+          <div class="mf-cap"><small>Pastries</small><p>Laminated over three days with cultured butter. Worth every flaky crumb on your shirt.</p></div>
+        </div>
+        <div class="mf-img" data-cat="coffee">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="900" height="600" loading="lazy">
+          <div class="mf-cap"><small>Coffee</small><p>Locally roasted beans, oat milk at no extra charge, and refills while you linger.</p></div>
+        </div>
+        <div class="mf-img" data-cat="seasonal">
+          <img src="https://images.unsplash.com/photo-1535920527002-b35e96722eb9?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="900" height="600" loading="lazy">
+          <div class="mf-cap"><small>This fall</small><p>Thanksgiving pie pre-orders are open. Pick yours up the Wednesday before.</p></div>
+        </div>
+      </div>
+
+      <div class="menu-main">
+        <div class="tabs reveal" role="tablist" aria-label="Menu categories">
+          <span class="tab-ink" aria-hidden="true"></span>
+          <button class="tab" role="tab" id="tab-breads" data-cat="breads" aria-selected="true" aria-controls="menu-list">Breads</button>
+          <button class="tab" role="tab" id="tab-pastries" data-cat="pastries" aria-selected="false" aria-controls="menu-list" tabindex="-1">Pastries</button>
+          <button class="tab" role="tab" id="tab-coffee" data-cat="coffee" aria-selected="false" aria-controls="menu-list" tabindex="-1">Coffee</button>
+          <button class="tab" role="tab" id="tab-seasonal" data-cat="seasonal" aria-selected="false" aria-controls="menu-list" tabindex="-1">Seasonal<span class="new" aria-hidden="true"></span></button>
+        </div>
+        <p class="menu-meta reveal"><span><b class="js-menu-count">6</b> items · prices include tax</span><span>V = vegan</span></p>
+
+        <div class="menu-list" id="menu-list" role="tabpanel" aria-labelledby="tab-breads" aria-live="polite">
+          <!-- breads -->
+          <article class="menu-item" data-cat="breads"><div class="mi-top"><h3>Country Sourdough</h3><span class="mi-dots"></span><span class="mi-price">$11</span></div><p class="mi-desc">Our house loaf. A 36-hour ferment, blistered crust and a custardy, open crumb.</p><span class="tag">Most loved</span></article>
+          <article class="menu-item" data-cat="breads"><div class="mi-top"><h3>Seeded Rye</h3><span class="mi-dots"></span><span class="mi-price">$12</span></div><p class="mi-desc">Caraway, sunflower and flax. Dense, tangy and best toasted with salted butter.</p><span class="tag alt">V</span></article>
+          <article class="menu-item" data-cat="breads"><div class="mi-top"><h3>Olive Bâtard</h3><span class="mi-dots"></span><span class="mi-price">$12</span></div><p class="mi-desc">Buttery green olives folded into a rosemary-flecked dough.</p><span class="tag alt">V</span></article>
+          <article class="menu-item" data-cat="breads"><div class="mi-top"><h3>Honey Oat Pan Loaf</h3><span class="mi-dots"></span><span class="mi-price">$10</span></div><p class="mi-desc">Soft sandwich bread sweetened with local wildflower honey.</p></article>
+          <article class="menu-item" data-cat="breads"><div class="mi-top"><h3>Sea Salt Focaccia</h3><span class="mi-dots"></span><span class="mi-price">$8</span></div><p class="mi-desc">Olive oil, flaky salt and herbs from the patio garden. Sold by the slab.</p><span class="tag alt">V</span></article>
+          <article class="menu-item" data-cat="breads"><div class="mi-top"><h3>Demi Baguette</h3><span class="mi-dots"></span><span class="mi-price">$4.50</span></div><p class="mi-desc">Crackly crust, airy middle. Baked three times a day.</p><span class="tag alt">V</span></article>
+          <!-- pastries -->
+          <article class="menu-item" data-cat="pastries"><div class="mi-top"><h3>Butter Croissant</h3><span class="mi-dots"></span><span class="mi-price">$4.75</span></div><p class="mi-desc">Twenty-seven layers of cultured butter, laminated over three days.</p><span class="tag">Most loved</span></article>
+          <article class="menu-item" data-cat="pastries"><div class="mi-top"><h3>Pain au Chocolat</h3><span class="mi-dots"></span><span class="mi-price">$5.25</span></div><p class="mi-desc">Two batons of dark chocolate tucked into croissant dough.</p></article>
+          <article class="menu-item" data-cat="pastries"><div class="mi-top"><h3>Almond Croissant</h3><span class="mi-dots"></span><span class="mi-price">$5.75</span></div><p class="mi-desc">Twice-baked with frangipane and a snowfall of toasted almonds.</p></article>
+          <article class="menu-item" data-cat="pastries"><div class="mi-top"><h3>Morning Bun</h3><span class="mi-dots"></span><span class="mi-price">$5</span></div><p class="mi-desc">Croissant dough rolled with orange zest and cinnamon sugar.</p></article>
+          <article class="menu-item" data-cat="pastries"><div class="mi-top"><h3>Ham &amp; Gruyère</h3><span class="mi-dots"></span><span class="mi-price">$7</span></div><p class="mi-desc">Smoked ham, aged Gruyère and a swipe of Dijon. Lunch, sorted.</p></article>
+          <article class="menu-item" data-cat="pastries"><div class="mi-top"><h3>Cardamom Knot</h3><span class="mi-dots"></span><span class="mi-price">$5</span></div><p class="mi-desc">A Swedish-style twist brushed with warm cardamom syrup.</p></article>
+          <!-- coffee -->
+          <article class="menu-item" data-cat="coffee"><div class="mi-top"><h3>Espresso</h3><span class="mi-dots"></span><span class="mi-price">$3.25</span></div><p class="mi-desc">A rotating single origin, pulled short and sweet.</p></article>
+          <article class="menu-item" data-cat="coffee"><div class="mi-top"><h3>Cortado</h3><span class="mi-dots"></span><span class="mi-price">$4.25</span></div><p class="mi-desc">Equal parts espresso and steamed milk. Small and mighty.</p></article>
+          <article class="menu-item" data-cat="coffee"><div class="mi-top"><h3>Cappuccino</h3><span class="mi-dots"></span><span class="mi-price">$4.75</span></div><p class="mi-desc">Velvety microfoam over a double shot.</p></article>
+          <article class="menu-item" data-cat="coffee"><div class="mi-top"><h3>Honey Lavender Latte</h3><span class="mi-dots"></span><span class="mi-price">$5.75</span></div><p class="mi-desc">Wildflower honey and dried lavender, steeped in-house.</p><span class="tag">House special</span></article>
+          <article class="menu-item" data-cat="coffee"><div class="mi-top"><h3>Cold Brew</h3><span class="mi-dots"></span><span class="mi-price">$5</span></div><p class="mi-desc">Steeped for 18 hours. Bright, chocolatey, never bitter.</p><span class="tag alt">V</span></article>
+          <article class="menu-item" data-cat="coffee"><div class="mi-top"><h3>Batch Drip</h3><span class="mi-dots"></span><span class="mi-price">$3.50</span></div><p class="mi-desc">Free refills for as long as you’d like to stay.</p><span class="tag alt">V</span></article>
+          <!-- seasonal -->
+          <article class="menu-item" data-cat="seasonal"><div class="mi-top"><h3>Pumpkin Pie</h3><span class="mi-dots"></span><span class="mi-price">$28</span></div><p class="mi-desc">Roasted kabocha custard in an all-butter crust. Whole 9-inch pie.</p><span class="tag">Pre-order</span></article>
+          <article class="menu-item" data-cat="seasonal"><div class="mi-top"><h3>Apple Crumble Pie</h3><span class="mi-dots"></span><span class="mi-price">$30</span></div><p class="mi-desc">Local apples under a brown butter oat crumble.</p><span class="tag">Pre-order</span></article>
+          <article class="menu-item" data-cat="seasonal"><div class="mi-top"><h3>Maple Pecan Sticky Bun</h3><span class="mi-dots"></span><span class="mi-price">$6</span></div><p class="mi-desc">Brioche, toasted pecans and a glossy maple caramel.</p><span class="tag alt">Weekends</span></article>
+          <article class="menu-item" data-cat="seasonal"><div class="mi-top"><h3>Spiced Pumpkin Latte</h3><span class="mi-dots"></span><span class="mi-price">$6</span></div><p class="mi-desc">Real roasted pumpkin, cinnamon, clove and nutmeg. No syrups.</p></article>
+          <article class="menu-item" data-cat="seasonal"><div class="mi-top"><h3>Pear &amp; Ginger Galette</h3><span class="mi-dots"></span><span class="mi-price">$6.50</span></div><p class="mi-desc">Free-form and flaky, with candied ginger and a crackly sugar crust.</p></article>
+          <article class="menu-item" data-cat="seasonal"><div class="mi-top"><h3>Cranberry Walnut Loaf</h3><span class="mi-dots"></span><span class="mi-price">$13</span></div><p class="mi-desc">Sourdough studded with tart cranberries and toasted walnuts.</p><span class="tag alt">V</span></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PASTRY BOX -->
+<section class="section box-section" id="box">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow reveal">Order ahead</p>
+        <h2 class="reveal" style="--d:.08s">Build a <em>pastry box.</em></h2>
+      </div>
+      <p class="reveal" style="--d:.16s">Pick up to six of today’s pastries and choose a pickup time. We’ll have your box packed, tied and waiting at the counter. Skip the line, keep the croissant.</p>
+    </div>
+
+    <div class="box-grid">
+      <div class="box-pick-col">
+      <ul class="px-list" id="pxList">
+        <li class="px reveal" data-id="croissant" data-name="Butter Croissant" data-price="4.75"><div class="px-img"><img src="https://images.unsplash.com/photo-1623334044303-241021148842?w=200&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="200" height="133" loading="lazy"><span class="px-badge" aria-hidden="true">0</span></div><div class="px-info"><h3>Butter Croissant</h3><p>Flaky, buttery, the classic</p></div><div class="px-foot"><span class="px-price">$4.75</span><div class="stepper"><button class="step minus" type="button" aria-label="Remove one Butter Croissant" disabled><svg width="18" height="18" aria-hidden="true"><use href="#minus"/></svg></button><span class="qty" aria-hidden="true">0</span><button class="step plus" type="button" aria-label="Add one Butter Croissant"><svg width="18" height="18" aria-hidden="true"><use href="#plus"/></svg></button></div></div></li>
+        <li class="px reveal" style="--d:.05s" data-id="painchoc" data-name="Pain au Chocolat" data-price="5.25"><div class="px-img"><img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?w=200&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="200" height="133" loading="lazy"><span class="px-badge" aria-hidden="true">0</span></div><div class="px-info"><h3>Pain au Chocolat</h3><p>Two dark chocolate batons</p></div><div class="px-foot"><span class="px-price">$5.25</span><div class="stepper"><button class="step minus" type="button" aria-label="Remove one Pain au Chocolat" disabled><svg width="18" height="18" aria-hidden="true"><use href="#minus"/></svg></button><span class="qty" aria-hidden="true">0</span><button class="step plus" type="button" aria-label="Add one Pain au Chocolat"><svg width="18" height="18" aria-hidden="true"><use href="#plus"/></svg></button></div></div></li>
+        <li class="px reveal" data-id="bun" data-name="Morning Bun" data-price="5.00"><div class="px-img"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=200&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="200" height="133" loading="lazy"><span class="px-badge" aria-hidden="true">0</span></div><div class="px-info"><h3>Morning Bun</h3><p>Orange zest, cinnamon sugar</p></div><div class="px-foot"><span class="px-price">$5.00</span><div class="stepper"><button class="step minus" type="button" aria-label="Remove one Morning Bun" disabled><svg width="18" height="18" aria-hidden="true"><use href="#minus"/></svg></button><span class="qty" aria-hidden="true">0</span><button class="step plus" type="button" aria-label="Add one Morning Bun"><svg width="18" height="18" aria-hidden="true"><use href="#plus"/></svg></button></div></div></li>
+        <li class="px reveal" style="--d:.05s" data-id="almond" data-name="Almond Croissant" data-price="5.75"><div class="px-img"><img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=200&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="200" height="133" loading="lazy"><span class="px-badge" aria-hidden="true">0</span></div><div class="px-info"><h3>Almond Croissant</h3><p>Twice-baked with frangipane</p></div><div class="px-foot"><span class="px-price">$5.75</span><div class="stepper"><button class="step minus" type="button" aria-label="Remove one Almond Croissant" disabled><svg width="18" height="18" aria-hidden="true"><use href="#minus"/></svg></button><span class="qty" aria-hidden="true">0</span><button class="step plus" type="button" aria-label="Add one Almond Croissant"><svg width="18" height="18" aria-hidden="true"><use href="#plus"/></svg></button></div></div></li>
+        <li class="px reveal" data-id="cookie" data-name="Brown Butter Cookie" data-price="3.50"><div class="px-img"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=200&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="200" height="133" loading="lazy"><span class="px-badge" aria-hidden="true">0</span></div><div class="px-info"><h3>Brown Butter Cookie</h3><p>Chocolate chunks, sea salt</p></div><div class="px-foot"><span class="px-price">$3.50</span><div class="stepper"><button class="step minus" type="button" aria-label="Remove one Brown Butter Cookie" disabled><svg width="18" height="18" aria-hidden="true"><use href="#minus"/></svg></button><span class="qty" aria-hidden="true">0</span><button class="step plus" type="button" aria-label="Add one Brown Butter Cookie"><svg width="18" height="18" aria-hidden="true"><use href="#plus"/></svg></button></div></div></li>
+        <li class="px reveal" style="--d:.05s" data-id="pie" data-name="Apple Pie Slice" data-price="6.00"><div class="px-img"><img src="https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=200&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="200" height="133" loading="lazy"><span class="px-badge" aria-hidden="true">0</span></div><div class="px-info"><h3>Apple Pie Slice</h3><p>Brown butter oat crumble</p></div><div class="px-foot"><span class="px-price">$6.00</span><div class="stepper"><button class="step minus" type="button" aria-label="Remove one Apple Pie Slice" disabled><svg width="18" height="18" aria-hidden="true"><use href="#minus"/></svg></button><span class="qty" aria-hidden="true">0</span><button class="step plus" type="button" aria-label="Add one Apple Pie Slice"><svg width="18" height="18" aria-hidden="true"><use href="#plus"/></svg></button></div></div></li>
+        <li class="px reveal" data-id="brownie" data-name="Fudgy Brownie" data-price="4.25"><div class="px-img"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=200&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="200" height="133" loading="lazy"><span class="px-badge" aria-hidden="true">0</span></div><div class="px-info"><h3>Fudgy Brownie</h3><p>Dark, dense, crackly top</p></div><div class="px-foot"><span class="px-price">$4.25</span><div class="stepper"><button class="step minus" type="button" aria-label="Remove one Fudgy Brownie" disabled><svg width="18" height="18" aria-hidden="true"><use href="#minus"/></svg></button><span class="qty" aria-hidden="true">0</span><button class="step plus" type="button" aria-label="Add one Fudgy Brownie"><svg width="18" height="18" aria-hidden="true"><use href="#plus"/></svg></button></div></div></li>
+        <li class="px reveal" style="--d:.05s" data-id="banana" data-name="Banana Bread" data-price="4.00"><div class="px-img"><img src="https://images.unsplash.com/photo-1606101273945-e9eba91c0dc4?w=200&amp;q=80&amp;auto=format&amp;fit=crop" alt="" width="200" height="133" loading="lazy"><span class="px-badge" aria-hidden="true">0</span></div><div class="px-info"><h3>Banana Bread</h3><p>Thick slice, walnut crunch</p></div><div class="px-foot"><span class="px-price">$4.00</span><div class="stepper"><button class="step minus" type="button" aria-label="Remove one Banana Bread" disabled><svg width="18" height="18" aria-hidden="true"><use href="#minus"/></svg></button><span class="qty" aria-hidden="true">0</span><button class="step plus" type="button" aria-label="Add one Banana Bread"><svg width="18" height="18" aria-hidden="true"><use href="#plus"/></svg></button></div></div></li>
+      </ul>
+      <ol class="box-steps reveal" aria-label="How pickup works">
+        <li><span class="n" aria-hidden="true">1</span><span><b>Fill your box</b><span>Up to six pastries, any mix.</span></span></li>
+        <li><span class="n" aria-hidden="true">2</span><span><b>Pick a time</b><span>Slots every hour while we’re open.</span></span></li>
+        <li><span class="n" aria-hidden="true">3</span><span><b>Skip the line</b><span>Your name’s on the box at the counter.</span></span></li>
+      </ol>
+      </div>
+
+      <aside class="box-card reveal" id="boxCard" aria-label="Your pastry box">
+        <div class="box-head"><h3>Your box</h3><span class="box-count" aria-live="polite"><b class="js-count">0</b> of 6</span></div>
+        <div class="kraft" id="kraft">
+          <div class="tray" id="tray">
+            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
+            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
+          </div>
+          <div class="ribbon" aria-hidden="true"><svg viewBox="0 0 64 40"><path d="M32 20C22 4 6 4 6 14s16 10 26 6zM32 20c10-16 26-16 26-6s-16 10-26 6z" fill="#c0603b" stroke="#a24a2a" stroke-width="1.5"/><path d="M28 22l-8 16M36 22l8 16" stroke="#c0603b" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="20" r="5" fill="#a24a2a"/></svg></div>
+        </div>
+        <div class="meter" aria-hidden="true"><span id="meter"></span></div>
+        <p class="box-hint" id="boxHint" aria-live="polite">Pick up to six. Mix and match however you like.</p>
+        <ul class="box-lines" id="boxLines"><li class="empty">Your box is empty, for now.</li></ul>
+        <p class="pick-label" id="pickLabel">Pickup time</p>
+        <div class="chips" id="slots" role="radiogroup" aria-labelledby="pickLabel"></div>
+        <div class="box-total"><span>Total, paid at pickup</span><strong id="boxTotal">$0.00</strong></div>
+        <button class="btn btn-primary btn-block" id="requestBtn" type="button" disabled>Request pickup <svg width="18" height="18" aria-hidden="true"><use href="#arrow"/></svg></button>
+        <div class="box-actions"><span>Held for 30 minutes after pickup time</span><button class="link-btn" id="clearBtn" type="button">Clear box</button></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow reveal">Around the bakery</p>
+        <h2 class="reveal" style="--d:.08s">Mornings <em>on the hill.</em></h2>
+      </div>
+      <p class="reveal" style="--d:.16s">Flour on the counters, steam on the windows and a line out the door by a quarter past seven. Come early, or come hungry.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="g-item g-a reveal"><img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?w=1100&amp;q=80&amp;auto=format&amp;fit=crop" alt="Warm-lit bakery counter with shelves of bread" width="1100" height="733" loading="lazy"><figcaption>The front counter at 7am</figcaption></figure>
+      <figure class="g-item g-b reveal" style="--d:.06s"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Milk being poured into a latte" width="700" height="467" loading="lazy"><figcaption>Latte art, every time</figcaption></figure>
+      <figure class="g-item g-c reveal" style="--d:.12s"><img src="https://images.unsplash.com/photo-1621743478914-cc8a86d7e7b5?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Lattice-topped apple pie next to red apples" width="700" height="467" loading="lazy"><figcaption>Apple lattice pie</figcaption></figure>
+      <figure class="g-item g-d reveal" style="--d:.06s"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Pastry case filled with breads and rolls" width="700" height="467" loading="lazy"><figcaption>The pastry case</figcaption></figure>
+      <figure class="g-item g-e reveal"><img src="https://images.unsplash.com/photo-1597604391235-a7429b4b350c?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Sliced sourdough on a wooden board" width="700" height="467" loading="lazy"><figcaption>Sliced to order</figcaption></figure>
+      <figure class="g-item g-f reveal" style="--d:.06s"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1100&amp;q=80&amp;auto=format&amp;fit=crop" alt="Pour-over coffee brewing at the bar" width="1100" height="733" loading="lazy"><figcaption>Slow pour-overs at the bar</figcaption></figure>
+      <figure class="g-item g-g reveal" style="--d:.12s"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Rustic loaves with wheat stalks" width="700" height="467" loading="lazy"><figcaption>Rye and country loaves</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTES -->
+<section class="section quotes-wrap" aria-labelledby="quotes-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow reveal">Kind words</p>
+        <h2 class="reveal" id="quotes-title" style="--d:.08s">What the <em>regulars</em> say.</h2>
+      </div>
+      <p class="reveal" style="--d:.16s">We know most of our customers by their order. A few of them were kind enough to put it in writing.</p>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal"><svg viewBox="0 0 38 30" aria-hidden="true"><path d="M0 30V17C0 7.5 5 1.6 14.5 0l1.6 4.4C10.6 6 8.3 9.4 8 14h7.6v16zm22 0V17C22 7.5 27 1.6 36.5 0l1.5 4.4C32.6 6 30.3 9.4 30 14h7.6v16z" fill="currentColor"/></svg><blockquote>The country loaf ruined grocery-store bread for our whole family. Saturday mornings are now planned around it.</blockquote><figcaption><span class="avatar" aria-hidden="true">M</span><span><b>Maria G.</b><small>Saturday regular</small></span></figcaption></figure>
+      <figure class="quote reveal" style="--d:.08s"><svg viewBox="0 0 38 30" aria-hidden="true"><path d="M0 30V17C0 7.5 5 1.6 14.5 0l1.6 4.4C10.6 6 8.3 9.4 8 14h7.6v16zm22 0V17C22 7.5 27 1.6 36.5 0l1.5 4.4C32.6 6 30.3 9.4 30 14h7.6v16z" fill="currentColor"/></svg><blockquote>A perfect cortado and a warm almond croissant. They remembered my order on my second visit.</blockquote><figcaption><span class="avatar" aria-hidden="true">D</span><span><b>Devon R.</b><small>Weekday commuter</small></span></figcaption></figure>
+      <figure class="quote reveal" style="--d:.16s"><svg viewBox="0 0 38 30" aria-hidden="true"><path d="M0 30V17C0 7.5 5 1.6 14.5 0l1.6 4.4C10.6 6 8.3 9.4 8 14h7.6v16zm22 0V17C22 7.5 27 1.6 36.5 0l1.5 4.4C32.6 6 30.3 9.4 30 14h7.6v16z" fill="currentColor"/></svg><blockquote>I brought a pastry box to a team meeting and people still ask me where it came from. Easiest win of my week.</blockquote><figcaption><span class="avatar" aria-hidden="true">P</span><span><b>Priya S.</b><small>Pastry box fan</small></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section visit" id="visit">
+  <div class="wrap visit-grid">
+    <div class="visit-card reveal">
+      <p class="eyebrow">Visit us</p>
+      <h2>Come up <em>the hill.</em></h2>
+      <p>Look for the terracotta awning, the long line and the very good smell. Free parking out back, and dogs are always welcome on the patio.</p>
+      <div class="visit-status"><span class="status js-status" data-state="closed"><i class="dot"></i><span class="txt">Open Tue–Sun</span></span></div>
+      <ul class="hours" id="hours" aria-label="Opening hours">
+        <li data-dow="1" class="closed"><span class="d">Monday <span class="today-pill">Today</span></span><span class="h">Closed</span></li>
+        <li data-dow="2"><span class="d">Tuesday <span class="today-pill">Today</span></span><span class="h">7am – 3pm</span></li>
+        <li data-dow="3"><span class="d">Wednesday <span class="today-pill">Today</span></span><span class="h">7am – 3pm</span></li>
+        <li data-dow="4"><span class="d">Thursday <span class="today-pill">Today</span></span><span class="h">7am – 3pm</span></li>
+        <li data-dow="5"><span class="d">Friday <span class="today-pill">Today</span></span><span class="h">7am – 3pm</span></li>
+        <li data-dow="6"><span class="d">Saturday <span class="today-pill">Today</span></span><span class="h">7am – 3pm</span></li>
+        <li data-dow="0"><span class="d">Sunday <span class="today-pill">Today</span></span><span class="h">7am – 2pm</span></li>
+      </ul>
+      <ul class="contact">
+        <li><span class="ci" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg></span><span><b>Escondido, CA</b><small>At the top of the rise. You can’t miss us.</small></span></li>
+        <li><span class="ci" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><span><a href="tel:+17605550142">(760) 555-0142</a><small>Call ahead for whole pies and big orders</small></span></li>
+        <li><span class="ci" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><span><a href="mailto:hello@example.com">hello@example.com</a><small>Catering, events and wholesale</small></span></li>
+      </ul>
+      <div class="visit-ctas">
+        <a class="btn btn-primary" href="tel:+17605550142">Call the bakery</a>
+        <a class="btn btn-ghost" href="#box">Order a box</a>
+      </div>
+    </div>
+
+    <div class="visit-map reveal" style="--d:.1s" role="img" aria-label="Illustrated map showing Hilltop Crumb at the top of a hill in Escondido">
+      <svg viewBox="0 0 600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="600" height="1000" fill="#ecdcc4"/>
+        <g fill="none" stroke="#5b3b2a" stroke-opacity=".13" stroke-width="1.6" transform="rotate(-10 300 470)">
+          <ellipse cx="300" cy="470" rx="92" ry="72" fill="#c0603b" fill-opacity=".07"/>
+          <ellipse cx="300" cy="474" rx="150" ry="122"/>
+          <ellipse cx="296" cy="480" rx="214" ry="178"/>
+          <ellipse cx="292" cy="488" rx="284" ry="240"/>
+          <ellipse cx="288" cy="496" rx="360" ry="306"/>
+          <ellipse cx="284" cy="504" rx="440" ry="376"/>
+        </g>
+        <path d="M-20 870C100 820 190 930 310 884S490 900 620 820" fill="none" stroke="#b9c3a8" stroke-width="13" stroke-linecap="round"/>
+        <path d="M-20 870C100 820 190 930 310 884S490 900 620 820" fill="none" stroke="#fbf7f0" stroke-opacity=".55" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/>
+        <g fill="none" stroke-linecap="round">
+          <path d="M-20 662C110 652 200 616 286 586S470 440 620 352" stroke="#5b3b2a" stroke-opacity=".16" stroke-width="22"/>
+          <path d="M-20 662C110 652 200 616 286 586S470 440 620 352" stroke="#fbf7f0" stroke-width="17"/>
+          <path d="M-20 662C110 652 200 616 286 586S470 440 620 352" stroke="#efd5a3" stroke-width="2" stroke-dasharray="12 12"/>
+          <path d="M140 -20C160 170 220 400 286 586S330 870 360 1020" stroke="#5b3b2a" stroke-opacity=".16" stroke-width="18"/>
+          <path d="M140 -20C160 170 220 400 286 586S330 870 360 1020" stroke="#fbf7f0" stroke-width="13"/>
+          <path d="M292 580C302 548 302 516 300 482" stroke="#5b3b2a" stroke-opacity=".2" stroke-width="10"/>
+          <path d="M292 580C302 548 302 516 300 482" stroke="#fbf7f0" stroke-width="6"/>
+        </g>
+        <g fill="#aeb38a">
+          <circle cx="90" cy="210" r="15"/><circle cx="112" cy="226" r="11"/><circle cx="74" cy="232" r="9"/>
+          <circle cx="470" cy="180" r="12"/><circle cx="490" cy="194" r="9"/>
+          <circle cx="500" cy="640" r="15"/><circle cx="522" cy="658" r="11"/><circle cx="482" cy="662" r="9"/>
+          <circle cx="120" cy="770" r="12"/><circle cx="138" cy="784" r="9"/>
+          <circle cx="430" cy="950" r="12"/><circle cx="452" cy="962" r="9"/>
+          <circle cx="66" cy="430" r="10"/><circle cx="530" cy="480" r="9"/><circle cx="210" cy="330" r="8"/>
+        </g>
+        <g font-family="DM Sans, sans-serif" font-size="12" font-weight="700" letter-spacing="2.4" fill="#5b3b2a" fill-opacity=".55">
+          <text x="60" y="636" transform="rotate(-5 60 636)">DOWNTOWN</text>
+          <text x="404" y="392" transform="rotate(-30 404 392)">TO THE VALLEY</text>
+          <text x="150" y="934">CREEK TRAIL</text>
+          <text x="176" y="160" transform="rotate(80 176 160)">ORCHARD RD</text>
+        </g>
+        <g transform="translate(490 110)" fill="#5b3b2a" fill-opacity=".6">
+          <circle r="20" fill="none" stroke="#5b3b2a" stroke-opacity=".3"/>
+          <path d="M0-14l5 14H-5z"/>
+          <text y="-26" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="11" font-weight="700">N</text>
+        </g>
+        <g transform="translate(300 476)">
+          <circle class="pin-pulse" r="34" fill="#c0603b" fill-opacity=".35"/>
+          <ellipse cx="0" cy="4" rx="12" ry="4" fill="#3a2419" fill-opacity=".25"/>
+          <path d="M0 2C-12-12-20-22-20-34a20 20 0 0 1 40 0C20-22 12-12 0 2z" fill="#c0603b"/>
+          <circle cy="-34" r="7.5" fill="#fbf7f0"/>
+          <g transform="translate(28 -82)">
+            <rect width="148" height="44" rx="14" fill="#fffdf9" stroke="#5b3b2a" stroke-opacity=".12"/>
+            <text x="16" y="20" font-family="Fraunces, Georgia, serif" font-size="15" font-weight="600" fill="#2e1d14">Hilltop Crumb</text>
+            <text x="16" y="35" font-family="DM Sans, sans-serif" font-size="10.5" font-weight="600" fill="#7b6354">Bakery &amp; coffee bar</text>
+          </g>
+        </g>
+      </svg>
+      <div class="map-note"><span><b>Escondido, CA</b><br>Patio seating · Free parking</span><span class="status js-status" data-state="closed"><i class="dot"></i><span class="txt">Open Tue–Sun</span></span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="foot-big reveal">See you in<br>the <span>morning.</span></p>
+    <div class="foot-grid">
+      <div>
+        <a class="foot-brand" href="#top"><svg width="40" height="40" aria-hidden="true"><use href="#mark"/></svg><span class="brand-name">Hilltop <em>Crumb</em></span></a>
+        <p>Artisan bakery and coffee bar. Sourdough, croissants, seasonal pies and espresso, made by hand in Escondido, CA.</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul><li>Tue – Sat · 7am – 3pm</li><li>Sunday · 7am – 2pm</li><li>Monday · Closed</li></ul>
+      </div>
+      <div>
+        <h4>Say hello</h4>
+        <ul><li>Escondido, CA</li><li><a href="tel:+17605550142">(760) 555-0142</a></li><li><a href="mailto:hello@example.com">hello@example.com</a></li></ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#menu">Menu</a></li><li><a href="#box">Pastry box</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#visit">Visit</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Hilltop Crumb. A fictional bakery, created as a design concept.</span>
+      <span>Design by <a href="../../">Upswing Sites</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="concept-pill" href="../../">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="16" fill="#0f5b4a"/><path d="M8 21l6-6 4 4 7-8" stroke="#f4c95d" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  Concept site by Upswing Sites
+</a>
+
+<div class="modal" id="confirm" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <div class="modal-art" id="modalArt" aria-hidden="true">
+      <svg viewBox="0 0 120 96" width="120" height="96"><rect x="14" y="34" width="92" height="56" rx="10" fill="#c99a62"/><rect x="14" y="34" width="92" height="14" rx="7" fill="#d9ae78"/><rect x="55" y="34" width="10" height="56" fill="#c0603b"/><path d="M60 34C48 16 30 16 30 26s18 10 30 8zM60 34c12-18 30-18 30-8s-18 10-30 8z" fill="#c0603b" stroke="#a24a2a" stroke-width="1.5"/><circle cx="60" cy="33" r="5.5" fill="#a24a2a"/></svg>
+    </div>
+    <h3 id="confirmTitle">Your box is on the list!</h3>
+    <p id="confirmText">We’ll have it packed and waiting at the counter.</p>
+    <span class="demo-note">Concept demo: no order was actually sent.</span><br>
+    <button class="btn btn-primary" type="button" data-close>Sounds delicious</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var $ = function(s, r){ return (r || document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var root = document.documentElement;
+  root.classList.add('js');
+  var mq = window.matchMedia ? matchMedia('(prefers-reduced-motion: reduce)') : null;
+  var reduce = !!(mq && mq.matches);
+  if (mq && mq.addEventListener) mq.addEventListener('change', function(e){ reduce = e.matches; });
+
+  /* ---------- Hours & live status (bakery time: America/Los_Angeles) ---------- */
+  var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  // minutes after midnight: [open, close]; null = closed
+  var HOURS = [[420,840], null, [420,900], [420,900], [420,900], [420,900], [420,900]];
+  function fmt(m){ var h = Math.floor(m/60) % 24, mm = m % 60; return (h % 12 || 12) + (mm ? ':' + (mm < 10 ? '0' : '') + mm : '') + (h >= 12 ? 'pm' : 'am'); }
+  function now(){
+    var q = new URLSearchParams(location.search).get('at'); // preview helper, e.g. ?at=2,10:30
+    if (q) { var a = q.split(','), t = (a[1] || '0:0').split(':'); return { dow: (+a[0]) % 7, min: (+t[0]) * 60 + (+t[1] || 0) }; }
+    try {
+      var o = {};
+      new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+        .formatToParts(new Date()).forEach(function(p){ o[p.type] = p.value; });
+      var dow = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday);
+      if (dow < 0) throw 0;
+      return { dow: dow, min: (parseInt(o.hour, 10) % 24) * 60 + parseInt(o.minute, 10) };
+    } catch (e) { var d = new Date(); return { dow: d.getDay(), min: d.getHours() * 60 + d.getMinutes() }; }
+  }
+  function nextOpenDay(n){ for (var i = 1; i <= 7; i++) { var d = (n.dow + i) % 7; if (HOURS[d]) return { i: i, d: d }; } }
+  function dayWord(i, d){ return i === 0 ? 'today' : i === 1 ? 'tomorrow' : DAYS[d]; }
+  function getStatus(){
+    var n = now(), t = HOURS[n.dow];
+    if (t && n.min >= t[0] && n.min < t[1]) {
+      var soon = t[1] - n.min <= 60;
+      return { state: soon ? 'soon' : 'open', text: (soon ? 'Closing soon' : 'Open now') + ' · closes ' + fmt(t[1]) };
+    }
+    if (t && n.min < t[0]) return { state: 'closed', text: 'Opens today at ' + fmt(t[0]) };
+    var x = nextOpenDay(n);
+    return { state: 'closed', text: 'Opens ' + dayWord(x.i, x.d) + ' at ' + fmt(HOURS[x.d][0]) };
+  }
+  var BAKES = [[390,'Country sourdough'],[450,'Butter croissants'],[510,'Morning buns'],[570,'Seeded rye'],[630,'Pain au chocolat'],[690,'Sea salt focaccia'],[750,'Brown butter cookies']];
+  function getOven(){
+    var n = now(), t = HOURS[n.dow];
+    if (t && n.min < t[1]) {
+      for (var i = 0; i < BAKES.length; i++) {
+        if (BAKES[i][0] > n.min && BAKES[i][0] < t[1]) return { label: n.min < BAKES[0][0] ? 'First bake today' : 'Next from the oven', item: BAKES[i][1], time: fmt(BAKES[i][0]) };
+      }
+      var last = BAKES[BAKES.length - 1];
+      return { label: 'Last batch of the day', item: last[1], time: 'Out at ' + fmt(last[0]) };
+    }
+    var x = nextOpenDay(n);
+    return { label: 'First bake ' + dayWord(x.i, x.d), item: BAKES[0][1], time: fmt(BAKES[0][0]) };
+  }
+  function renderTime(){
+    var s = getStatus();
+    $$('.js-status').forEach(function(el){ el.setAttribute('data-state', s.state); $('.txt', el).textContent = s.text; });
+    var today = now().dow;
+    $$('#hours li').forEach(function(li){ li.classList.toggle('today', +li.getAttribute('data-dow') === today); });
+    var o = getOven();
+    $('.js-oven-label').textContent = o.label;
+    $('.js-oven-item').textContent = o.item;
+    $('.js-oven-time').textContent = o.time;
+  }
+  renderTime();
+  setInterval(renderTime, 30000);
+  var yr = $('#year'); if (yr) yr.textContent = new Date().getFullYear();
+
+  /* ---------- Header + mobile nav ---------- */
+  var header = $('#header');
+  var toggle = $('.menu-toggle'), mnav = $('#mobile-nav');
+  function setNav(open){
+    toggle.setAttribute('aria-expanded', open);
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    mnav.classList.toggle('open', open);
+    if (open) header.classList.add('scrolled'); else onScroll();
+  }
+  toggle.addEventListener('click', function(){ setNav(toggle.getAttribute('aria-expanded') !== 'true'); });
+  $$('a', mnav).forEach(function(a){ a.addEventListener('click', function(){ setNav(false); }); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && mnav.classList.contains('open')) { setNav(false); toggle.focus(); } });
+  addEventListener('resize', function(){ if (innerWidth > 960 && mnav.classList.contains('open')) setNav(false); });
+
+  /* ---------- Parallax hero ---------- */
+  var hero = $('.hero'), layers = $$('[data-depth]'), hills = $$('.hill');
+  var mx = 0, my = 0, tx = 0, ty = 0, raf = 0;
+  function frame(){
+    raf = 0;
+    if (reduce) { layers.concat(hills).forEach(function(l){ l.style.translate = ''; }); return; }
+    tx += (mx - tx) * 0.08; ty += (my - ty) * 0.08;
+    var y = window.scrollY || 0;
+    if (y < innerHeight * 1.3) {
+      layers.forEach(function(l){ var d = +l.getAttribute('data-depth'); l.style.translate = (tx * d * 90).toFixed(2) + 'px ' + (-y * d * 1.4 + ty * d * 70).toFixed(2) + 'px'; });
+      hills.forEach(function(h){ var s = +h.getAttribute('data-speed'); h.style.translate = '0 ' + (y * s).toFixed(1) + 'px'; });
+    }
+    if (Math.abs(mx - tx) > 0.0005 || Math.abs(my - ty) > 0.0005) raf = requestAnimationFrame(frame);
+  }
+  function req(){ if (!raf) raf = requestAnimationFrame(frame); }
+  function onScroll(){ header.classList.toggle('scrolled', (window.scrollY || 0) > 8 || mnav.classList.contains('open')); req(); }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (window.matchMedia && matchMedia('(pointer: fine)').matches) {
+    hero.addEventListener('pointermove', function(e){ var r = hero.getBoundingClientRect(); mx = (e.clientX - r.left) / r.width - 0.5; my = (e.clientY - r.top) / r.height - 0.5; req(); });
+    hero.addEventListener('pointerleave', function(){ mx = 0; my = 0; req(); });
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  var reveals = $$('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) { reveals.forEach(function(el){ el.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+
+  /* ---------- Menu tabs ---------- */
+  var tabs = $$('.tab'), list = $('#menu-list'), items = $$('.menu-item', list), feats = $$('.mf-img'), ink = $('.tab-ink'), countEl = $('.js-menu-count');
+  var switchTimer = 0, sizeTimer = 0;
+  function showCat(cat, animate){
+    var idx = 0;
+    tabs.forEach(function(t, i){ var on = t.getAttribute('data-cat') === cat; if (on) idx = i; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; });
+    ink.style.setProperty('--idx', idx);
+    list.setAttribute('aria-labelledby', tabs[idx].id);
+    feats.forEach(function(f){ f.classList.toggle('on', f.getAttribute('data-cat') === cat); });
+    var apply = function(){
+      var k = 0;
+      items.forEach(function(el){ var on = el.getAttribute('data-cat') === cat; el.hidden = !on; el.classList.remove('entering'); if (on) el.style.setProperty('--i', k++); });
+      countEl.textContent = k;
+    };
+    if (!animate || reduce) { apply(); return; }
+    clearTimeout(switchTimer); clearTimeout(sizeTimer);
+    var h0 = list.offsetHeight;
+    list.style.height = h0 + 'px';
+    list.classList.add('sizing');
+    items.forEach(function(el){ el.classList.remove('entering'); });
+    list.classList.add('leaving');
+    switchTimer = setTimeout(function(){
+      list.classList.remove('leaving');
+      apply();
+      list.style.height = 'auto';
+      var h1 = list.offsetHeight;
+      list.style.height = h0 + 'px';
+      void list.offsetHeight;
+      items.forEach(function(el){ if (!el.hidden) el.classList.add('entering'); });
+      list.style.height = h1 + 'px';
+      sizeTimer = setTimeout(function(){ list.style.height = ''; list.classList.remove('sizing'); }, 560);
+    }, 210);
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ if (t.getAttribute('aria-selected') !== 'true') showCat(t.getAttribute('data-cat'), true); });
+    t.addEventListener('keydown', function(e){
+      var j = null;
+      if (e.key === 'ArrowRight') j = (i + 1) % tabs.length;
+      else if (e.key === 'ArrowLeft') j = (i - 1 + tabs.length) % tabs.length;
+      else if (e.key === 'Home') j = 0;
+      else if (e.key === 'End') j = tabs.length - 1;
+      if (j !== null) { e.preventDefault(); tabs[j].focus(); showCat(tabs[j].getAttribute('data-cat'), true); }
+    });
+  });
+  showCat('breads', false);
+
+  /* ---------- Pastry box ---------- */
+  var MAX = 6, order = [], qty = {}, info = {};
+  var pxEls = $$('.px'), slotEls = $$('#tray .slot'), kraft = $('#kraft'), card = $('#boxCard');
+  var hint = $('#boxHint'), lines = $('#boxLines'), totalEl = $('#boxTotal'), countB = $('.js-count'), meter = $('#meter'), reqBtn = $('#requestBtn');
+  var money = function(n){ return '$' + n.toFixed(2); };
+  pxEls.forEach(function(el){
+    var id = el.getAttribute('data-id');
+    info[id] = { name: el.getAttribute('data-name'), price: parseFloat(el.getAttribute('data-price')), img: $('img', el).getAttribute('src') };
+    qty[id] = 0;
+    $('.plus', el).addEventListener('click', function(){ add(id); });
+    $('.minus', el).addEventListener('click', function(){ remove(id); });
+  });
+  function add(id){
+    if (order.length >= MAX) { full(); return; }
+    order.push(id); qty[id]++; render(true);
+  }
+  function remove(id){
+    if (!qty[id]) return;
+    qty[id]--; order.splice(order.lastIndexOf(id), 1); render(false);
+  }
+  function full(){
+    hint.textContent = 'That’s a full box. Six is the most we can tie up!';
+    if (!reduce) { card.classList.remove('shake'); void card.offsetWidth; card.classList.add('shake'); }
+  }
+  function render(added){
+    var count = order.length, total = 0;
+    order.forEach(function(id){ total += info[id].price; });
+    pxEls.forEach(function(el){
+      var id = el.getAttribute('data-id'), q = qty[id];
+      $('.qty', el).textContent = q;
+      $('.px-badge', el).textContent = q;
+      el.classList.toggle('picked', q > 0);
+      $('.minus', el).disabled = q === 0;
+      $('.plus', el).setAttribute('aria-disabled', count >= MAX ? 'true' : 'false');
+    });
+    slotEls.forEach(function(s, i){
+      var id = order[i] || '';
+      if (s.getAttribute('data-id') !== id) {
+        s.setAttribute('data-id', id);
+        s.innerHTML = id ? '<img src="' + info[id].img + '" alt="">' : '';
+      }
+      s.classList.toggle('filled', !!id);
+      s.classList.remove('pop');
+    });
+    if (added && !reduce && slotEls[count - 1]) { var ns = slotEls[count - 1]; void ns.offsetWidth; ns.classList.add('pop'); }
+    kraft.classList.toggle('full', count === MAX);
+    countB.textContent = count;
+    meter.style.width = (count / MAX * 100) + '%';
+    hint.textContent = count === 0 ? 'Pick up to six. Mix and match however you like.'
+      : count === MAX ? 'Full box! We’ll tie it with our terracotta ribbon.'
+      : 'Room for ' + (MAX - count) + ' more.';
+    var seen = [];
+    order.forEach(function(id){ if (seen.indexOf(id) < 0) seen.push(id); });
+    lines.innerHTML = seen.length ? seen.map(function(id){ return '<li><span>' + qty[id] + ' × ' + info[id].name + '</span><span>' + money(qty[id] * info[id].price) + '</span></li>'; }).join('')
+      : '<li class="empty">Your box is empty, for now.</li>';
+    totalEl.textContent = money(total);
+    reqBtn.disabled = count === 0;
+  }
+  $('#clearBtn').addEventListener('click', function(){ order = []; Object.keys(qty).forEach(function(k){ qty[k] = 0; }); render(false); });
+
+  // pickup times
+  var slotWrap = $('#slots'), chosen = null;
+  function pickupSlots(){
+    var n = now(), out = [];
+    for (var i = 0; i < 8 && out.length < 4; i++) {
+      var d = (n.dow + i) % 7, t = HOURS[d]; if (!t) continue;
+      var s = i === 0 ? Math.max(t[0] + 30, Math.ceil((n.min + 40) / 30) * 30) : t[0] + 60;
+      var take = out.length === 0 ? 3 : 1;
+      for (var c = 0; s <= t[1] - 30 && c < take; s += 60, c++) out.push({ i: i, d: d, s: s });
+    }
+    return out.slice(0, 4).map(function(o){ return (o.i === 0 ? 'Today' : o.i === 1 ? 'Tomorrow' : DAYS[o.d].slice(0, 3)) + ' · ' + fmt(o.s); });
+  }
+  function renderSlots(){
+    var opts = pickupSlots();
+    if (chosen === null || opts.indexOf(chosen) < 0) chosen = opts[0];
+    slotWrap.innerHTML = opts.map(function(o){ return '<button type="button" class="chip" role="radio" aria-checked="' + (o === chosen) + '" tabindex="' + (o === chosen ? 0 : -1) + '">' + o + '</button>'; }).join('');
+  }
+  slotWrap.addEventListener('click', function(e){
+    var b = e.target.closest('.chip'); if (!b) return;
+    chosen = b.textContent; renderSlots(); var f = $('.chip[aria-checked="true"]', slotWrap); if (f) f.focus();
+  });
+  slotWrap.addEventListener('keydown', function(e){
+    if (['ArrowRight','ArrowDown','ArrowLeft','ArrowUp'].indexOf(e.key) < 0) return;
+    e.preventDefault();
+    var chips = $$('.chip', slotWrap), i = chips.findIndex(function(c){ return c.getAttribute('aria-checked') === 'true'; });
+    i = (i + (e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : -1) + chips.length) % chips.length;
+    chosen = chips[i].textContent; renderSlots(); $$('.chip', slotWrap)[i].focus();
+  });
+  renderSlots();
+  setInterval(renderSlots, 60000);
+  render(false);
+
+  // confirmation modal (demo only, nothing is submitted)
+  var modal = $('#confirm'), art = $('#modalArt'), lastFocus = null;
+  function openModal(){
+    var count = order.length, total = 0;
+    order.forEach(function(id){ total += info[id].price; });
+    $('#confirmText').textContent = 'Thanks, friend! Your ' + count + ' ' + (count === 1 ? 'pastry' : 'pastries') + ' will be boxed and waiting at the counter ' + chosen.replace(' · ', ' at ').replace(/^Today/, 'today').replace(/^Tomorrow/, 'tomorrow') + '. Total ' + money(total) + ', paid at pickup.';
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ modal.classList.add('open'); }); });
+    $$('.crumb', art).forEach(function(c){ c.remove(); });
+    if (!reduce) {
+      var colors = ['#c0603b','#efd5a3','#c99a62','#a24a2a','#e7b896'];
+      for (var k = 0; k < 18; k++) {
+        var c = document.createElement('i'), a = (k / 18) * Math.PI * 2 + Math.random() * 0.4, r = 60 + Math.random() * 50;
+        c.className = 'crumb';
+        c.style.cssText = '--x:' + (Math.cos(a) * r).toFixed(1) + 'px;--y:' + (Math.sin(a) * r * 0.8).toFixed(1) + 'px;--s:' + (5 + Math.random() * 7).toFixed(1) + 'px;--c:' + colors[k % colors.length];
+        art.appendChild(c);
+      }
+    }
+    setTimeout(function(){ $('.modal-card .btn', modal).focus(); }, 60);
+  }
+  function closeModal(){
+    modal.classList.remove('open');
+    setTimeout(function(){ modal.hidden = true; }, reduce ? 0 : 350);
+    order = []; Object.keys(qty).forEach(function(k){ qty[k] = 0; }); render(false);
+    hint.textContent = 'All set. Feel free to start another box!';
+    if (lastFocus) lastFocus.focus();
+  }
+  reqBtn.addEventListener('click', function(){ if (order.length) openModal(); });
+  $$('[data-close]', modal).forEach(function(b){ b.addEventListener('click', closeModal); });
+  document.addEventListener('keydown', function(e){
+    if (modal.hidden) return;
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Tab') { e.preventDefault(); $('.modal-card .btn', modal).focus(); }
+  });
+})();
+</script>
+</body>
+</html>
