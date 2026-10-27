@@ -1,0 +1,1437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Ridgeline Plumbing &amp; Drain | 24/7 Plumber, North County San Diego (Concept)</title>
+<meta name="description" content="Concept website by Upswing Sites for a fictional North County San Diego plumber: leak repair, drain clearing, water heaters, repiping and 24/7 emergency service.">
+<meta name="theme-color" content="#081631">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='11' fill='%23FF6B1A'/%3E%3Cpath d='M8 27l8-10 5 6 5-8 10 12' fill='none' stroke='%23081631' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+@property --a { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+:root{
+  --navy-950:#050E1D; --navy-900:#081631; --navy-800:#0C1F40; --navy-700:#12294F; --navy-600:#1A3765; --navy-500:#2A4C80;
+  --orange:#FF6B1A; --orange-hi:#FF8640; --orange-700:#C2410C; --orange-50:#FFF4EC; --orange-100:#FFE4D1;
+  --ink:#0C1F40; --body:#3D4B63; --muted:#66748C; --line:#E2E7EF; --paper:#F3F6FA; --white:#fff;
+  --green:#16A34A; --green-50:#E9F8EF;
+  --display:"Barlow Condensed","Oswald","Arial Narrow",Impact,sans-serif;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --spring:cubic-bezier(.34,1.56,.64,1);
+  --gutter:20px;
+  --hdr:72px;
+  --bar:0px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--body);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip;padding-bottom:var(--bar)}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;padding:0}
+h1,h2,h3,h4{margin:0;color:var(--ink);font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.005em;line-height:.95}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.wrap{width:100%;max-width:1240px;margin-inline:auto;padding-inline:var(--gutter)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:8px}
+section[id]{scroll-margin-top:calc(var(--hdr) + 12px)}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ic-fill{fill:currentColor;stroke:none}
+@media (min-width:768px){:root{--gutter:32px}}
+@media (max-width:899px){:root{--bar:calc(72px + env(safe-area-inset-bottom));--hdr:64px}}
+
+/* ---------- buttons ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:12px;font:700 16px/1 var(--sans);letter-spacing:.005em;border:2px solid transparent;white-space:nowrap;transition:transform .3s var(--ease),background-color .25s,box-shadow .3s var(--ease),border-color .25s,color .25s}
+.btn .ic{transition:transform .3s var(--ease)}
+.btn:hover .ic-arrow{transform:translateX(4px)}
+.btn-primary{background:var(--orange);color:var(--navy-950);box-shadow:0 12px 30px -12px rgba(255,107,26,.75),inset 0 -2px 0 rgba(0,0,0,.14)}
+.btn-primary:hover{background:var(--orange-hi);transform:translateY(-2px);box-shadow:0 18px 36px -14px rgba(255,107,26,.9),inset 0 -2px 0 rgba(0,0,0,.14)}
+.btn-primary:active{transform:translateY(0)}
+.btn-ghost{color:#fff;border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.04)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.09)}
+.btn-navy{background:var(--navy-900);color:#fff}
+.btn-navy:hover{background:var(--navy-700);transform:translateY(-2px)}
+.btn-outline{color:var(--navy-950);border-color:var(--navy-950)}
+.btn-outline:hover{background:var(--navy-950);color:#fff}
+.btn-lg{min-height:62px;padding:0 30px;font-size:17px}
+.btn-block{width:100%}
+
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:700 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--orange-700);margin-bottom:20px}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+.eyebrow-light{color:var(--orange-hi)}
+
+/* ---------- utility bar + header ---------- */
+.util{background:var(--navy-950);color:rgba(255,255,255,.66);font-size:13px}
+.util .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:40px}
+.util-l,.util-r{display:flex;align-items:center;gap:22px}
+.util b{color:#fff;font-weight:600}
+.util .ic{width:15px;height:15px;color:var(--orange)}
+.util span{display:inline-flex;align-items:center;gap:8px}
+.util a:hover{color:#fff}
+@media (max-width:899px){.util{display:none}}
+
+.hdr{position:sticky;top:0;z-index:50;background:var(--navy-900);transition:background-color .3s,box-shadow .3s}
+.hdr.scrolled{background:rgba(8,22,49,.88);-webkit-backdrop-filter:saturate(160%) blur(14px);backdrop-filter:saturate(160%) blur(14px);box-shadow:0 12px 30px -20px rgba(0,0,0,.8)}
+.hdr::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:rgba(255,255,255,.07)}
+.hdr .wrap{display:flex;align-items:center;gap:24px;height:var(--hdr)}
+.logo{display:flex;align-items:center;gap:12px;color:#fff;flex:none}
+.logo-mark{width:44px;height:44px;flex:none;transition:transform .5s var(--spring)}
+.logo:hover .logo-mark{transform:rotate(-6deg) scale(1.05)}
+.logo-txt{display:flex;flex-direction:column;line-height:1}
+.logo-txt b{font:800 26px/.9 var(--display);letter-spacing:.06em}
+.logo-txt span{font:600 10px/1 var(--sans);letter-spacing:.24em;color:rgba(255,255,255,.58);margin-top:5px}
+.nav{display:flex;gap:2px;margin-left:auto}
+.nav a{position:relative;padding:10px 13px;font-weight:500;font-size:15px;color:rgba(255,255,255,.78);border-radius:8px;transition:color .2s}
+.nav a::after{content:"";position:absolute;left:13px;right:13px;bottom:3px;height:2px;border-radius:2px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav a:hover{color:#fff}
+.nav a:hover::after{transform:scaleX(1)}
+.hdr-cta{display:flex;align-items:center;gap:12px}
+.call-btn{display:flex;align-items:center;gap:13px;padding:9px 18px 9px 16px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);color:#fff;transition:background-color .25s,border-color .25s,transform .3s var(--ease)}
+.call-btn:hover{background:rgba(255,255,255,.09);border-color:rgba(255,107,26,.7);transform:translateY(-1px)}
+.call-btn .ct{display:flex;flex-direction:column}
+.call-btn small{font:700 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--orange-hi)}
+.call-btn b{font:700 21px/1 var(--display);letter-spacing:.04em;margin-top:4px}
+.pulse{position:relative;width:10px;height:10px;border-radius:50%;background:var(--orange);flex:none}
+.pulse::before,.pulse::after{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;animation:ping 2.2s var(--ease) infinite}
+.pulse::after{animation-delay:1.1s}
+@keyframes ping{0%{transform:scale(1);opacity:.75}100%{transform:scale(3.4);opacity:0}}
+.hdr .btn{min-height:50px;padding:0 20px;font-size:15px}
+.menu-btn,.call-sm{display:none}
+@media (max-width:1139px){.hdr .btn-book{display:none}}
+@media (max-width:899px){
+  .call-btn{display:none}
+  .hdr-cta{margin-left:auto;gap:10px}
+  .call-sm{display:grid;place-items:center;width:48px;height:48px;border-radius:12px;background:var(--orange);color:var(--navy-950)}
+  .menu-btn{display:grid;place-items:center;width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#fff}
+  .menu-btn .ic{width:22px;height:22px}
+  .menu-btn .x{display:none}
+  .hdr.open .menu-btn .x{display:block}
+  .hdr.open .menu-btn .m{display:none}
+  .logo-mark{width:40px;height:40px}
+  .logo-txt b{font-size:23px}
+  .nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;margin:0;padding:6px var(--gutter) 22px;background:var(--navy-900);box-shadow:0 30px 40px -20px rgba(0,0,0,.6);opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s}
+  .hdr.open .nav{opacity:1;visibility:visible;transform:none}
+  .nav a{padding:15px 2px;font-size:18px;font-weight:600;color:#fff;border-bottom:1px solid rgba(255,255,255,.07);border-radius:0}
+  .nav a::after{display:none}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--navy-900);color:#fff;overflow:clip;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:56px 56px;background-position:-1px -1px;-webkit-mask-image:radial-gradient(ellipse 70% 75% at 72% 45%,#000 15%,transparent 72%);mask-image:radial-gradient(ellipse 70% 75% at 72% 45%,#000 15%,transparent 72%)}
+.hero-glow{position:absolute;border-radius:50%}
+.hero-glow.g1{width:1000px;height:1000px;right:-260px;top:-260px;background:radial-gradient(circle,rgba(255,107,26,.20),rgba(255,107,26,0) 62%)}
+.hero-glow.g2{width:1100px;height:1100px;left:-420px;bottom:-640px;background:radial-gradient(circle,rgba(42,76,128,.7),rgba(42,76,128,0) 62%)}
+.hero-topo{position:absolute;left:0;right:0;bottom:-2px;width:100%;height:58%;color:rgba(255,255,255,.075)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:76px;align-items:center;padding-block:66px 118px}
+.chip-live{display:inline-flex;align-items:center;gap:10px;padding:8px 15px 8px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);font-size:13.5px;font-weight:600;color:rgba(255,255,255,.9)}
+.live{position:relative;width:8px;height:8px;border-radius:50%;background:#22C55E;flex:none}
+.live::after{content:"";position:absolute;inset:0;border-radius:50%;background:#22C55E;animation:ping 2s var(--ease) infinite}
+.hero h1{color:#fff;font-size:clamp(50px,13.4vw,94px);line-height:.9;margin:26px 0 26px;letter-spacing:0}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.03em;margin-bottom:-.03em}
+.hero h1 .ln>span{display:block}
+.hero h1 .ln:last-child{padding-bottom:.2em;margin-bottom:-.2em}
+.hero h1 .accent{color:var(--orange)}
+.hero h1 .uline{position:relative;display:inline-block}
+.hero h1 .uline svg{position:absolute;left:-1%;bottom:-.13em;width:102%;height:.16em;color:var(--orange);overflow:visible}
+.lede{font-size:clamp(17px,1.45vw,19px);line-height:1.62;color:rgba(255,255,255,.75);max-width:33em}
+.lede b{color:#fff;font-weight:600}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-checks{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:34px;font-size:14.5px;font-weight:500;color:rgba(255,255,255,.82)}
+.hero-checks li{display:flex;align-items:center;gap:9px}
+.hero-checks .ck{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(255,107,26,.16);color:var(--orange-hi)}
+.hero-checks .ck .ic{width:13px;height:13px;stroke-width:3}
+
+.hero-visual{position:relative;width:100%;max-width:540px;height:612px;justify-self:end}
+.beam{position:absolute;inset:-15px;border-radius:40px;padding:1.5px;background:conic-gradient(from var(--a),rgba(255,255,255,.10) 0turn,rgba(255,255,255,.10) .68turn,#FF6B1A .9turn,#FFD2B3 .95turn,rgba(255,255,255,.10) 1turn);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);animation:beam 7s linear infinite}
+@keyframes beam{to{--a:1turn}}
+.tick{position:absolute;width:14px;height:14px;color:rgba(255,255,255,.35)}
+.tick::before,.tick::after{content:"";position:absolute;background:currentColor}
+.tick::before{left:6px;top:0;width:2px;height:14px}
+.tick::after{top:6px;left:0;height:2px;width:14px}
+.tick.t1{right:-36px;top:-36px}.tick.t2{right:-36px;bottom:-36px}.tick.t3{left:-36px;bottom:-36px}
+.hero-photo{position:absolute;inset:0;margin:0;border-radius:28px;overflow:hidden;background:radial-gradient(120% 80% at 70% 20%,var(--navy-500),var(--navy-800));box-shadow:0 50px 90px -40px rgba(0,0,0,.85)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,22,49,.15) 0%,rgba(8,22,49,0) 30%,rgba(8,22,49,0) 52%,rgba(8,22,49,.82) 100%)}
+.photo-cap{position:absolute;right:22px;bottom:22px;z-index:2;display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:.02em}
+.photo-cap .ic{width:16px;height:16px;color:var(--orange-hi)}
+
+.float{position:absolute;z-index:3;border-radius:18px}
+.f-dispatch{left:-60px;bottom:70px;width:306px;padding:16px 18px 15px;background:#fff;color:var(--ink);box-shadow:0 36px 70px -24px rgba(0,0,0,.7),0 0 0 1px rgba(12,31,64,.04)}
+.fd-top{display:flex;justify-content:space-between;align-items:center;font:700 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fd-live{display:flex;align-items:center;gap:8px}
+.fd-live .live{width:7px;height:7px}
+.fd-eta{display:flex;align-items:baseline;gap:5px;color:var(--orange-700)}
+.fd-eta b{font:800 20px/1 var(--display);letter-spacing:.02em}
+.fd-tech{display:flex;gap:12px;align-items:center;margin:14px 0 18px}
+.fd-av{position:relative;width:44px;height:44px;border-radius:50%;background:linear-gradient(140deg,var(--navy-500),var(--navy-900));color:#fff;display:grid;place-items:center;font:700 14px/1 var(--sans);flex:none}
+.fd-av i{position:absolute;right:-1px;bottom:-1px;width:13px;height:13px;border-radius:50%;background:#22C55E;border:2.5px solid #fff}
+.fd-tech div b{display:block;font-size:15px;font-weight:700;line-height:1.25;color:var(--ink)}
+.fd-tech div span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.fd-track{position:relative;height:6px;border-radius:6px;background:#E8ECF3;margin:0 8px}
+.fd-fill{position:absolute;left:0;top:0;bottom:0;width:64%;border-radius:6px;background:linear-gradient(90deg,var(--orange) 0%,#FFA36B 50%,var(--orange) 100%);background-size:200% 100%;animation:fillIn 2.6s var(--ease) 1.3s both,flow 2.4s linear 3.9s infinite}
+.fd-van{position:absolute;top:50%;left:64%;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:var(--navy-900);color:#fff;display:grid;place-items:center;box-shadow:0 0 0 5px rgba(255,107,26,.22);animation:vanIn 2.6s var(--ease) 1.3s both}
+.fd-van .ic{width:15px;height:15px}
+@keyframes fillIn{from{width:3%}}
+@keyframes vanIn{from{left:3%}}
+@keyframes flow{to{background-position:-200% 0}}
+.fd-steps{display:flex;justify-content:space-between;margin-top:14px;font-size:11.5px;font-weight:600;color:#9AA6B9}
+.fd-steps .done{color:var(--muted)}
+.fd-steps .on{color:var(--ink)}
+
+.f-rating{right:-34px;top:76px;display:flex;align-items:center;gap:14px;padding:15px 20px 15px 18px;background:rgba(8,22,49,.66);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);border:1px solid rgba(255,255,255,.16);color:#fff;box-shadow:0 26px 50px -20px rgba(0,0,0,.6)}
+.fr-num{font:800 50px/.9 var(--display)}
+.stars{display:flex;gap:2px;color:var(--orange)}
+.stars .ic{width:16px;height:16px}
+.f-rating span{display:block;font-size:12.5px;color:rgba(255,255,255,.72);margin-top:5px;white-space:nowrap}
+
+.badge-rot{position:absolute;left:-56px;top:-50px;z-index:4;width:132px;height:132px;border-radius:50%;background:var(--orange);color:var(--navy-950);display:grid;place-items:center;box-shadow:0 24px 44px -16px rgba(255,107,26,.7),inset 0 -4px 0 rgba(0,0,0,.1);transition:transform .5s var(--spring)}
+.badge-rot:hover{transform:scale(1.06) rotate(-4deg)}
+.badge-rot .ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 24s linear infinite}
+.badge-rot .ring text{font:700 10.5px var(--sans);letter-spacing:.1em;fill:var(--navy-950)}
+.badge-rot .core{position:relative;display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--navy-950);color:#fff;font:800 22px/1 var(--display);letter-spacing:.02em}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* hero load choreography */
+.js .h-in{animation:rise 1s var(--ease) both;animation-delay:var(--d,0s)}
+.js .hero h1 .ln>span{animation:lineUp 1.05s var(--ease) both;animation-delay:var(--d,0s)}
+.js .hero h1 .uline path{stroke-dasharray:1;stroke-dashoffset:1;animation:dash 1s var(--ease) 1.05s forwards}
+.js .hero-photo{animation:clipIn 1.3s var(--ease) .25s both}
+.js .hero-photo img{animation:settle 2.4s var(--ease) .25s both}
+.js .beam{animation:fadeIn 1s ease .9s both,beam 7s linear infinite}
+.js .f-dispatch{animation:rise 1s var(--ease) .85s both,bob 7s ease-in-out 1.85s infinite}
+.js .f-rating{animation:rise 1s var(--ease) 1s both,bob 8s ease-in-out 2s infinite reverse}
+.js .badge-rot{animation:pop .9s var(--spring) .7s both}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes lineUp{from{transform:translateY(105%)}to{transform:none}}
+@keyframes dash{to{stroke-dashoffset:0}}
+@keyframes clipIn{from{clip-path:inset(10% 10% 10% 10% round 28px);opacity:0}to{clip-path:inset(0 0 0 0 round 28px);opacity:1}}
+@keyframes settle{from{transform:scale(1.14)}to{transform:scale(1.02)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:scale(.4) rotate(-40deg)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+@media (max-width:1180px){
+  .hero .wrap{gap:56px}
+  .f-dispatch{left:-30px}
+  .f-rating{right:-16px}
+}
+@media (max-width:999px){
+  .hero .wrap{grid-template-columns:1fr;gap:72px;padding-block:44px 92px}
+  .hero-visual{justify-self:center;max-width:620px;height:520px}
+  .f-dispatch{left:24px}
+  .f-rating{right:24px}
+  .badge-rot{left:auto;right:-14px;top:-44px}
+}
+@media (max-width:599px){
+  .hero .wrap{padding-block:34px 84px;gap:64px}
+  .hero h1{margin:22px 0 20px}
+  .hero-ctas{margin-top:28px}
+  .hero-ctas .btn{width:100%}
+  .hero-checks{margin-top:28px;gap:12px 20px;font-size:14px}
+  .hero-visual{height:400px}
+  .beam{inset:-9px;border-radius:32px}
+  .tick{display:none}
+  .hero-photo{border-radius:24px}
+  .f-dispatch{left:12px;right:12px;width:auto;bottom:-30px}
+  .f-rating{right:12px;top:14px;padding:11px 14px;gap:10px}
+  .fr-num{font-size:38px}
+  .f-rating span{font-size:11.5px}
+  .stars .ic{width:13px;height:13px}
+  .badge-rot{width:100px;height:100px;left:-6px;right:auto;top:-34px}
+  .badge-rot .core{width:48px;height:48px;font-size:17px}
+  .badge-rot .ring text{font-size:10.5px}
+  .photo-cap{display:none}
+}
+
+/* ---------- trust strip ---------- */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.tb{display:flex;align-items:center;gap:14px;padding:30px 22px}
+.tb + .tb{border-left:1px solid var(--line)}
+.tb:first-child{padding-left:0}
+.tb-ic{display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--orange-50);color:var(--orange-700);flex:none;transition:transform .4s var(--spring),background-color .3s,color .3s}
+.tb:hover .tb-ic{transform:rotate(-8deg) scale(1.08);background:var(--orange);color:var(--navy-950)}
+.tb-ic .ic{width:22px;height:22px}
+.tb b{display:block;font-size:15px;font-weight:700;color:var(--ink);line-height:1.25}
+.tb span{display:block;font-size:13px;color:var(--muted);line-height:1.35;margin-top:3px}
+@media (max-width:1100px){
+  .trust-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tb{padding:22px 18px}
+  .tb:first-child{padding-left:18px}
+  .tb + .tb{border-left:0}
+  .tb{border-bottom:1px solid var(--line)}
+}
+@media (max-width:699px){
+  .trust-grid{grid-template-columns:1fr 1fr;padding-block:8px}
+  .tb{padding:16px 0;gap:12px;align-items:flex-start;border-bottom:0}
+  .tb:first-child{padding-left:0}
+  .tb:nth-child(5){grid-column:1 / -1}
+  .tb-ic{width:40px;height:40px}
+  .tb-ic .ic{width:20px;height:20px}
+  .tb b{font-size:14px}
+  .tb span{font-size:12.5px}
+}
+
+/* ---------- sections ---------- */
+.sec{padding-block:clamp(76px,9vw,124px)}
+.sec-paper{background:var(--paper)}
+.sec-navy{background:var(--navy-900);color:rgba(255,255,255,.75)}
+.sec-navy h2,.sec-navy h3{color:#fff}
+.sec h2{font-size:clamp(40px,8.6vw,68px);line-height:.93;text-wrap:balance}
+.sec-head{display:grid;gap:22px;margin-bottom:clamp(40px,5vw,64px)}
+.sec-head.split{grid-template-columns:1fr}
+.sec-lede{font-size:clamp(16.5px,1.4vw,18px);line-height:1.65;color:var(--muted);max-width:34em}
+.sec-navy .sec-lede{color:rgba(255,255,255,.7)}
+@media (min-width:900px){
+  .sec-head.split{grid-template-columns:1.1fr .9fr;align-items:end;gap:48px}
+  .sec-head.split .sec-lede{justify-self:end}
+}
+
+.js .reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media (min-width:640px){.svc-grid{grid-template-columns:1fr 1fr;gap:20px}}
+@media (min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr);gap:24px}}
+.svc{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 28px 26px;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .3s,opacity .9s var(--ease)}
+.svc::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+.svc:hover,.svc:focus-within{transform:translateY(-6px);box-shadow:0 34px 60px -32px rgba(12,31,64,.45);border-color:transparent}
+.svc:hover::before,.svc:focus-within::before{transform:scaleX(1)}
+.js .svc.reveal.in:hover{transform:translateY(-6px)}
+.svc-ic{display:grid;place-items:center;width:64px;height:64px;border-radius:18px;background:var(--orange-50);color:var(--orange-700);margin-bottom:26px;transition:background-color .35s,color .35s,transform .5s var(--spring)}
+.svc:hover .svc-ic,.svc:focus-within .svc-ic{background:var(--orange);color:var(--navy-950);transform:rotate(-6deg)}
+.svc-ic svg{width:36px;height:36px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.svc h3{font-size:30px;line-height:1;margin-bottom:12px}
+.svc p{font-size:15.5px;line-height:1.6;color:var(--muted)}
+.svc-ft{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:24px}
+.svc-price{font-size:14px;color:var(--muted)}
+.svc-price b{font:800 24px/1 var(--display);color:var(--ink);letter-spacing:.02em;margin-left:3px}
+.svc-link{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--ink);min-height:44px}
+.svc-link::after{content:"";position:absolute;inset:0;border-radius:22px}
+.svc-link .ic{width:18px;height:18px;transition:transform .35s var(--ease)}
+.svc:hover .svc-link .ic{transform:translateX(5px)}
+.svc-emg{background:var(--navy-900);border-color:var(--navy-900);color:rgba(255,255,255,.72)}
+.svc-emg h3,.svc-emg .svc-link,.svc-emg .svc-price b{color:#fff}
+.svc-emg p,.svc-emg .svc-price{color:rgba(255,255,255,.7)}
+.svc-emg .svc-ic{background:rgba(255,107,26,.16);color:var(--orange-hi)}
+.svc-emg::after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;background:repeating-linear-gradient(-45deg,var(--orange) 0 12px,var(--navy-950) 12px 24px);opacity:.9}
+.svc-emg .live-tag{position:absolute;top:30px;right:26px;display:flex;align-items:center;gap:8px;font:700 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#4ADE80}
+/* icon micro-animations */
+.svc .drop{transform-origin:23px 26px}
+.svc:hover .drop,.svc:focus-within .drop{animation:drop 1.2s var(--ease) infinite}
+@keyframes drop{0%{transform:translateY(-4px);opacity:0}25%{opacity:1}100%{transform:translateY(6px);opacity:0}}
+.svc .swirl{transform-origin:16px 16px}
+.svc:hover .swirl,.svc:focus-within .swirl{animation:spin 1.3s linear infinite}
+.svc .flame{transform-origin:16px 21.5px}
+.svc:hover .flame,.svc:focus-within .flame{animation:flicker .45s ease-in-out infinite alternate}
+@keyframes flicker{from{transform:scale(1,1)}to{transform:scale(.86,1.18)}}
+.svc .draw{stroke-dasharray:1;stroke-dashoffset:0}
+.svc:hover .draw,.svc:focus-within .draw{animation:drawIn 1.3s var(--ease) both}
+@keyframes drawIn{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.svc:hover .drip,.svc:focus-within .drip{animation:drip 1s ease-in infinite}
+@keyframes drip{0%{transform:translateY(-5px);opacity:0}30%{opacity:1}100%{transform:translateY(5px);opacity:0}}
+.svc .siren{transform-origin:16px 26px}
+.svc:hover .siren,.svc:focus-within .siren{animation:shake .5s ease-in-out infinite}
+.svc:hover .rays,.svc:focus-within .rays{animation:blink .7s steps(2,jump-none) infinite}
+@keyframes shake{0%,100%{transform:rotate(0)}25%{transform:rotate(-7deg)}75%{transform:rotate(7deg)}}
+@keyframes blink{0%{opacity:1}100%{opacity:.15}}
+
+/* ---------- stats ---------- */
+.stats{position:relative;background:var(--navy-950);color:#fff;overflow:clip;isolation:isolate;padding-block:clamp(64px,8vw,104px)}
+.stats .topo{position:absolute;inset:0;width:100%;height:100%;color:rgba(255,255,255,.05);z-index:-1}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:8px 32px}
+.stat + .stat{border-left:1px solid rgba(255,255,255,.1)}
+.stat:first-child{padding-left:0}
+.stat-n{display:flex;align-items:baseline;gap:6px;font:800 clamp(56px,6.4vw,92px)/.9 var(--display);color:#fff;font-variant-numeric:tabular-nums;letter-spacing:.005em}
+.stat-n em{font-style:normal;color:var(--orange);font-size:.55em}
+.stat p{margin-top:14px;font-size:15px;color:rgba(255,255,255,.66);max-width:16em}
+.stats-note{margin-top:42px;font-size:12.5px;color:rgba(255,255,255,.42);letter-spacing:.02em}
+@media (max-width:899px){
+  .stats-grid{grid-template-columns:1fr 1fr;gap:36px 0}
+  .stat{padding:4px 20px}
+  .stat:nth-child(odd){padding-left:0;border-left:0}
+  .stat:nth-child(3){border-left:0}
+}
+@media (max-width:420px){.stat{padding:4px 14px}.stat p{font-size:14px}}
+
+/* ---------- estimator ---------- */
+.est{display:grid;grid-template-columns:1fr;background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:0 50px 90px -50px rgba(12,31,64,.45);overflow:hidden}
+@media (min-width:980px){.est{grid-template-columns:minmax(0,1.22fr) minmax(0,1fr)}}
+.est-form{padding:clamp(24px,4vw,44px)}
+.est-step{border:0;margin:0;padding:0;min-width:0}
+.est-step + .est-step{margin-top:34px;padding-top:32px;border-top:1px dashed var(--line)}
+.est-step legend{display:flex;align-items:center;gap:12px;padding:0;margin-bottom:18px;font:800 24px/1 var(--display);text-transform:uppercase;color:var(--ink);letter-spacing:.01em}
+.est-step legend .n{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--navy-900);color:#fff;font:700 14px/1 var(--sans);transition:background-color .3s,color .3s}
+.est-step.done legend .n{background:var(--orange);color:var(--navy-950)}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:560px){.chips{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.opt{position:relative;display:block}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt-in{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:12px;height:100%;min-height:100px;padding:16px;border:1.5px solid var(--line);border-radius:16px;background:#fff;cursor:pointer;transition:border-color .25s,background-color .25s,transform .35s var(--ease),box-shadow .35s var(--ease)}
+.opt-in:hover{border-color:#B7C2D4;transform:translateY(-2px)}
+.opt-ic{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--paper);color:var(--navy-700);transition:background-color .25s,color .25s,transform .45s var(--spring)}
+.opt-ic .ic{width:21px;height:21px}
+.opt-in b{font-size:15px;font-weight:700;color:var(--ink);line-height:1.25}
+.opt-in small{display:block;font-size:12.5px;color:var(--muted);line-height:1.3;margin-top:2px}
+.opt-in::after{content:"";position:absolute;top:12px;right:12px;width:22px;height:22px;border-radius:50%;background:var(--orange) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23050E1D' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/13px no-repeat;transform:scale(0);transition:transform .45s var(--spring)}
+.opt input:checked + .opt-in{border-color:var(--orange);background:var(--orange-50);box-shadow:0 14px 30px -18px rgba(255,107,26,.6)}
+.opt input:checked + .opt-in::after{transform:scale(1)}
+.opt input:checked + .opt-in .opt-ic{background:var(--orange);color:var(--navy-950);transform:rotate(-8deg)}
+.opt input:focus-visible + .opt-in{outline:3px solid var(--orange);outline-offset:2px}
+.seg{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:480px){.seg{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.seg .opt-in{min-height:0;gap:4px;padding:16px 16px 15px}
+.seg .opt-in b{font:800 22px/1 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.seg .opt-in small{font-size:13px}
+.seg .save{color:var(--green);font-weight:600}
+
+.est-out{position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:center;min-height:460px;padding:clamp(28px,4vw,44px);background:var(--navy-900);color:#fff;overflow:hidden}
+.est-out .topo{position:absolute;inset:0;width:100%;height:100%;color:rgba(255,255,255,.06);z-index:-1}
+.est-out::before{content:"";position:absolute;width:520px;height:520px;right:-220px;top:-220px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,26,.25),rgba(255,107,26,0) 65%);z-index:-1}
+.eo{display:none}
+.est-out[data-state="empty"] .eo-empty,.est-out[data-state="partial"] .eo-empty,.est-out[data-state="result"] .eo-result,.est-out[data-state="done"] .eo-done{display:block;animation:rise .6s var(--ease) both}
+.eo-empty{text-align:center;max-width:320px;margin-inline:auto}
+.gauge{width:150px;margin:0 auto 26px;color:rgba(255,255,255,.18)}
+.gauge .needle{transform-origin:75px 80px;transition:transform 1s var(--spring)}
+.est-out[data-state="empty"] .gauge .needle{transform:rotate(-62deg)}
+.est-out[data-state="partial"] .gauge .needle{transform:rotate(-8deg)}
+.gauge .arc{color:var(--orange)}
+.eo-empty h3{font-size:30px;color:#fff;margin-bottom:10px}
+.eo-empty p{color:rgba(255,255,255,.66);font-size:15.5px}
+.eo-progress{display:flex;justify-content:center;gap:8px;margin-top:22px}
+.eo-progress i{width:36px;height:5px;border-radius:5px;background:rgba(255,255,255,.14);transition:background-color .4s}
+.eo-progress i.on{background:var(--orange)}
+.eo-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.eo-label{font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.eo-tag{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;background:rgba(255,107,26,.15);color:var(--orange-hi);font-size:12.5px;font-weight:700}
+.eo-for{margin-top:14px;font-size:16px;font-weight:600;color:#fff}
+.eo-range{display:flex;align-items:baseline;flex-wrap:nowrap;gap:.12em;margin:8px 0 22px;font:800 clamp(48px,12vw,74px)/1 var(--display);letter-spacing:.005em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.eo-range.long{font-size:clamp(38px,9vw,58px)}
+.eo-range .dash{color:var(--orange);margin:0 .08em}
+.eo-bar-track{position:relative;height:10px;border-radius:10px;background:rgba(255,255,255,.1);overflow:hidden}
+.eo-fill{position:absolute;top:0;bottom:0;left:0;width:0;border-radius:10px;background:linear-gradient(90deg,var(--orange),#FFB07F);transition:left .9s var(--ease),width .9s var(--ease)}
+.eo-scale{display:flex;justify-content:space-between;margin-top:8px;font-size:12px;color:rgba(255,255,255,.45);font-variant-numeric:tabular-nums}
+.eo-meta{display:grid;gap:12px;margin:24px 0 0;padding:20px 0 0;border-top:1px solid rgba(255,255,255,.1)}
+.eo-meta div{display:grid;grid-template-columns:84px 1fr;gap:12px;font-size:14.5px}
+.eo-meta dt{color:rgba(255,255,255,.5);font-weight:500}
+.eo-meta dd{margin:0;color:#fff;font-weight:500}
+.eo-note{display:flex;gap:10px;margin:22px 0;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.75)}
+.eo-note .ic{width:18px;height:18px;color:var(--orange-hi);margin-top:1px}
+.eo-note b{color:#fff}
+.eo-done{text-align:center;max-width:360px;margin-inline:auto}
+.eo-done:focus{outline:none}
+.done-check{width:88px;height:88px;margin:0 auto 22px}
+.done-check circle{fill:rgba(34,197,94,.14);stroke:#22C55E;stroke-width:3;stroke-dasharray:1;stroke-dashoffset:1;animation:dash .8s var(--ease) .1s forwards}
+.done-check path{fill:none;stroke:#4ADE80;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:dash .5s var(--ease) .65s forwards}
+.eo-done h3{font-size:36px;color:#fff}
+.eo-done .sum{margin-top:12px;font-weight:600;color:#fff}
+.eo-done .ref{display:inline-block;margin-top:10px;padding:6px 12px;border-radius:8px;background:rgba(255,255,255,.08);font:600 13px/1.4 ui-monospace,Consolas,monospace;letter-spacing:.06em;color:var(--orange-hi)}
+.eo-done .demo{margin:18px 0 24px;font-size:14px;color:rgba(255,255,255,.62)}
+
+/* ---------- why + steps ---------- */
+.why{display:grid;grid-template-columns:1fr;gap:56px;align-items:center}
+@media (min-width:980px){.why{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:88px}}
+.why-media{position:relative;max-width:560px;width:100%;justify-self:center}
+.why-photo{position:relative;margin:0;aspect-ratio:4/5;border-radius:26px;overflow:hidden;background:linear-gradient(150deg,var(--navy-600),var(--navy-900));box-shadow:0 50px 80px -50px rgba(12,31,64,.6)}
+.why-photo img{width:100%;height:100%;object-fit:cover;object-position:40% 50%;transition:transform 1.4s var(--ease)}
+.why-media:hover .why-photo img{transform:scale(1.04)}
+.why-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,22,49,0) 55%,rgba(8,22,49,.6))}
+.why-badge{position:absolute;right:-22px;bottom:44px;display:flex;align-items:center;gap:14px;padding:18px 22px;border-radius:20px;background:var(--orange);color:var(--navy-950);box-shadow:0 30px 50px -24px rgba(194,65,12,.7)}
+.why-badge b{font:800 54px/.85 var(--display)}
+.why-badge span{font:700 13px/1.25 var(--sans);text-transform:uppercase;letter-spacing:.08em}
+.why-dim{position:absolute;left:-30px;top:0;bottom:0;width:14px;color:#AFBBCD}
+.why-dim::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:1.5px;background:currentColor}
+.why-dim::after{content:"";position:absolute;left:0;right:0;top:0;bottom:0;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor}
+.why-dim span{position:absolute;left:-5px;top:50%;transform:translate(-50%,-50%) rotate(-90deg);font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;background:var(--paper);padding:0 8px;color:var(--muted)}
+@media (max-width:1100px){.why-dim{display:none}}
+@media (max-width:599px){.why-badge{right:12px;bottom:16px;padding:14px 16px}.why-badge b{font-size:42px}}
+.promises{display:grid;gap:8px;margin-top:34px}
+.promise{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.promise:last-child{border-bottom:0}
+.p-ic{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:#fff;color:var(--orange-700);border:1px solid var(--line);flex:none;box-shadow:0 10px 20px -16px rgba(12,31,64,.4)}
+.p-ic .ic{width:22px;height:22px}
+.promise h3{font-size:24px;margin-bottom:6px}
+.promise p{font-size:15.5px;color:var(--muted)}
+
+.how{margin-top:clamp(72px,9vw,120px)}
+.how-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 40px;margin-bottom:44px}
+.how-head h2{font-size:clamp(34px,6vw,52px)}
+.how-head p{color:var(--muted);max-width:26em}
+.steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:s}
+.steps::before,.steps::after{content:"";position:absolute;left:34px;right:calc(33.333% - 34px);top:33px;height:3px;border-radius:3px;background:#D5DCE7}
+.steps::after{background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform 1.6s var(--ease) .2s}
+.steps.in::after{transform:scaleX(1)}
+.step{position:relative;z-index:1}
+.st-n{display:grid;place-items:center;width:68px;height:68px;border-radius:50%;background:#fff;border:3px solid #D5DCE7;font:800 26px/1 var(--display);color:var(--ink);transition:background-color .5s,border-color .5s,color .5s,transform .6s var(--spring)}
+.steps.in .step:nth-child(1) .st-n{transition-delay:.2s}
+.steps.in .step:nth-child(2) .st-n{transition-delay:.9s}
+.steps.in .step:nth-child(3) .st-n{transition-delay:1.6s}
+.steps.in .st-n{background:var(--orange);border-color:var(--orange);color:var(--navy-950)}
+.step:hover .st-n{transform:scale(1.08)}
+.step h3{font-size:27px;margin:24px 0 10px}
+.step p{font-size:15.5px;color:var(--muted);max-width:22em}
+@media (max-width:799px){
+  .steps{grid-template-columns:1fr;gap:30px}
+  .steps::before,.steps::after{left:33px;right:auto;top:34px;bottom:34px;width:3px;height:auto}
+  .steps::after{transform:scaleY(0);transform-origin:top}
+  .steps.in::after{transform:scaleY(1)}
+  .step{display:grid;grid-template-columns:68px 1fr;gap:0 20px}
+  .step h3{margin:6px 0 8px;font-size:25px}
+  .step p{grid-column:2}
+  .st-n{grid-row:span 2}
+}
+
+/* ---------- service area ---------- */
+.area{display:grid;grid-template-columns:1fr;gap:52px;align-items:center}
+@media (min-width:980px){.area{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px}}
+.zip{margin-top:34px}
+.zip-label{display:block;font-weight:700;color:var(--ink);font-size:15px;margin-bottom:10px}
+.zip-field{display:flex;align-items:center;gap:8px;padding:7px 7px 7px 16px;border:2px solid var(--line);border-radius:16px;background:#fff;transition:border-color .25s,box-shadow .25s;max-width:460px}
+.zip-field:focus-within{border-color:var(--navy-700);box-shadow:0 0 0 5px rgba(26,55,101,.1)}
+.zip-field > .ic{width:22px;height:22px;color:var(--orange-700)}
+.zip-field input{flex:1 1 0;width:0;min-width:0;height:50px;border:0;outline:0;background:transparent;font:700 22px/1 var(--display);letter-spacing:.14em;color:var(--ink)}
+.zip-field input::placeholder{color:#A9B4C6;letter-spacing:.06em;font-weight:600}
+.zip-field .btn{min-height:50px;padding:0 22px;border-radius:11px}
+.zip-try{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px;font-size:13.5px;color:var(--muted)}
+.zip-try button{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:600;font-size:13px;color:var(--ink);min-height:36px;transition:border-color .2s,background-color .2s}
+.zip-try button:hover{border-color:var(--orange);background:var(--orange-50)}
+.zip-out{min-height:96px;margin-top:20px;max-width:460px}
+.zr{display:flex;gap:16px;align-items:flex-start;padding:18px 20px;border-radius:18px;animation:rise .55s var(--ease) both}
+.zr strong{display:block;font:800 26px/1 var(--display);text-transform:uppercase;letter-spacing:.01em;margin-bottom:6px}
+.zr span{display:block;font-size:14.5px;line-height:1.5}
+.zr a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.zr-ok{background:var(--green-50);border:1px solid #BDE8CC;color:#14532D}
+.zr-ok strong{color:#15803D}
+.zr-ok .go{display:inline-flex;align-items:center;gap:6px;margin-top:10px;text-decoration:none;color:#14532D}
+.zr-ok .go .ic{width:16px;height:16px}
+.zr-check{width:50px;height:50px;flex:none}
+.zr-check circle{fill:#22C55E;stroke:none;transform-origin:26px 26px;animation:pop .6s var(--spring) both}
+.zr-check path{fill:none;stroke:#fff;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:dash .45s var(--ease) .3s forwards}
+.zr-no{background:var(--orange-50);border:1px solid var(--orange-100);color:#7C2D12}
+.zr-no strong{color:var(--orange-700)}
+.zr-ic{display:grid;place-items:center;width:50px;height:50px;border-radius:50%;background:var(--orange);color:var(--navy-950);flex:none;animation:pop .6s var(--spring) both}
+.zr-ic .ic{width:22px;height:22px}
+.zr-hint{font-size:14px;color:var(--muted);padding:6px 2px}
+.cities{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.cities li{padding:7px 13px;border-radius:999px;background:var(--paper);font-size:13.5px;font-weight:600;color:var(--ink)}
+
+.map{position:relative;border-radius:28px;background:var(--navy-900);overflow:hidden;box-shadow:0 50px 90px -50px rgba(12,31,64,.7);isolation:isolate}
+.map-in{position:relative;aspect-ratio:6/5}
+.map svg.base{position:absolute;inset:0;width:100%;height:100%}
+.map .contour{fill:none;stroke:rgba(255,255,255,.08);stroke-width:1.2}
+.map .zone{fill:rgba(255,107,26,.09);stroke:var(--orange);stroke-width:2;stroke-dasharray:8 8;animation:march 30s linear infinite}
+@keyframes march{to{stroke-dashoffset:-320}}
+.map .hwy{fill:none;stroke:rgba(255,255,255,.2);stroke-width:3;stroke-linecap:round}
+.map .route{fill:none;stroke:rgba(255,134,64,.7);stroke-width:2;stroke-dasharray:3 7;stroke-linecap:round;animation:march 12s linear infinite}
+.map .shield rect{fill:#fff}
+.map .shield text{font:800 12px var(--sans);fill:var(--navy-900);text-anchor:middle}
+.city{position:absolute;display:flex;align-items:center;gap:9px;transform:translate(-9px,-50%);padding:6px 4px;font:600 14px/1.1 var(--sans);color:#fff;white-space:nowrap;border-radius:8px;cursor:pointer}
+.city i{position:relative;width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.14);flex:none;transition:background-color .3s}
+.city i::before{content:"";position:absolute;inset:5px;border-radius:50%;background:#fff;transition:background-color .3s}
+.city i::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--orange);opacity:0}
+.city:hover i::before{background:var(--orange)}
+.city.l{flex-direction:row-reverse;transform:translate(calc(-100% + 9px),-50%)}
+.city.hub i{width:26px;height:26px;background:rgba(255,107,26,.25)}
+.city.hub i::before{inset:6px;background:var(--orange)}
+.city.hub i::after{animation:ring 2.4s var(--ease) infinite;opacity:1}
+.city.hub{transform:translate(-13px,-50%)}
+.city small{display:block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-hi);margin-top:3px}
+.city.hit i{background:rgba(34,197,94,.3)}
+.city.hit i::before{background:#22C55E}
+.city.hit i::after{border-color:#22C55E;animation:ring 1.6s var(--ease) infinite;opacity:1}
+.city.hit span{color:#4ADE80}
+@keyframes ring{0%{transform:scale(1);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+.map-legend{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;padding:16px 22px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;color:rgba(255,255,255,.55)}
+.map-legend span{display:inline-flex;align-items:center;gap:8px}
+.map-legend i{width:14px;height:10px;border-radius:3px;border:1.5px dashed var(--orange);background:rgba(255,107,26,.15)}
+.compass{position:absolute;right:20px;top:18px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.18);font:800 15px/1 var(--display);color:#fff}
+.compass::before{content:"";position:absolute;top:-6px;left:50%;margin-left:-5px;border:5px solid transparent;border-bottom:7px solid var(--orange);border-top:0}
+@media (max-width:599px){.city{font-size:12.5px;gap:7px}.city small{font-size:9.5px}.compass{width:36px;height:36px;font-size:13px;right:14px;top:14px}}
+
+/* ---------- reviews ---------- */
+.rv-head{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:44px}
+@media (min-width:900px){.rv-head{grid-template-columns:1fr auto auto;align-items:end;gap:48px}}
+.rv-sum{display:flex;align-items:center;gap:16px}
+.rv-sum .big{font:800 64px/.85 var(--display);color:#fff}
+.rv-sum span{display:block;font-size:13.5px;color:rgba(255,255,255,.62);margin-top:6px}
+.rv-sum .stars .ic{width:18px;height:18px}
+.rv-nav{display:flex;gap:10px}
+.rv-btn{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;border:1.5px solid rgba(255,255,255,.22);color:#fff;transition:background-color .25s,border-color .25s,color .25s,transform .3s var(--ease),opacity .25s}
+.rv-btn:hover:not(:disabled){background:var(--orange);border-color:var(--orange);color:var(--navy-950);transform:scale(1.06)}
+.rv-btn:disabled{opacity:.3;cursor:default}
+.rv-btn .ic{width:22px;height:22px}
+.rv-vp{overflow:hidden;touch-action:pan-y;cursor:grab;margin-inline:-8px;padding:8px;-webkit-user-select:none;user-select:none}
+.rv-vp.dragging{cursor:grabbing}
+.rv-track{display:flex;gap:24px;transition:transform .7s var(--ease);will-change:transform}
+.rv-card{flex:0 0 calc((100% - 48px)/3);display:flex;flex-direction:column;background:#fff;border-radius:22px;padding:30px 28px 26px;color:var(--body);box-shadow:0 30px 60px -40px rgba(0,0,0,.6);transition:transform .5s var(--ease)}
+.rv-card .stars .ic{width:18px;height:18px}
+.rv-card blockquote{margin:18px 0 26px;font-size:17px;line-height:1.6;color:var(--ink)}
+.rv-card blockquote::before{content:"\201C";display:block;font:800 64px/.6 var(--display);color:var(--orange);height:26px}
+.rv-foot{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:20px;border-top:1px solid var(--line);flex-wrap:wrap}
+.rv-av{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--c,#1A3765);color:#fff;font:700 14px/1 var(--sans);flex:none}
+.rv-foot b{display:block;color:var(--ink);font-size:15px;line-height:1.2}
+.rv-foot span{display:block;font-size:13px;color:var(--muted)}
+.rv-tag{margin-left:auto;padding:6px 10px;border-radius:999px;background:var(--orange-50);color:var(--orange-700);font-size:12px;font-weight:700;white-space:nowrap}
+.rv-dots{display:flex;justify-content:center;gap:8px;margin-top:36px}
+.rv-dots button{position:relative;width:12px;height:12px;border-radius:12px;background:rgba(255,255,255,.22);transition:width .45s var(--ease),background-color .3s}
+.rv-dots button::after{content:"";position:absolute;inset:-12px -4px}
+.rv-dots button[aria-current="true"]{width:36px;background:var(--orange)}
+.rv-note{text-align:center;margin-top:20px;font-size:12.5px;color:rgba(255,255,255,.42)}
+
+/* ---------- faq ---------- */
+.faq{display:grid;grid-template-columns:1fr;gap:40px}
+@media (min-width:980px){.faq{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:80px}}
+.faq-aside p{margin-top:20px;color:var(--muted);max-width:24em}
+.faq-aside a{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px}
+.acc{border-top:1px solid var(--line)}
+.acc-item{border-bottom:1px solid var(--line)}
+.acc-btn{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;padding:24px 0;text-align:left;font:800 clamp(22px,2.4vw,27px)/1.1 var(--display);text-transform:uppercase;color:var(--ink);letter-spacing:.01em;transition:color .2s}
+.acc-btn:hover{color:var(--orange-700)}
+.pm{position:relative;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);flex:none;transition:background-color .3s,border-color .3s,transform .5s var(--ease)}
+.pm::before,.pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;margin:-1px 0 0 -7px;background:var(--ink);border-radius:2px;transition:transform .4s var(--ease),background-color .3s}
+.pm::after{transform:rotate(90deg)}
+.acc-item.open .pm{background:var(--orange);border-color:var(--orange);transform:rotate(180deg)}
+.acc-item.open .pm::after{transform:rotate(0)}
+.acc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.acc-item.open .acc-panel{grid-template-rows:1fr}
+.acc-panel > div{overflow:hidden;visibility:hidden;transition:visibility .5s}
+.acc-item.open .acc-panel > div{visibility:visible}
+.acc-panel p{padding:0 56px 26px 0;color:var(--muted);font-size:16px;max-width:40em}
+
+/* ---------- CTA ---------- */
+.cta{position:relative;background:var(--orange);color:var(--navy-950);overflow:clip;isolation:isolate}
+.hazard{height:14px;background:repeating-linear-gradient(-45deg,var(--navy-950) 0 18px,var(--orange) 18px 36px)}
+.cta .topo{position:absolute;inset:0;width:100%;height:100%;color:rgba(5,14,29,.08);z-index:-1}
+.cta-in{display:grid;grid-template-columns:1fr;gap:32px;align-items:center;padding-block:clamp(64px,8vw,104px)}
+@media (min-width:980px){.cta-in{grid-template-columns:1.2fr auto;gap:56px}}
+.cta h2{font-size:clamp(46px,9.4vw,96px);line-height:.88;color:var(--navy-950)}
+.cta p{margin-top:20px;font-size:18px;font-weight:500;max-width:32em;color:rgba(5,14,29,.82)}
+.cta-actions{display:flex;flex-direction:column;gap:12px;min-width:min(100%,330px)}
+.cta-actions .btn{width:100%}
+.cta-actions small{display:block;text-align:center;font-size:13px;font-weight:600;color:rgba(5,14,29,.7)}
+
+/* ---------- footer ---------- */
+.foot{background:var(--navy-950);color:rgba(255,255,255,.62);font-size:14.5px;padding:72px 0 calc(32px + var(--bar))}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:40px}
+@media (min-width:700px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:48px}}
+.foot h4{font:800 18px/1 var(--display);letter-spacing:.08em;color:#fff;margin-bottom:18px}
+.foot li{margin-bottom:10px}
+.foot a:hover{color:#fff}
+.foot .about{margin-top:18px;max-width:28em}
+.foot .lic{margin-top:16px;font-size:13px;color:rgba(255,255,255,.45)}
+.foot-contact a{display:flex;align-items:center;gap:10px}
+.foot-contact .ic{width:17px;height:17px;color:var(--orange)}
+.foot-contact .big{font:700 24px/1 var(--display);letter-spacing:.04em;color:#fff}
+.foot-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:56px;padding-top:26px;border-top:1px solid rgba(255,255,255,.08);font-size:13px;color:rgba(255,255,255,.45)}
+.foot-bot a{color:rgba(255,255,255,.75);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- mobile call bar + concept pill ---------- */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom));background:rgba(5,14,29,.94);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid rgba(255,255,255,.1)}
+.cb-call{flex:1;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;border-radius:12px;background:var(--orange);color:var(--navy-950);font-weight:700;box-shadow:inset 0 -2px 0 rgba(0,0,0,.14)}
+.cb-call .pulse{background:var(--navy-950)}
+.cb-t{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+.cb-call b{font-size:16.5px}
+.cb-call small{font-size:12px;font-weight:600;opacity:.78;white-space:nowrap}
+.cb-est{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 18px;border-radius:12px;border:1.5px solid rgba(255,255,255,.22);color:#fff;font-weight:600;font-size:15px}
+.cb-est .ic{width:18px;height:18px}
+@media (max-width:899px){.callbar{display:flex}}
+@media (max-width:359px){.cb-call small{display:none}}
+
+.concept-pill{position:fixed;left:16px;bottom:16px;z-index:70;display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 8px;border-radius:999px;background:rgba(5,14,29,.84);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.86);font-size:12.5px;font-weight:500;box-shadow:0 12px 30px -12px rgba(0,0,0,.6);transition:transform .3s var(--ease),border-color .3s}
+.concept-pill:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.4)}
+.concept-pill b{color:#fff;font-weight:700}
+.concept-pill .mk{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#fff;color:var(--navy-950)}
+.concept-pill .mk .ic{width:13px;height:13px;stroke-width:2.6}
+@media (min-width:900px){.concept-pill{left:20px;bottom:20px}}
+@media (max-width:899px){.concept-pill{bottom:calc(72px + 12px + env(safe-area-inset-bottom));left:12px}}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.001ms!important;transition-delay:0s!important}
+  .js .reveal{opacity:1;transform:none}
+  .rv-track{transition:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2.5"/><path d="M8 6.5h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 18.5h.01M12 18.5h4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 4h14v12H1zM15 8h4l3.5 3.5V16H15z"/><circle cx="5.5" cy="18" r="2"/><circle cx="18.5" cy="18" r="2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M4 18 10 12l4 4 6-8"/><path d="M15 8h5v5"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3c3.5 4.6 6 8 6 11a6 6 0 0 1-12 0c0-3 2.5-6.4 6-11z"/></symbol>
+    <symbol id="i-drain" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7a5 5 0 0 1 5 5M12 17a5 5 0 0 1-5-5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-heater" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="17" rx="2.5"/><path d="M9 19.5v2M15 19.5v2"/><path d="M12 8.5c1.4 1.4 2 2.4 2 3.5a2 2 0 0 1-4 0c0-.8.4-1.4.9-1.9.1.7.5 1.1.9 1.3-.1-1 0-2 .2-2.9z"/></symbol>
+    <symbol id="i-toilet" viewBox="0 0 24 24"><path d="M6 3h5v8H6z"/><path d="M4 11h15c0 3.9-3.1 7-7 7h-2l.8 3H6.6l.6-3.4C5.3 16.4 4 14 4 11z"/></symbol>
+    <symbol id="i-pipes" viewBox="0 0 24 24"><path d="M2.5 7h6v10h7V7h6"/><path d="M2.5 4.5v5M21.5 4.5v5"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></symbol>
+  </defs>
+</svg>
+
+<div class="util">
+  <div class="wrap">
+    <div class="util-l">
+      <span><svg class="ic"><use href="#i-clock"/></svg><b>Open 24/7</b> for plumbing emergencies</span>
+      <span><svg class="ic"><use href="#i-pin"/></svg>Serving all of North County San Diego</span>
+    </div>
+    <div class="util-r">
+      <span><svg class="ic"><use href="#i-shield"/></svg>CA Lic. #000000 (demo)</span>
+      <a href="mailto:hello@example.com"><span><svg class="ic"><use href="#i-mail"/></svg>hello@example.com</span></a>
+    </div>
+  </div>
+</div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Ridgeline Plumbing and Drain, home">
+      <svg class="logo-mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="11" fill="#FF6B1A"/><path d="M8 26l8-10 5 6 5-8 10 12" fill="none" stroke="#081631" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 33c2.4 0 2.4-1.8 4.8-1.8s2.4 1.8 4.8 1.8 2.4-1.8 4.8-1.8 2.4 1.8 4.8 1.8 2.4-1.8 4.8-1.8" fill="none" stroke="#081631" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span class="logo-txt"><b>RIDGELINE</b><span>PLUMBING &amp; DRAIN</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#estimate">Pricing</a>
+      <a href="#why">Why us</a>
+      <a href="#area">Service area</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="call-btn" href="tel:+17605550188" aria-label="24/7 emergency line, call (760) 555-0188">
+        <span class="pulse" aria-hidden="true"></span>
+        <span class="ct"><small>24/7 Emergency</small><b>(760) 555-0188</b></span>
+      </a>
+      <a class="btn btn-primary btn-book" href="#estimate">Book a plumber</a>
+      <a class="call-sm" href="tel:+17605550188" aria-label="Call (760) 555-0188"><svg class="ic"><use href="#i-phone"/></svg></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg class="ic m"><use href="#i-menu"/></svg><svg class="ic x"><use href="#i-x"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="hero-grid"></div>
+    <svg class="hero-topo" viewBox="0 0 1440 520" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M-20 500C180 440 330 520 560 462S930 360 1460 420"/>
+      <path d="M-20 462C190 398 340 474 566 418S940 316 1460 378"/>
+      <path d="M-20 424C200 356 352 428 574 374S952 272 1460 336"/>
+      <path d="M-20 386C210 314 364 382 582 330S964 228 1460 294"/>
+      <path d="M-20 348C220 272 376 336 590 286S976 184 1460 252"/>
+      <path d="M-20 310C230 230 388 290 598 242S988 140 1460 210"/>
+      <path d="M-20 272C240 188 400 244 606 198S1000 96 1460 168"/>
+      <path d="M-20 234C250 146 412 198 614 154S1012 52 1460 126"/>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="chip-live h-in" style="--d:.05s"><span class="live" aria-hidden="true"></span>Plumbers on call now in North County</span>
+      <h1 id="hero-title">
+        <span class="ln"><span style="--d:.15s">Leak? Clog?</span></span>
+        <span class="ln"><span style="--d:.27s">No hot water?</span></span>
+        <span class="ln"><span style="--d:.39s" class="accent"><span class="uline">We’re on it.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14C70 6 170 4 297 9" pathLength="1" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span></span></span>
+      </h1>
+      <p class="lede h-in" style="--d:.55s">Licensed plumbers for <b>Escondido, San Marcos, Vista</b> and the rest of North County. You get a flat price before we start, and a truck at your door in about an hour.</p>
+      <div class="hero-ctas h-in" style="--d:.68s">
+        <a class="btn btn-primary btn-lg" href="tel:+17605550188"><svg class="ic"><use href="#i-phone"/></svg>Call (760) 555-0188</a>
+        <a class="btn btn-ghost btn-lg" href="#estimate">Instant estimate<svg class="ic ic-arrow"><use href="#i-arrow"/></svg></a>
+      </div>
+      <ul class="hero-checks h-in" style="--d:.8s">
+        <li><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span>Licensed &amp; insured</li>
+        <li><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span>Upfront flat-rate pricing</li>
+        <li><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span>1-year warranty</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual">
+      <div class="beam" aria-hidden="true"></div>
+      <span class="tick t1" aria-hidden="true"></span><span class="tick t2" aria-hidden="true"></span><span class="tick t3" aria-hidden="true"></span>
+      <figure class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1542013936693-884638332954?w=1100&q=80&auto=format&fit=crop" alt="A hand turning on a chrome kitchen faucet as water splashes into the sink" width="1100" height="1650" fetchpriority="high" onerror="this.remove()">
+      </figure>
+      <span class="photo-cap"><svg class="ic"><use href="#i-pin"/></svg>North County San Diego</span>
+      <a class="badge-rot" href="tel:+17605550188" aria-label="Call the 24/7 emergency line">
+        <svg class="ring" viewBox="0 0 132 132" aria-hidden="true"><defs><path id="circ" d="M66 66m-50 0a50 50 0 1 1 100 0a50 50 0 1 1-100 0"/></defs><text><textPath href="#circ" textLength="312" lengthAdjust="spacing">24/7 EMERGENCY • ON CALL NOW • </textPath></text></svg>
+        <span class="core">24/7</span>
+      </a>
+      <div class="float f-rating" aria-label="4.9 average rating from 380 plus local reviews">
+        <div class="fr-num">4.9</div>
+        <div>
+          <div class="stars" aria-hidden="true"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div>
+          <span>380+ local reviews</span>
+        </div>
+      </div>
+      <div class="float f-dispatch" aria-hidden="true">
+        <div class="fd-top"><span class="fd-live"><span class="live"></span>Live dispatch</span><span class="fd-eta">ETA <b>38</b> min</span></div>
+        <div class="fd-tech">
+          <span class="fd-av">MR<i></i></span>
+          <div><b>Marco R. is on the way</b><span>Licensed plumber · Van 12</span></div>
+        </div>
+        <div class="fd-track"><span class="fd-fill"></span><span class="fd-van"><svg class="ic"><use href="#i-truck"/></svg></span></div>
+        <div class="fd-steps"><span class="done">Booked</span><span class="on">En route</span><span>Fixed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust" aria-label="Why you can trust Ridgeline">
+  <div class="wrap trust-grid">
+    <div class="tb"><span class="tb-ic"><svg class="ic"><use href="#i-shield"/></svg></span><div><b>Licensed &amp; insured</b><span>CA Lic. #000000 (demo)</span></div></div>
+    <div class="tb"><span class="tb-ic"><svg class="ic"><use href="#i-user"/></svg></span><div><b>Background-checked</b><span>Our own employees, never subs</span></div></div>
+    <div class="tb"><span class="tb-ic"><svg class="ic"><use href="#i-tag"/></svg></span><div><b>Upfront pricing</b><span>Flat rate, approved by you</span></div></div>
+    <div class="tb"><span class="tb-ic"><svg class="ic"><use href="#i-award"/></svg></span><div><b>1-year warranty</b><span>On every repair we make</span></div></div>
+    <div class="tb"><span class="tb-ic"><svg class="ic"><use href="#i-home"/></svg></span><div><b>Clean-home promise</b><span>Boot covers &amp; drop cloths</span></div></div>
+  </div>
+</section>
+
+<section class="sec sec-paper" id="services" aria-labelledby="svc-title">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div>
+        <p class="eyebrow">What we fix</p>
+        <h2 id="svc-title">Every pipe, drain and drip in the house.</h2>
+      </div>
+      <p class="sec-lede">From a running toilet to a whole-home repipe, one licensed crew handles it, with a written flat price before any work starts.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal" style="--d:0s">
+        <div class="svc-ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 9h13a6 6 0 0 1 6 6v2"/><path d="M4 5.5v7"/><path d="M19.5 17h7"/><path class="drop" d="M23 21.5c-1.8 2.4-2.7 3.9-2.7 5a2.7 2.7 0 0 0 5.4 0c0-1.1-.9-2.6-2.7-5z"/></svg></div>
+        <h3>Leak repair</h3>
+        <p>Dripping, hissing or a mystery puddle. We pinpoint it with acoustic and thermal detection, then fix it clean.</p>
+        <div class="svc-ft"><span class="svc-price">From <b>$150</b></span><a class="svc-link" href="#estimate" data-problem="leak">Estimate<svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="svc reveal" style="--d:.08s">
+        <div class="svc-ic"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><g class="swirl"><path d="M16 8.5a7.5 7.5 0 0 1 7.5 7.5"/><path d="M16 23.5A7.5 7.5 0 0 1 8.5 16"/><path d="M12.4 13.2a4.2 4.2 0 0 1 6.3.4"/><path d="M19.6 18.8a4.2 4.2 0 0 1-6.3-.4"/></g><circle cx="16" cy="16" r="1.2"/></svg></div>
+        <h3>Drain clearing</h3>
+        <p>Kitchen, shower or main line. Cabling, hydro-jetting and camera inspection so it stays clear for good.</p>
+        <div class="svc-ft"><span class="svc-price">From <b>$125</b></span><a class="svc-link" href="#estimate" data-problem="drain">Estimate<svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="svc reveal" style="--d:.16s">
+        <div class="svc-ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="3" width="16" height="23" rx="3.5"/><path d="M12 26v3M20 26v3M12 8h8"/><path class="flame" d="M16 13.5c2 2 2.9 3.4 2.9 5a2.9 2.9 0 0 1-5.8 0c0-1.1.6-2 1.3-2.6.2 1 .6 1.5 1.3 1.8-.2-1.5-.1-2.8.3-4.2z"/></svg></div>
+        <h3>Water heaters</h3>
+        <p>Tank and tankless repair, flushes and same-day replacement. Cold shower this morning? Hot water tonight.</p>
+        <div class="svc-ft"><span class="svc-price">From <b>$225</b></span><a class="svc-link" href="#estimate" data-problem="heater">Estimate<svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="svc reveal" style="--d:0s">
+        <div class="svc-ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path class="draw" pathLength="1" d="M3 10h9v12h8V10h9"/><path d="M3 6.5v7M29 6.5v7"/><circle cx="12" cy="16" r="1.3"/><circle cx="20" cy="16" r="1.3"/></svg></div>
+        <h3>Repiping</h3>
+        <p>Whole-home PEX or copper repipes for aging galvanized lines, with tidy drywall patching. In-home consult is free.</p>
+        <div class="svc-ft"><span class="svc-price">Consult <b>Free</b></span><a class="svc-link" href="#estimate" data-problem="repipe">Estimate<svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="svc reveal" style="--d:.08s">
+        <div class="svc-ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 14h12a6 6 0 0 1 6 6v1"/><path d="M11 14V9M7 9h8"/><path d="M5 11v6"/><circle class="drip" cx="23" cy="25.5" r="1.7" fill="currentColor" stroke="none"/></svg></div>
+        <h3>Toilets &amp; fixtures</h3>
+        <p>Running toilets, faucets, disposals and shut-off valves. Small jobs are welcome, and priced just as honestly.</p>
+        <div class="svc-ft"><span class="svc-price">From <b>$125</b></span><a class="svc-link" href="#estimate" data-problem="toilet">Estimate<svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="svc svc-emg reveal" style="--d:.16s">
+        <span class="live-tag"><span class="live" aria-hidden="true"></span>Live now</span>
+        <div class="svc-ic"><svg viewBox="0 0 32 32" aria-hidden="true"><g class="siren"><path d="M9 22v-6a7 7 0 0 1 14 0v6"/><path d="M6 22h20v4.5H6z"/><path d="M16 13v4"/></g><g class="rays"><path d="M16 2.5v3M6.5 6.5l2 2M25.5 6.5l-2 2M3 15h3M26 15h3"/></g></svg></div>
+        <h3>24/7 emergencies</h3>
+        <p>Burst pipe or sewage backup at 2am? A live dispatcher answers day or night, holidays included.</p>
+        <div class="svc-ft"><span class="svc-price">Answered in <b>&lt;1 min</b></span><a class="svc-link" href="tel:+17605550188">Call now<svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Ridgeline by the numbers">
+  <svg class="topo" viewBox="0 0 1440 400" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+    <path d="M-20 360C200 300 420 380 700 320S1150 230 1460 280"/><path d="M-20 320C210 256 430 334 706 276S1160 186 1460 238"/><path d="M-20 280C220 212 440 288 712 232S1170 142 1460 196"/><path d="M-20 240C230 168 450 242 718 188S1180 98 1460 154"/><path d="M-20 200C240 124 460 196 724 144S1190 54 1460 112"/><path d="M-20 160C250 80 470 150 730 100S1200 10 1460 70"/>
+  </svg>
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat reveal" style="--d:0s"><div class="stat-n"><span class="count" data-to="1200">1,200</span><em>+</em></div><p>Jobs completed across North County</p></div>
+      <div class="stat reveal" style="--d:.1s"><div class="stat-n"><span class="count" data-to="4.9" data-dec="1">4.9</span><em>★</em></div><p>Average rating from local customers</p></div>
+      <div class="stat reveal" style="--d:.2s"><div class="stat-n"><span class="count" data-to="60">60</span><em>min</em></div><p>Typical emergency response time</p></div>
+      <div class="stat reveal" style="--d:.3s"><div class="stat-n"><span class="count" data-to="98">98</span><em>%</em></div><p>Of visits start inside the arrival window</p></div>
+    </div>
+    <p class="stats-note">Illustrative figures for this concept site.</p>
+  </div>
+</section>
+
+<section class="sec" id="estimate" aria-labelledby="est-title">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div>
+        <p class="eyebrow">Instant estimate</p>
+        <h2 id="est-title">Know the ballpark before we knock.</h2>
+      </div>
+      <p class="sec-lede">Two taps gets you a typical price range from similar North County jobs. Your plumber still confirms a flat price on-site, before any work begins.</p>
+    </div>
+
+    <div class="est reveal">
+      <form class="est-form" id="estForm" onsubmit="return false">
+        <fieldset class="est-step" id="stepP">
+          <legend><span class="n">1</span>What’s going on?</legend>
+          <div class="chips">
+            <label class="opt"><input type="radio" name="problem" value="leak"><span class="opt-in"><span class="opt-ic"><svg class="ic"><use href="#i-drop"/></svg></span><b>Leak</b></span></label>
+            <label class="opt"><input type="radio" name="problem" value="drain"><span class="opt-in"><span class="opt-ic"><svg class="ic"><use href="#i-drain"/></svg></span><b>Clogged drain</b></span></label>
+            <label class="opt"><input type="radio" name="problem" value="heater"><span class="opt-in"><span class="opt-ic"><svg class="ic"><use href="#i-heater"/></svg></span><b>Water heater</b></span></label>
+            <label class="opt"><input type="radio" name="problem" value="toilet"><span class="opt-in"><span class="opt-ic"><svg class="ic"><use href="#i-toilet"/></svg></span><b>Toilet</b></span></label>
+            <label class="opt"><input type="radio" name="problem" value="repipe"><span class="opt-in"><span class="opt-ic"><svg class="ic"><use href="#i-pipes"/></svg></span><b>Repipe consult</b></span></label>
+            <label class="opt"><input type="radio" name="problem" value="other"><span class="opt-in"><span class="opt-ic"><svg class="ic"><use href="#i-wrench"/></svg></span><b>Something else</b></span></label>
+          </div>
+        </fieldset>
+        <fieldset class="est-step" id="stepU">
+          <legend><span class="n">2</span>How soon do you need us?</legend>
+          <div class="seg">
+            <label class="opt"><input type="radio" name="urgency" value="today"><span class="opt-in"><b>Today</b><small>Same-day priority</small></span></label>
+            <label class="opt"><input type="radio" name="urgency" value="week"><span class="opt-in"><b>This week</b><small>Pick a 2-hour window</small></span></label>
+            <label class="opt"><input type="radio" name="urgency" value="flex"><span class="opt-in"><b>Flexible</b><small class="save">Save 10%</small></span></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="est-out" id="estOut" data-state="empty" aria-live="polite">
+        <svg class="topo" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+          <path d="M480 120c40 10 70 50 60 90s-60 60-100 50-60-50-50-90 50-60 90-50z"/><path d="M470 70c70 10 120 80 110 150s-100 110-170 95-110-80-95-150 85-105 155-95z"/><path d="M460 20c100 10 170 110 155 210s-140 160-240 140-160-110-140-210 125-150 225-140z"/><path d="M450-30c130 10 220 140 200 270S470 450 340 425 130 290 155 160 320-40 450-30z"/><path d="M440-80c160 10 270 170 245 330S470 520 310 490 90 320 120 160 280-90 440-80z"/>
+        </svg>
+        <div class="eo eo-empty">
+          <svg class="gauge" viewBox="0 0 150 90" aria-hidden="true"><path d="M12 80a63 63 0 0 1 126 0" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path class="arc" d="M12 80a63 63 0 0 1 30-53.6" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><g class="needle"><path d="M75 80V30" stroke="#fff" stroke-width="4" stroke-linecap="round"/></g><circle cx="75" cy="80" r="8" fill="#fff"/></svg>
+          <h3 id="eoEmptyTitle">Your price range lands here</h3>
+          <p id="eoEmptyText">Pick what’s going on to get started. No phone number or email needed.</p>
+          <div class="eo-progress" aria-hidden="true"><i id="pg1"></i><i id="pg2"></i></div>
+        </div>
+        <div class="eo eo-result">
+          <div class="eo-top"><span class="eo-label">Typical range</span><span class="eo-tag" id="eoTag">Standard</span></div>
+          <div class="eo-for" id="eoFor">Leak repair · This week</div>
+          <div class="eo-range" id="eoRange" aria-hidden="true"><span id="eoMin">$150</span><span class="dash">–</span><span id="eoMax">$450</span></div>
+          <p class="sr-only" id="eoSr"></p>
+          <div class="eo-bar">
+            <div class="eo-bar-track"><span class="eo-fill" id="eoFill"></span></div>
+            <div class="eo-scale"><span>$0</span><span id="eoScale">$1,000+</span></div>
+          </div>
+          <dl class="eo-meta">
+            <div><dt>Arrival</dt><dd id="eoArrive">2-hour window in 1–3 days</dd></div>
+            <div><dt>Includes</dt><dd id="eoInc">Leak detection, repair and standard fittings</dd></div>
+          </dl>
+          <p class="eo-note"><svg class="ic"><use href="#i-info"/></svg><span><b>Estimate only.</b> <span id="eoExtra"></span>Your plumber confirms a flat, upfront price on-site before any work begins.</span></p>
+          <button class="btn btn-primary btn-block" type="button" id="bookBtn">Book this<svg class="ic ic-arrow"><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="eo eo-done" id="eoDone" tabindex="-1">
+          <svg class="done-check" viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="40" pathLength="1"/><path d="M27 45l11 11 23-24" pathLength="1"/></svg>
+          <h3>Request received</h3>
+          <p class="sum" id="doneSum">Leak repair · Today</p>
+          <span class="ref" id="doneRef">REF RP-00000</span>
+          <p class="demo">This is a demo, so nothing was actually sent. On the live site, a Ridgeline dispatcher would text you within 10 minutes to lock in a time.</p>
+          <button class="btn btn-ghost" type="button" id="resetBtn">Start over</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-paper" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="why">
+      <div class="why-media reveal">
+        <span class="why-dim" aria-hidden="true"><span>Built to code</span></span>
+        <figure class="why-photo">
+          <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1000&q=80&auto=format&fit=crop" alt="Neatly installed pipework, valves and a meter mounted on a red brick wall" width="1000" height="750" loading="lazy" onerror="this.remove()">
+        </figure>
+        <div class="why-badge"><b>1 YR</b><span>Workmanship<br>warranty</span></div>
+      </div>
+      <div class="why-copy">
+        <p class="eyebrow">The Ridgeline standard</p>
+        <h2 id="why-title">Done right. Priced upfront. Left spotless.</h2>
+        <ul class="promises">
+          <li class="promise reveal"><span class="p-ic"><svg class="ic"><use href="#i-tag"/></svg></span><div><h3>A real price before we start</h3><p>A written flat-rate quote on-site. The number we quote is the number you pay, even if the job runs long.</p></div></li>
+          <li class="promise reveal" style="--d:.08s"><span class="p-ic"><svg class="ic"><use href="#i-user"/></svg></span><div><h3>Plumbers you can trust inside</h3><p>Every tech is a licensed, background-checked Ridgeline employee. We never send day-labor subcontractors.</p></div></li>
+          <li class="promise reveal" style="--d:.16s"><span class="p-ic"><svg class="ic"><use href="#i-home"/></svg></span><div><h3>Clean-home promise</h3><p>Boot covers, drop cloths and a full wipe-down before we leave. You’d never know we were there, except it works.</p></div></li>
+          <li class="promise reveal" style="--d:.24s"><span class="p-ic"><svg class="ic"><use href="#i-award"/></svg></span><div><h3>Backed for a full year</h3><p>If our repair fails within 12 months, we come back and make it right at no charge. Simple as that.</p></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="how">
+      <div class="how-head">
+        <div><p class="eyebrow">How it works</p><h2>Three steps. Zero guesswork.</h2></div>
+        <p>No hourly meter, no vague “we’ll see.” Here’s exactly what happens after you call.</p>
+      </div>
+      <ol class="steps reveal">
+        <li class="step"><span class="st-n">01</span><h3>Call or book online</h3><p>A live dispatcher answers 24/7 and texts you a photo of your plumber before they arrive.</p></li>
+        <li class="step"><span class="st-n">02</span><h3>Approve a flat price</h3><p>We diagnose first, then hand you a written upfront quote. Nothing starts until you say yes.</p></li>
+        <li class="step"><span class="st-n">03</span><h3>Fixed, tested, tidy</h3><p>We pressure-test the work, clean up completely and back it with a 1-year warranty.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="area" aria-labelledby="area-title">
+  <div class="wrap area">
+    <div class="area-copy">
+      <p class="eyebrow">Service area</p>
+      <h2 id="area-title">Proudly local to North County.</h2>
+      <p class="sec-lede" style="margin-top:22px">Our vans are stationed around Escondido and along the 78, so help is never more than a short drive away.</p>
+      <form class="zip" id="zipForm" novalidate>
+        <label class="zip-label" for="zip">Check your ZIP code</label>
+        <div class="zip-field">
+          <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>
+          <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" size="5" placeholder="e.g. 92025" aria-describedby="zipOut">
+          <button class="btn btn-navy" type="submit">Check</button>
+        </div>
+        <div class="zip-try"><span>Try:</span><button type="button" data-zip="92025">92025</button><button type="button" data-zip="92081">92081</button><button type="button" data-zip="92065">92065</button><button type="button" data-zip="92101">92101</button></div>
+        <div class="zip-out" id="zipOut" aria-live="polite"></div>
+      </form>
+      <ul class="cities" aria-label="Cities we serve">
+        <li>Escondido</li><li>San Marcos</li><li>Vista</li><li>Valley Center</li><li>Ramona</li><li>Poway</li><li>Rancho Bernardo</li>
+      </ul>
+    </div>
+
+    <div class="map reveal" aria-label="Stylized service area map">
+      <div class="map-in">
+        <svg class="base" viewBox="0 0 600 500" aria-hidden="true">
+          <g class="contour">
+            <path d="M470 270c22-26 62-24 76 4s-6 58-38 60-58-38-38-64z"/>
+            <path d="M440 262c30-50 104-52 130-6s-10 104-66 110-96-54-64-104z"/>
+            <path d="M408 254c38-74 146-80 184-12s-14 152-96 160-140-74-88-148z"/>
+            <path d="M376 246c46-98 188-108 238-18s-18 200-126 210-182-96-112-192z"/>
+            <path d="M150 70c22-16 56-10 64 14s-14 44-40 42-46-38-24-56z"/>
+            <path d="M120 64c34-36 104-30 122 18s-24 92-74 90-90-68-48-108z"/>
+            <path d="M90 58c46-56 152-50 180 22s-34 140-108 136-128-100-72-158z"/>
+            <path d="M30 470c60-50 140-40 200 0M10 440c80-70 190-60 270 0M-10 410c100-90 240-80 340 0"/>
+          </g>
+          <path class="hwy" d="M-10 172C80 168 150 200 200 226S290 222 330 222 430 262 610 300"/>
+          <path class="hwy" d="M300 -10C312 80 322 160 326 222S300 320 284 380 270 460 268 520"/>
+          <path class="zone" d="M60 160C70 100 180 54 330 50S500 110 548 240 520 420 400 430 250 420 210 370 50 230 60 160Z"/>
+          <g class="routes">
+            <path class="route" d="M326 222Q340 150 350 95"/>
+            <path class="route" d="M326 222Q220 170 105 165"/>
+            <path class="route" d="M326 222Q260 240 195 225"/>
+            <path class="route" d="M326 222Q420 240 500 290"/>
+            <path class="route" d="M326 222Q280 290 265 345"/>
+            <path class="route" d="M326 222Q370 300 375 385"/>
+          </g>
+          <g class="shield" transform="translate(150 196)"><rect x="-17" y="-11" width="34" height="22" rx="5"/><text y="4.5">78</text></g>
+          <g class="shield" transform="translate(296 300)"><rect x="-17" y="-11" width="34" height="22" rx="5"/><text y="4.5">15</text></g>
+        </svg>
+        <button class="city" data-city="Valley Center" style="left:58.3%;top:19%" type="button"><i></i><span>Valley Center</span></button>
+        <button class="city" data-city="Vista" style="left:17.5%;top:33%" type="button"><i></i><span>Vista</span></button>
+        <button class="city" data-city="San Marcos" style="left:32.5%;top:45%" type="button"><i></i><span>San Marcos</span></button>
+        <button class="city hub" data-city="Escondido" style="left:54.3%;top:44.4%" type="button"><i></i><span>Escondido<small>Dispatch hub</small></span></button>
+        <button class="city l" data-city="Ramona" style="left:83.3%;top:58%" type="button"><i></i><span>Ramona</span></button>
+        <button class="city" data-city="Rancho Bernardo" style="left:44.2%;top:69%" type="button"><i></i><span>Rancho Bernardo</span></button>
+        <button class="city" data-city="Poway" style="left:62.5%;top:77%" type="button"><i></i><span>Poway</span></button>
+        <span class="compass" aria-hidden="true">N</span>
+      </div>
+      <div class="map-legend"><span><i></i>Primary service zone</span><span>Stylized map, not to scale</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-navy" id="reviews" aria-labelledby="rv-title">
+  <div class="wrap">
+    <div class="rv-head">
+      <div><p class="eyebrow eyebrow-light">Reviews</p><h2 id="rv-title">Neighbors keep calling us back.</h2></div>
+      <div class="rv-sum">
+        <span class="big">4.9</span>
+        <div><div class="stars" aria-hidden="true"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div><span>Average across 380+ reviews</span></div>
+      </div>
+      <div class="rv-nav">
+        <button class="rv-btn rv-prev" type="button" aria-label="Previous reviews"><svg class="ic"><use href="#i-left"/></svg></button>
+        <button class="rv-btn rv-next" type="button" aria-label="Next reviews"><svg class="ic"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+    <div class="rv-vp" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Customer reviews. Use arrow keys or drag to browse.">
+      <div class="rv-track">
+        <article class="rv-card"><div class="stars" aria-label="5 out of 5 stars"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div><blockquote>Water heater died on a Sunday night. Someone was at our door within the hour, quoted the price before touching anything, and we had hot water by ten.</blockquote><footer class="rv-foot"><span class="rv-av" style="--c:#1A3765">DM</span><div><b>Danielle M.</b><span>Escondido</span></div><span class="rv-tag">Water heater</span></footer></article>
+        <article class="rv-card"><div class="stars" aria-label="5 out of 5 stars"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div><blockquote>Our kitchen drain kept backing up. The tech ran a camera, showed me the roots on his tablet, cleared it, and left the floor cleaner than he found it.</blockquote><footer class="rv-foot"><span class="rv-av" style="--c:#C2410C">MT</span><div><b>Marcus T.</b><span>San Marcos</span></div><span class="rv-tag">Drain clearing</span></footer></article>
+        <article class="rv-card"><div class="stars" aria-label="5 out of 5 stars"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div><blockquote>Honest people. They told me my running toilet just needed a twenty-dollar part instead of selling me a new one. That’s how you earn a customer for life.</blockquote><footer class="rv-foot"><span class="rv-av" style="--c:#0F766E">PS</span><div><b>Priya S.</b><span>Vista</span></div><span class="rv-tag">Toilet repair</span></footer></article>
+        <article class="rv-card"><div class="stars" aria-label="5 out of 5 stars"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div><blockquote>We repiped our 1978 ranch house with Ridgeline. Clear written quote, done in two days, drywall patched. Zero surprises on the final invoice.</blockquote><footer class="rv-foot"><span class="rv-av" style="--c:#334155">GH</span><div><b>Greg H.</b><span>Poway</span></div><span class="rv-tag">Repipe</span></footer></article>
+        <article class="rv-card"><div class="stars" aria-label="5 out of 5 stars"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div><blockquote>Slab leak scare at 6am. They found it with acoustic detection, fixed it the same day and even helped me with the insurance paperwork.</blockquote><footer class="rv-foot"><span class="rv-av" style="--c:#9A3412">AR</span><div><b>Alicia R.</b><span>Ramona</span></div><span class="rv-tag">Leak repair</span></footer></article>
+        <article class="rv-card"><div class="stars" aria-label="5 out of 5 stars"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div><blockquote>Booked online for “this week” and they still came the next morning. Got a text with the plumber’s photo before he arrived. Every trade should work like this.</blockquote><footer class="rv-foot"><span class="rv-av" style="--c:#1E40AF">TW</span><div><b>Tom W.</b><span>Valley Center</span></div><span class="rv-tag">Fixtures</span></footer></article>
+        <article class="rv-card"><div class="stars" aria-label="5 out of 5 stars"><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg><svg class="ic ic-fill"><use href="#i-star"/></svg></div><blockquote>Fair price, boot covers on, and he explained everything without making me feel dumb. Ridgeline is our go-to plumber now, full stop.</blockquote><footer class="rv-foot"><span class="rv-av" style="--c:#B45309">JK</span><div><b>Jen K.</b><span>Rancho Bernardo</span></div><span class="rv-tag">Disposal</span></footer></article>
+      </div>
+    </div>
+    <div class="rv-dots" role="group" aria-label="Choose review slide"></div>
+    <p class="rv-note">Sample reviews written for this concept site.</p>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq">
+    <div class="faq-aside">
+      <p class="eyebrow">FAQ</p>
+      <h2 id="faq-title">Straight answers.</h2>
+      <p>Still have a question? Call <a href="tel:+17605550188">(760) 555-0188</a> and a real person picks up, day or night.</p>
+    </div>
+    <div class="acc">
+      <div class="acc-item open">
+        <h3><button class="acc-btn" type="button" aria-expanded="true" aria-controls="fq1" id="fb1">Do you really answer at 2am?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="fq1" role="region" aria-labelledby="fb1"><div><p>Yes. A live Ridgeline dispatcher answers 24/7, every day of the year. After-hours visits carry a flat emergency fee, and we tell you exactly what it is before anyone gets in the van.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3><button class="acc-btn" type="button" aria-expanded="false" aria-controls="fq2" id="fb2">How does upfront pricing work?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="fq2" role="region" aria-labelledby="fb2"><div><p>Your plumber diagnoses the problem, then gives you a written flat price for the whole job. You approve it before any work begins. If the job takes longer than expected, that’s on us, not you.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3><button class="acc-btn" type="button" aria-expanded="false" aria-controls="fq3" id="fb3">Is the online estimate my final price?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="fq3" role="region" aria-labelledby="fb3"><div><p>No. It’s a typical range from similar jobs in North County, meant to help you plan. Your final flat price is confirmed on-site, in writing, before we start.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3><button class="acc-btn" type="button" aria-expanded="false" aria-controls="fq4" id="fb4">Which areas do you serve?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="fq4" role="region" aria-labelledby="fb4"><div><p>Escondido, San Marcos, Vista, Valley Center, Ramona, Poway and Rancho Bernardo. Use the ZIP checker above, or just call and ask. We often help neighbors just outside the map.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3><button class="acc-btn" type="button" aria-expanded="false" aria-controls="fq5" id="fb5">Do you offer a warranty?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="fq5" role="region" aria-labelledby="fb5"><div><p>Every repair carries a 1-year workmanship warranty. New water heaters and fixtures also keep their full manufacturer warranty, and we handle the claim for you.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" aria-labelledby="cta-title">
+  <div class="hazard" aria-hidden="true"></div>
+  <svg class="topo" viewBox="0 0 1440 500" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+    <path d="M-20 470C200 410 420 490 700 430S1150 340 1460 390"/><path d="M-20 420C210 356 430 434 706 376S1160 286 1460 338"/><path d="M-20 370C220 302 440 378 712 322S1170 232 1460 286"/><path d="M-20 320C230 248 450 322 718 268S1180 178 1460 234"/><path d="M-20 270C240 194 460 266 724 214S1190 124 1460 182"/><path d="M-20 220C250 140 470 210 730 160S1200 70 1460 130"/>
+  </svg>
+  <div class="wrap cta-in">
+    <div>
+      <h2 id="cta-title">Water where it shouldn’t be?</h2>
+      <p>Shut off your main valve if you can, then call us. A live dispatcher answers day or night, and most of North County gets a plumber within the hour.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-navy btn-lg" href="tel:+17605550188"><svg class="ic"><use href="#i-phone"/></svg>Call (760) 555-0188</a>
+      <a class="btn btn-outline btn-lg" href="#estimate">Get an instant estimate</a>
+      <small>Upfront pricing · Licensed &amp; insured</small>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top" aria-label="Ridgeline Plumbing and Drain, back to top">
+          <svg class="logo-mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="11" fill="#FF6B1A"/><path d="M8 26l8-10 5 6 5-8 10 12" fill="none" stroke="#081631" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 33c2.4 0 2.4-1.8 4.8-1.8s2.4 1.8 4.8 1.8 2.4-1.8 4.8-1.8 2.4 1.8 4.8 1.8 2.4-1.8 4.8-1.8" fill="none" stroke="#081631" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span class="logo-txt"><b>RIDGELINE</b><span>PLUMBING &amp; DRAIN</span></span>
+        </a>
+        <p class="about">Licensed plumbing, drain and water heater service for homes across North County San Diego. Upfront prices, tidy work, real people on the phone.</p>
+        <p class="lic">CA Lic. #000000 (demo) · Bonded &amp; insured</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="#services">Leak repair</a></li><li><a href="#services">Drain clearing</a></li><li><a href="#services">Water heaters</a></li><li><a href="#services">Repiping</a></li><li><a href="#services">24/7 emergencies</a></li></ul>
+      </div>
+      <div>
+        <h4>Service area</h4>
+        <ul><li>Escondido</li><li>San Marcos &amp; Vista</li><li>Valley Center</li><li>Ramona</li><li>Poway &amp; Rancho Bernardo</li></ul>
+      </div>
+      <div class="foot-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><a class="big" href="tel:+17605550188"><svg class="ic"><use href="#i-phone"/></svg>(760) 555-0188</a></li>
+          <li><a href="mailto:hello@example.com"><svg class="ic"><use href="#i-mail"/></svg>hello@example.com</a></li>
+          <li><span style="display:flex;gap:10px"><svg class="ic" style="margin-top:3px"><use href="#i-clock"/></svg><span>Emergencies: 24/7<br>Office: Mon–Sat, 7am–6pm</span></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Ridgeline Plumbing &amp; Drain is a fictional business. Names, reviews and figures are illustrative.</span>
+      <span>Concept website by <a href="../../">Upswing Sites</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" role="region" aria-label="Quick contact">
+  <a class="cb-call" href="tel:+17605550188"><span class="pulse" aria-hidden="true"></span><span class="cb-t"><b>Call now</b><small>24/7 · (760) 555-0188</small></span></a>
+  <a class="cb-est" href="#estimate"><svg class="ic"><use href="#i-calc"/></svg>Estimate</a>
+</div>
+
+<a class="concept-pill" href="../../"><span class="mk"><svg class="ic"><use href="#i-up"/></svg></span>Concept site by <b>Upswing Sites</b></a>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let reduce = mq.matches;
+  if (mq.addEventListener) mq.addEventListener('change', e => { reduce = e.matches; });
+
+  /* header: scrolled state + mobile menu */
+  const hdr = $('.hdr');
+  const menuBtn = $('.menu-btn');
+  const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setMenu = open => { hdr.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', String(open)); };
+  menuBtn.addEventListener('click', () => setMenu(!hdr.classList.contains('open')));
+  $$('.nav a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && hdr.classList.contains('open')) { setMenu(false); menuBtn.focus(); } });
+  document.addEventListener('click', e => { if (hdr.classList.contains('open') && !hdr.contains(e.target)) setMenu(false); });
+
+  /* scroll reveals */
+  const hasIO = 'IntersectionObserver' in window;
+  const io = hasIO ? new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 }) : null;
+  $$('.reveal').forEach(el => (io ? io.observe(el) : el.classList.add('in')));
+
+  /* stat counters */
+  const fmt = (v, d) => v.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const counters = $$('.count');
+  const runCount = el => {
+    const to = parseFloat(el.dataset.to), d = +(el.dataset.dec || 0);
+    if (reduce) { el.textContent = fmt(to, d); return; }
+    const dur = 1900, t0 = performance.now();
+    const tick = now => {
+      const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 4);
+      el.textContent = fmt(to * e, d);
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if (hasIO && !reduce) {
+    counters.forEach(el => { el.textContent = fmt(0, +(el.dataset.dec || 0)); });
+    const cio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { runCount(en.target); cio.unobserve(en.target); } }), { threshold: 0.5 });
+    counters.forEach(el => cio.observe(el));
+  }
+
+  /* instant estimate */
+  const P = {
+    leak:   { label: 'Leak repair',        min: 150,  max: 450,   scale: 1000,  inc: 'Leak detection, repair and standard fittings' },
+    drain:  { label: 'Drain clearing',     min: 125,  max: 350,   scale: 1000,  inc: 'Cable or hydro-jet clearing, camera check if needed' },
+    heater: { label: 'Water heater repair', min: 225, max: 700,   scale: 1000,  inc: 'Diagnosis, parts, safety and pressure test', extra: 'Full tank replacement typically runs $1,600–$2,400. ' },
+    toilet: { label: 'Toilet repair',      min: 125,  max: 375,   scale: 1000,  inc: 'Flapper, fill valve, wax ring or full reset' },
+    repipe: { label: 'Whole-home repipe',  min: 4500, max: 12000, scale: 15000, inc: 'Free in-home consult and a written PEX or copper quote', extra: 'The in-home consult itself is free. ' },
+    other:  { label: 'Diagnostic + repair', min: 95,  max: 400,   scale: 1000,  inc: '$95 diagnostic visit, waived if we do the repair' }
+  };
+  const U = {
+    today: { label: 'Today',     mult: 1.25, tag: 'Same-day priority', arrive: 'Typically within 60 minutes' },
+    week:  { label: 'This week', mult: 1,    tag: 'Standard rate',     arrive: '2-hour window in 1–3 days' },
+    flex:  { label: 'Flexible',  mult: 0.9,  tag: 'Flexible: save 10%', arrive: 'Any day that suits you' }
+  };
+  const out = $('#estOut'), form = $('#estForm');
+  const minEl = $('#eoMin'), maxEl = $('#eoMax'), rangeEl = $('#eoRange'), fill = $('#eoFill');
+  const shown = { min: 0, max: 0 };
+  let raf = 0;
+  const money = v => '$' + Math.round(v).toLocaleString('en-US');
+  const roundTo = v => (v >= 1000 ? Math.round(v / 50) * 50 : Math.round(v / 5) * 5);
+  const setState = s => { out.dataset.state = s; };
+
+  function animateRange(min, max) {
+    cancelAnimationFrame(raf);
+    const a0 = shown.min, b0 = shown.max;
+    if (reduce) { minEl.textContent = money(min); maxEl.textContent = money(max); shown.min = min; shown.max = max; return; }
+    const dur = 900, t0 = performance.now();
+    const step = now => {
+      const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      const a = a0 + (min - a0) * e, b = b0 + (max - b0) * e;
+      minEl.textContent = money(p < 1 ? Math.round(a / 5) * 5 : min);
+      maxEl.textContent = money(p < 1 ? Math.round(b / 5) * 5 : max);
+      shown.min = a; shown.max = b;
+      if (p < 1) raf = requestAnimationFrame(step); else { shown.min = min; shown.max = max; }
+    };
+    raf = requestAnimationFrame(step);
+  }
+
+  function update() {
+    const p = form.problem.value, u = form.urgency.value;
+    $('#stepP').classList.toggle('done', !!p);
+    $('#stepU').classList.toggle('done', !!u);
+    $('#pg1').classList.toggle('on', !!p);
+    $('#pg2').classList.toggle('on', !!u);
+    if (!p || !u) {
+      setState(p || u ? 'partial' : 'empty');
+      $('#eoEmptyTitle').textContent = p ? 'Nice. One more tap.' : (u ? 'Now, what’s going on?' : 'Your price range lands here');
+      $('#eoEmptyText').textContent = p ? 'Choose how soon you need us and your typical range appears instantly.' : (u ? 'Pick the problem and your typical range appears instantly.' : 'Pick what’s going on to get started. No phone number or email needed.');
+      return;
+    }
+    const pp = P[p], uu = U[u];
+    const m = p === 'repipe' ? (u === 'flex' ? 0.95 : 1) : uu.mult;
+    const min = roundTo(pp.min * m), max = roundTo(pp.max * m);
+    const wasResult = out.dataset.state === 'result';
+    if (!wasResult) { shown.min = min * 0.4; shown.max = max * 0.4; fill.style.transition = 'none'; fill.style.left = '0%'; fill.style.width = '0%'; void fill.offsetWidth; fill.style.transition = ''; }
+    setState('result');
+    $('#eoFor').textContent = pp.label + ' · ' + uu.label;
+    $('#eoTag').textContent = p === 'repipe' ? (u === 'flex' ? 'Flexible: save 5%' : 'Free consult') : uu.tag;
+    $('#eoArrive').textContent = p === 'repipe' ? (u === 'today' ? 'Consult as soon as today' : u === 'week' ? 'Consult within 1–3 days' : 'Consult whenever suits you') : uu.arrive;
+    $('#eoInc').textContent = pp.inc;
+    $('#eoExtra').textContent = pp.extra || '';
+    $('#eoScale').textContent = pp.scale >= 10000 ? '$15,000+' : '$1,000+';
+    rangeEl.classList.toggle('long', max >= 10000);
+    $('#eoSr').textContent = 'Typical range for ' + pp.label + ', ' + uu.label + ': ' + money(min) + ' to ' + money(max) + '. Estimate only.';
+    requestAnimationFrame(() => {
+      fill.style.left = (min / pp.scale * 100) + '%';
+      fill.style.width = (Math.max(2, (max - min) / pp.scale * 100)) + '%';
+    });
+    animateRange(min, max);
+  }
+  form.addEventListener('change', update);
+
+  $('#bookBtn').addEventListener('click', () => {
+    const p = form.problem.value, u = form.urgency.value;
+    if (!p || !u) return;
+    $('#doneSum').textContent = P[p].label + ' · ' + U[u].label;
+    $('#doneRef').textContent = 'REF RP-' + String(Math.floor(10000 + Math.random() * 89999));
+    setState('done');
+    $('#eoDone').focus({ preventScroll: true });
+  });
+  $('#resetBtn').addEventListener('click', () => {
+    form.reset();
+    shown.min = 0; shown.max = 0;
+    update();
+    const first = form.querySelector('input[name=problem]');
+    if (first) first.focus({ preventScroll: true });
+  });
+  $$('[data-problem]').forEach(a => a.addEventListener('click', () => {
+    const input = form.querySelector('input[name=problem][value="' + a.dataset.problem + '"]');
+    if (input) { input.checked = true; update(); }
+  }));
+
+  /* ZIP checker */
+  const ZIPS = { '92025': 'Escondido', '92026': 'Escondido', '92027': 'Escondido', '92029': 'Escondido', '92069': 'San Marcos', '92078': 'San Marcos', '92081': 'Vista', '92083': 'Vista', '92084': 'Vista', '92082': 'Valley Center', '92065': 'Ramona', '92064': 'Poway', '92128': 'Rancho Bernardo', '92127': 'Rancho Bernardo' };
+  const zipIn = $('#zip'), zipOut = $('#zipOut'), zipForm = $('#zipForm');
+  const cities = $$('.city');
+  let lastZip = '';
+  function checkZip(force) {
+    const z = zipIn.value;
+    cities.forEach(c => c.classList.remove('hit'));
+    if (z.length < 5) {
+      lastZip = '';
+      zipOut.innerHTML = force ? '<p class="zr-hint">Please enter all 5 digits of your ZIP code.</p>' : '';
+      return;
+    }
+    if (z === lastZip && !force) return;
+    lastZip = z;
+    const city = ZIPS[z];
+    if (city) {
+      zipOut.innerHTML = '<div class="zr zr-ok"><svg class="zr-check" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="25"/><path d="M15 27.5l7 7 15-16" pathLength="1"/></svg><div><strong>We serve you!</strong><span>' + z + ' is in our ' + city + ' zone. A plumber can usually be there in under 60 minutes.</span><a class="go" href="#estimate">Get your instant estimate <svg class="ic"><use href="#i-arrow"/></svg></a></div></div>';
+      cities.forEach(c => c.classList.toggle('hit', c.dataset.city === city));
+    } else {
+      zipOut.innerHTML = '<div class="zr zr-no"><span class="zr-ic"><svg class="ic"><use href="#i-phone"/></svg></span><div><strong>Call to ask!</strong><span>' + z + ' is just outside our usual map, but we often help neighbors nearby. Give us a ring at <a href="tel:+17605550188">(760) 555-0188</a> and we’ll let you know.</span></div></div>';
+    }
+  }
+  zipIn.addEventListener('input', () => {
+    const clean = zipIn.value.replace(/\D/g, '').slice(0, 5);
+    if (clean !== zipIn.value) zipIn.value = clean;
+    checkZip(false);
+  });
+  zipForm.addEventListener('submit', e => { e.preventDefault(); checkZip(true); });
+  $$('[data-zip]').forEach(b => b.addEventListener('click', () => { zipIn.value = b.dataset.zip; lastZip = ''; checkZip(true); }));
+  cities.forEach(c => c.addEventListener('click', () => {
+    const z = Object.keys(ZIPS).find(k => ZIPS[k] === c.dataset.city);
+    if (z) { zipIn.value = z; lastZip = ''; checkZip(true); }
+  }));
+
+  /* reviews carousel: drag / swipe / buttons / keys / dots */
+  const vp = $('.rv-vp'), track = $('.rv-track'), cards = $$('.rv-card', track);
+  const prev = $('.rv-prev'), next = $('.rv-next'), dotsWrap = $('.rv-dots');
+  let idx = 0, stepW = 0, maxT = 0, maxIdx = 0;
+  const tx = i => -Math.min(i * stepW, maxT);
+  function layout() {
+    const w = vp.clientWidth - 16;
+    const per = w >= 980 ? 3 : w >= 620 ? 2 : 1;
+    const gap = w >= 620 ? 24 : 14;
+    const cw = per === 1 ? Math.min(w * 0.88, 440) : (w - gap * (per - 1)) / per;
+    track.style.gap = gap + 'px';
+    cards.forEach(c => { c.style.flexBasis = cw + 'px'; });
+    stepW = cw + gap;
+    maxT = Math.max(0, cards.length * cw + (cards.length - 1) * gap - w);
+    maxIdx = Math.max(0, Math.ceil(maxT / stepW - 0.01));
+    if (dotsWrap.children.length !== maxIdx + 1) {
+      dotsWrap.innerHTML = '';
+      for (let i = 0; i <= maxIdx; i++) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        b.addEventListener('click', () => go(i));
+        dotsWrap.appendChild(b);
+      }
+    }
+    go(Math.min(idx, maxIdx), false);
+  }
+  function go(i, anim = true) {
+    idx = Math.max(0, Math.min(maxIdx, i));
+    track.style.transition = anim && !reduce ? '' : 'none';
+    track.style.transform = 'translate3d(' + tx(idx) + 'px,0,0)';
+    prev.disabled = idx === 0;
+    next.disabled = idx === maxIdx;
+    Array.from(dotsWrap.children).forEach((d, k) => d.setAttribute('aria-current', String(k === idx)));
+  }
+  prev.addEventListener('click', () => go(idx - 1));
+  next.addEventListener('click', () => go(idx + 1));
+  vp.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(idx - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1); }
+  });
+  let down = false, sx = 0, sy = 0, dx = 0, axis = null, moved = false, pid = null;
+  vp.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    down = true; sx = e.clientX; sy = e.clientY; dx = 0; axis = null; moved = false; pid = e.pointerId;
+  });
+  vp.addEventListener('pointermove', e => {
+    if (!down) return;
+    const ddx = e.clientX - sx, ddy = e.clientY - sy;
+    if (!axis) {
+      if (Math.abs(ddx) < 6 && Math.abs(ddy) < 6) return;
+      axis = Math.abs(ddx) > Math.abs(ddy) ? 'x' : 'y';
+      if (axis === 'x') { try { vp.setPointerCapture(pid); } catch (err) {} vp.classList.add('dragging'); track.style.transition = 'none'; }
+    }
+    if (axis !== 'x') return;
+    moved = true; dx = ddx;
+    let t = tx(idx) + dx;
+    if (t > 0) t *= 0.35; else if (t < -maxT) t = -maxT + (t + maxT) * 0.35;
+    track.style.transform = 'translate3d(' + t + 'px,0,0)';
+  });
+  const endDrag = () => {
+    if (!down) return;
+    down = false;
+    vp.classList.remove('dragging');
+    if (axis === 'x') {
+      const n = Math.round(Math.abs(dx) / stepW);
+      const jump = Math.abs(dx) > 50 ? Math.max(1, n) : 0;
+      go(idx + (dx < 0 ? jump : -jump));
+    }
+    axis = null;
+  };
+  vp.addEventListener('pointerup', endDrag);
+  vp.addEventListener('pointercancel', endDrag);
+  vp.addEventListener('lostpointercapture', endDrag);
+  vp.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+  vp.addEventListener('dragstart', e => e.preventDefault());
+  if ('ResizeObserver' in window) new ResizeObserver(() => layout()).observe(vp); else window.addEventListener('resize', layout);
+  layout();
+
+  /* FAQ accordion */
+  $$('.acc-btn').forEach(b => b.addEventListener('click', () => {
+    const item = b.closest('.acc-item');
+    const open = !item.classList.contains('open');
+    item.classList.toggle('open', open);
+    b.setAttribute('aria-expanded', String(open));
+  }));
+})();
+</script>
+</body>
+</html>
