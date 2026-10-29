@@ -7,7 +7,7 @@
 <meta name="description" content="World-class websites for local businesses for one flat $47/month. Custom design, hosting, security and updates, with no setup fees. Based in Escondido, CA.">
 <meta property="og:title" content="Upswing Sites | Websites for local businesses, $47/month">
 <meta property="og:description" content="Custom design, hosting and updates for one flat $47/month. No setup fees.">
-<meta property="og:image" content="img/northbound-detailing.png">
+<meta property="og:image" content="https://upswingsites.com/img/chic-flowers.jpg">
 <meta name="theme-color" content="#07090a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,6 +117,7 @@ main{position:relative;z-index:2}
 .wc-desc{color:var(--muted);margin:0 0 20px;font-size:16px}
 .wc-link{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;color:#10180f;background:#fff;padding:12px 18px;border-radius:999px;transition:transform .25s var(--ease)}
 .wc-link:hover{transform:translateY(-2px)}
+.wc-more{margin-left:14px;font-size:14px;font-weight:600;color:var(--dim);white-space:nowrap}
 .work-card .swap{transition:opacity .35s var(--ease),transform .35s var(--ease)}
 .work-card.out .swap{opacity:0;transform:translateY(8px)}
 .hint{display:block;margin-top:14px;font-size:13px;color:var(--dim)}
@@ -396,7 +397,7 @@ dialog.get[open]{animation:dlgIn .45s var(--ease)}
 
       <div class="ch ch-work" data-ch="work" id="work">
         <div class="work-card" id="workCard">
-          <div class="wc-top swap"><span class="wc-count" id="wcCount"><b>01</b> / 04</span><span class="tag" id="wcTag">Live product</span></div>
+          <div class="wc-top swap"><span class="wc-count" id="wcCount"><b>01</b> / 05</span><span class="tag" id="wcTag">Live product</span></div>
           <div class="swap">
             <h3 class="wc-name" id="wcName">ParaphyAI</h3>
             <div class="wc-type" id="wcType">AI writing platform</div>
@@ -404,6 +405,7 @@ dialog.get[open]{animation:dlgIn .45s var(--ease)}
           </div>
           <a class="wc-link swap" id="wcLink" href="https://paraphyai.com/" target="_blank" rel="noopener">Open the site
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="wc-more">…and much more!</span>
         </div>
       </div>
       <div class="dots" id="dots" data-ch="work" role="tablist" aria-label="Projects"></div>
@@ -439,11 +441,13 @@ dialog.get[open]{animation:dlgIn .45s var(--ease)}
       <span class="k2">Work</span>
       <h2 class="h2">Make your business look world-class.</h2>
       <div class="static-grid">
-        <a href="https://paraphyai.com/" target="_blank" rel="noopener"><img src="img/paraphyai.png" alt="ParaphyAI" loading="lazy"><span>ParaphyAI · Live product</span></a>
-        <a href="work/hilltop-crumb/"><img src="img/hilltop-crumb.png" alt="Hilltop Crumb concept" loading="lazy"><span>Hilltop Crumb · Concept</span></a>
-        <a href="work/ridgeline-plumbing/"><img src="img/ridgeline-plumbing.png" alt="Ridgeline Plumbing concept" loading="lazy"><span>Ridgeline Plumbing · Concept</span></a>
-        <a href="work/northbound-detailing/"><img src="img/northbound-detailing.png" alt="Northbound Detailing concept" loading="lazy"><span>Northbound Detailing · Concept</span></a>
+        <a href="https://paraphyai.com/" target="_blank" rel="noopener"><img src="img/paraphyai.png" alt="ParaphyAI" loading="lazy"><span>ParaphyAI · AI writing platform</span></a>
+        <a href="https://www.basilestudio.com/" target="_blank" rel="noopener"><img src="img/basile-studio.jpg" alt="BASILE Studio" loading="lazy"><span>BASILE Studio · Architecture &amp; fabrication</span></a>
+        <a href="https://ch-projects.com/" target="_blank" rel="noopener"><img src="img/ch-projects.jpg" alt="CH Projects" loading="lazy"><span>CH Projects · Restaurant &amp; hotel group</span></a>
+        <a href="https://www.peakregenmed.com/" target="_blank" rel="noopener"><img src="img/peak-iv.jpg" alt="Peak IV Regenerative Medicine" loading="lazy"><span>Peak IV · Wellness clinic</span></a>
+        <a href="https://www.chicflowers.com/" target="_blank" rel="noopener"><img src="img/chic-flowers.jpg" alt="CHIC Flowers" loading="lazy"><span>CHIC Flowers · Wedding florist</span></a>
       </div>
+      <p class="hint">…and much more!</p>
     </div>
   </section>
 
@@ -608,16 +612,21 @@ const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 const mix = (a, b, t) => a + (b - a) * t;
 const mixCol = (a, b, t) => [mix(a[0], b[0], t), mix(a[1], b[1], t), mix(a[2], b[2], t)];
 
+// scroll = how far down the page the laptop screen scrolls (0 = first screen only)
+// the last site's phone shot also fills the 3D phone
 const SITES = [
-  { key: 'paraphyai', name: 'ParaphyAI', type: 'AI writing platform', tag: 'Live product', url: 'https://paraphyai.com/', ext: true, glow: [34, 197, 94],
+  { key: 'paraphyai', name: 'ParaphyAI', type: 'AI writing platform', tag: 'Live product', url: 'https://paraphyai.com/', ext: true, glow: [34, 197, 94], scroll: 0.6,
     desc: 'A full software product: AI humanizer, detector and essay tools, with accounts and payments.' },
-  { key: 'hilltop-crumb', name: 'Hilltop Crumb', type: 'Bakery & coffee bar', tag: 'Concept', url: 'work/hilltop-crumb/', glow: [214, 112, 64],
-    desc: 'A live "open now" badge, a tabbed menu and a pastry-box builder for pickup orders.' },
-  { key: 'ridgeline-plumbing', name: 'Ridgeline Plumbing', type: '24/7 plumber', tag: 'Concept', url: 'work/ridgeline-plumbing/', glow: [255, 126, 36],
-    desc: 'Instant price estimates, a ZIP-code service-area checker and one-tap calling.' },
-  { key: 'northbound-detailing', name: 'Northbound Detailing', type: 'Mobile car detailing', tag: 'Concept', url: 'work/northbound-detailing/', glow: [46, 226, 210],
-    desc: 'A live package-price builder, a before/after shine slider and a booking flow.' }
+  { key: 'basile-studio', name: 'BASILE Studio', type: 'Architecture & fabrication studio', tag: 'Live site', url: 'https://www.basilestudio.com/', ext: true, glow: [222, 168, 84], scroll: 0.6,
+    desc: 'A project-first portfolio with full-bleed restaurant and hotel features, studio stories and a quote request.' },
+  { key: 'ch-projects', name: 'CH Projects', type: 'Restaurant & hotel group', tag: 'Live site', url: 'https://ch-projects.com/', ext: true, glow: [235, 150, 80], scroll: 0,
+    desc: 'A dark, cinematic landing page with a floating gallery of the group’s bars, restaurants and hotels.' },
+  { key: 'peak-iv', name: 'Peak IV Regenerative Medicine', type: 'IV & wellness clinic · Mammoth Lakes', tag: 'Live site', url: 'https://www.peakregenmed.com/', ext: true, glow: [52, 152, 200], scroll: 0.04,
+    desc: 'Appointment booking, mobile IV service, pricing and a full treatment menu for a High Sierra clinic.' },
+  { key: 'chic-flowers', name: 'CHIC Flowers', type: 'Luxury wedding florist · San Diego', tag: 'Live site', url: 'https://www.chicflowers.com/', ext: true, glow: [232, 120, 150], scroll: 0.6,
+    desc: 'A photo-led wedding portfolio with a full gallery of real events across Southern California.' }
 ];
+const N = SITES.length;
 const BRAND = [31, 150, 110], SUN = [244, 201, 93];
 
 /* ======================= UI (works with or without 3D) ======================= */
@@ -635,7 +644,7 @@ const dotsEl = $('#dots');
 SITES.forEach((s, i) => {
   const b = document.createElement('button');
   b.type = 'button'; b.setAttribute('aria-label', s.name); b.setAttribute('aria-current', i === 0);
-  b.addEventListener('click', () => storyJump(0.30 + (i + 0.4) / 4 * 0.44));
+  b.addEventListener('click', () => storyJump(0.30 + (i + 0.4) / N * 0.44));
   dotsEl.appendChild(b);
 });
 const card = $('#workCard');
@@ -646,7 +655,7 @@ function showSite(i) {
   shownIdx = i;
   const s = SITES[i];
   const apply = () => {
-    $('#wcCount').innerHTML = `<b>0${i + 1}</b> / 0${SITES.length}`;
+    $('#wcCount').innerHTML = `<b>0${i + 1}</b> / 0${N}`;
     $('#wcTag').textContent = s.tag;
     $('#wcName').textContent = s.name;
     $('#wcType').textContent = s.type;
@@ -828,7 +837,7 @@ function initStage() {
   const tl = new THREE.TextureLoader(manager);
   const maxAniso = renderer.capabilities.getMaxAnisotropy();
   const prep = (t, r) => { t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = maxAniso; t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping; t.repeat.set(1, r); t.offset.set(0, 1 - r); return t; };
-  const tex = SITES.map(s => ({ d: prep(tl.load(`img/screens/${s.key}-desk.jpg`), LAP_R), m: prep(tl.load(`img/screens/${s.key}-mob.jpg`), PH_R) }));
+  const tex = SITES.map((s, i) => ({ d: prep(tl.load(`img/screens/${s.key}-desk.jpg`), LAP_R), m: i === N - 1 ? prep(tl.load(`img/screens/${s.key}-mob.jpg`), PH_R) : null }));
   const setScroll = (t, r, s) => { t.offset.y = (1 - r) * (1 - s); };
 
   /* ---------- laptop ---------- */
@@ -865,7 +874,7 @@ function initStage() {
   const pBezelGeo = new THREE.ShapeGeometry(shapeRR(PW - 0.01, PH - 0.01, 0.145), 24);
   const pBezel = new THREE.Mesh(pBezelGeo, glossBlack); pBezel.position.z = pFrontZ + 0.001; phone.add(pBezel);
   const pScrGeo = new THREE.ShapeGeometry(shapeRR(PSW, PSH, 0.12), 24); planeUV(pScrGeo, PSW, PSH);
-  const pScr = new THREE.Mesh(pScrGeo, new THREE.MeshBasicMaterial({ map: tex[3].m, toneMapped: false }));
+  const pScr = new THREE.Mesh(pScrGeo, new THREE.MeshBasicMaterial({ map: tex[N - 1].m, toneMapped: false }));
   pScr.position.z = pFrontZ + 0.002; phone.add(pScr);
   const island = new THREE.Mesh(new THREE.ShapeGeometry(shapeRR(0.26, 0.07, 0.035), 12), new THREE.MeshBasicMaterial({ color: 0x000000 }));
   island.position.set(0, PSH / 2 - 0.085, pFrontZ + 0.003); phone.add(island);
@@ -873,9 +882,9 @@ function initStage() {
   pGlare.position.z = pFrontZ + 0.004; phone.add(pGlare);
 
   /* ---------- dust particles ---------- */
-  const N = innerWidth < 700 ? 140 : 260;
-  const pGeo = new THREE.BufferGeometry(), pPos = new Float32Array(N * 3), pSpd = new Float32Array(N);
-  for (let i = 0; i < N; i++) { pPos[i * 3] = (Math.random() - .5) * 16; pPos[i * 3 + 1] = (Math.random() - .5) * 10; pPos[i * 3 + 2] = -6 + Math.random() * 8; pSpd[i] = .04 + Math.random() * .1; }
+  const NP = innerWidth < 700 ? 140 : 260;
+  const pGeo = new THREE.BufferGeometry(), pPos = new Float32Array(NP * 3), pSpd = new Float32Array(NP);
+  for (let i = 0; i < NP; i++) { pPos[i * 3] = (Math.random() - .5) * 16; pPos[i * 3 + 1] = (Math.random() - .5) * 10; pPos[i * 3 + 2] = -6 + Math.random() * 8; pSpd[i] = .04 + Math.random() * .1; }
   pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
   const dotTex = canvasTex(64, 64, (g, w) => { const gr = g.createRadialGradient(w / 2, w / 2, 0, w / 2, w / 2, w / 2); gr.addColorStop(0, 'rgba(255,255,255,1)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(0, 0, w, w); });
   const pMat = new THREE.PointsMaterial({ size: 0.05, map: dotTex, transparent: true, opacity: 0.5, depthWrite: false, blending: THREE.AdditiveBlending, color: 0x9fe3c6 });
@@ -978,16 +987,16 @@ function initStage() {
     const idle = reduce ? 0 : 1;
 
     // portfolio sequencing
-    const f = cl((sp - 0.30) / 0.44) * 4;
-    let idx = Math.min(3, Math.floor(f)), frac = f - idx; if (f >= 4) { idx = 3; frac = 1; }
-    const m = idx < 3 ? ss(0.8, 1, frac) : 0;
-    const sA = ease(cl((frac - 0.1) / 0.7)) * 0.6;
+    const f = cl((sp - 0.30) / 0.44) * N;
+    let idx = Math.min(N - 1, Math.floor(f)), frac = f - idx; if (f >= N) { idx = N - 1; frac = 1; }
+    const m = idx < N - 1 ? ss(0.8, 1, frac) : 0;
+    const sA = ease(cl((frac - 0.1) / 0.7)) * SITES[idx].scroll;
     scrA.material.map = tex[idx].d; setScroll(tex[idx].d, LAP_R, sA);
-    if (idx < 3) { scrB.material.map = tex[idx + 1].d; setScroll(tex[idx + 1].d, LAP_R, 0); }
+    if (idx < N - 1) { scrB.material.map = tex[idx + 1].d; setScroll(tex[idx + 1].d, LAP_R, 0); }
     scrB.material.opacity = m; scrB.visible = m > 0.002;
     const bright = ss(0.13, 0.25, sp);
     scrA.material.color.setScalar(bright); scrB.material.color.setScalar(bright);
-    currentIdx = m > 0.5 ? Math.min(3, idx + 1) : idx;
+    currentIdx = m > 0.5 ? Math.min(N - 1, idx + 1) : idx;
 
     const wob = Math.sin(f * Math.PI) * 0.08 * w[1] * (1 - w[2]) * (M ? 0.5 : 1);
     laptop.position.set(L.x, L.y + Math.sin(t * 0.9) * 0.035 * idle, L.z);
@@ -1001,7 +1010,7 @@ function initStage() {
     phone.rotation.set(P.rx + ptr.y * 0.05, P.ry + ptr.x * 0.2 + spin * 0.6, 0);
     phone.scale.setScalar(P.s);
     phone.visible = w[2] > 0.001;
-    setScroll(tex[3].m, PH_R, ss(0.78, 0.99, sp) * 0.5);
+    setScroll(tex[N - 1].m, PH_R, ss(0.78, 0.99, sp) * 0.5);
 
     shadow.position.set(laptop.position.x, laptop.position.y - 1.25, laptop.position.z);
     shadow.material.opacity = 0.45 * (1 - 0.4 * w[3]);
@@ -1011,7 +1020,7 @@ function initStage() {
     camera.lookAt(0, 0, 0);
 
     // light color follows the site on screen
-    const siteCol = mixCol(SITES[idx].glow, SITES[Math.min(idx + 1, 3)].glow, m);
+    const siteCol = mixCol(SITES[idx].glow, SITES[Math.min(idx + 1, N - 1)].glow, m);
     let col = mixCol(BRAND, siteCol, ss(0.2, 0.32, sp));
     col = mixCol(col, SUN, w[3] * 0.6);
     const gs = col.map(v => Math.round(v)).join(',');
@@ -1023,7 +1032,7 @@ function initStage() {
     // dust
     if (idle) {
       const a = pGeo.attributes.position.array;
-      for (let i = 0; i < N; i++) { a[i * 3 + 1] += pSpd[i] * dt; if (a[i * 3 + 1] > 5) a[i * 3 + 1] = -5; }
+      for (let i = 0; i < NP; i++) { a[i * 3 + 1] += pSpd[i] * dt; if (a[i * 3 + 1] > 5) a[i * 3 + 1] = -5; }
       pGeo.attributes.position.needsUpdate = true;
     }
     dust.position.y = -sp * 2;
