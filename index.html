@@ -87,7 +87,7 @@ main{position:relative;z-index:2}
 .btn-glass:hover{background:rgba(255,255,255,.13)}
 
 /* ---------- story ---------- */
-.story{position:relative;height:440vh}
+.story{position:relative;height:440vh;padding:0!important}
 .story-ui{position:sticky;top:0;height:100vh;height:100svh;pointer-events:none;overflow:hidden}
 .story-ui a,.story-ui button{pointer-events:auto}
 .ch{position:absolute;opacity:0;visibility:hidden;will-change:opacity,transform}
@@ -266,7 +266,7 @@ dialog.get[open]{animation:dlgIn .45s var(--ease)}
   .ch-work{left:16px;right:16px;bottom:max(16px,3vh);width:auto}
   .work-card{padding:20px}
   .wc-desc{font-size:15px;margin-bottom:16px}
-  .dots{right:auto;left:50%;top:auto;bottom:calc(max(16px,3vh) + 250px);transform:translateX(-50%);grid-auto-flow:column}
+  .dots{right:auto;left:50%;top:auto;bottom:calc(max(16px,3vh) + var(--card-h,250px) + 14px);transform:translateX(-50%);grid-auto-flow:column}
   .dots button[aria-current=true]{height:12px;width:34px}
   .ch-hero h1{font-size:clamp(36px,10.5vw,58px)}
   .ch-hero p{font-size:16px}
@@ -275,9 +275,13 @@ dialog.get[open]{animation:dlgIn .45s var(--ease)}
   .wc-desc{display:none}
   .wc-type{margin-bottom:14px}
   .wc-name{font-size:28px}
-  .dots{bottom:calc(max(16px,3vh) + 196px)}
   .ch-hero .pill{display:none}
   .ch-hero p{margin:12px auto 18px}
+}
+/* very short phones (iPhone SE 1st gen): drop the side paragraphs so text clears the devices */
+@media (max-aspect-ratio:9/10) and (max-height:620px){
+  .ch-side p,.ch-price p,.ch-price .btn-glass{display:none}
+  .ch-price .ctas{margin-top:18px}
 }
 @media (max-width:700px){
   .feat-grid,.steps,.static-grid{grid-template-columns:1fr}
@@ -324,6 +328,7 @@ dialog.get[open]{animation:dlgIn .45s var(--ease)}
   .rv{opacity:1;transform:none}
 }
 </style>
+<noscript><style>.loader{display:none}.story,#gl{display:none}.static-work{display:block}</style></noscript>
 </head>
 <body>
 
@@ -597,11 +602,7 @@ dialog.get[open]{animation:dlgIn .45s var(--ease)}
 </dialog>
 
 <script type="module">
-import * as THREE from 'three';
-import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-
-const $ = (s, r = document) => r.querySelector(s);
+const $ =(s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const html = document.documentElement;
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -648,6 +649,8 @@ SITES.forEach((s, i) => {
   dotsEl.appendChild(b);
 });
 const card = $('#workCard');
+// phones stack the dots above the card, so they follow its real height
+new ResizeObserver(() => dotsEl.style.setProperty('--card-h', card.offsetHeight + 'px')).observe(card);
 let shownIdx = -1;
 function showSite(i) {
   if (i === shownIdx) return;
@@ -746,8 +749,17 @@ addEventListener('scroll', onScroll, { passive: true }); onScroll();
 const canvas = $('#gl');
 const loaderEl = $('#loader'), loadBar = $('#loadBar');
 const hideLoader = () => loaderEl.classList.add('done');
-let renderer = null;
+setTimeout(hideLoader, 9000); // never leave anyone stuck behind the loader
+// three.js loads last, so the buttons and form above work even if it can't
+// (old browsers without import maps, a blocked CDN): those visitors get the static grid
+let renderer = null, THREE = null, RoundedBoxGeometry, RoomEnvironment;
 try {
+  const [three, rbg, env] = await Promise.all([
+    import('three'),
+    import('three/addons/geometries/RoundedBoxGeometry.js'),
+    import('three/addons/environments/RoomEnvironment.js')
+  ]);
+  THREE = three; ({ RoundedBoxGeometry } = rbg); ({ RoomEnvironment } = env);
   renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
 } catch (e) { renderer = null; }
 if (!renderer) { html.classList.add('no-gl'); hideLoader(); }
